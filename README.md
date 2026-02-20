@@ -1,7 +1,136 @@
+# Sistema de Gestión Hospitalaria
 
-# Proyecto Unidad 3
+**Equipo:** Caetano Flores · Leonardo Narváez  
+**Institución:** Universidad de las Fuerzas Armadas ESPE  
 
-Integrantes: Caetano Flores y Leonardo Narváez
+---
+
+## Descripción
+
+Sistema web de gestión hospitalaria desarrollado con **ASP.NET Core MVC** bajo una arquitectura de cuatro capas. Permite administrar los procesos internos de un hospital incluyendo el control de pacientes, médicos, citas, tratamientos y facturación, con un sistema de roles y autenticación que distingue entre Secretario y Médico.
+
+---
+
+## Funcionalidades
+
+- Gestión de **Pacientes**, **Médicos** y **Especialidades**
+- Registro y seguimiento de **Citas Médicas** y **Tratamientos**
+- Módulo de **Facturación**
+- Autenticación de usuarios con **roles diferenciados** (Secretario / Médico)
+- Permisos por controlador según rol asignado
+
+---
+
+## Tecnologías Utilizadas
+
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core_MVC-512BD4?style=flat&logo=dotnet&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+
+| Tecnología | Uso |
+|---|---|
+| **ASP.NET Core MVC** | Framework principal del backend |
+| **SQL Server** | Base de datos con procedimientos almacenados |
+| **Entity Framework Core** | ORM para mapeo objeto-relacional |
+| **Bootstrap / Materialize CSS** | Diseño y responsividad del frontend |
+| **JavaScript** | Interactividad en el cliente |
+| **C#** | Lenguaje de programación |
+
+---
+
+## Arquitectura por Capas
+
+El sistema sigue el patrón de arquitectura de **cuatro capas** para separar responsabilidades y facilitar el mantenimiento:
+
+| Capa | Descripción |
+|---|---|
+| **Capa de Entidad** | Clases que representan las tablas de la base de datos |
+| **Capa de Datos** | Acceso y manipulación de datos mediante procedimientos almacenados |
+| **Capa de Negocio** | Lógica de validaciones y procesamiento de datos |
+| **Capa de Presentación** | Controladores y vistas MVC que interactúan con el usuario |
+
+---
+
+## Estructura del Proyecto
+
+```
+proyectoHospital/
+├── CapaEntidad/       # Modelos: UsuarioCLS, MedicoCLS, CitasCLS, PacienteCLS...
+├── CapaDatos/         # DAL: acceso a BD con procedimientos almacenados
+├── CapaNegocio/       # BL: lógica de negocio e intermediario entre capas
+└── Login/             # Capa de Presentación: controladores, vistas y autenticación
+```
+
+---
+
+## Roles y Permisos
+
+- **Secretario:** acceso a Citas, Pacientes y Facturación.
+- **Médico:** acceso a Citas, Pacientes y Tratamientos.
+
+La autenticación se gestiona mediante atributos `[Authorize(Roles = "Rol")]` en los controladores.
+
+---
+
+## Ejemplo de Capa de Entidad
+
+```csharp
+public class CitasCLS
+{
+    public int idCita { get; set; }
+    public int idPaciente { get; set; }
+    public int idMedico { get; set; }
+    public DateTime fecha { get; set; }
+    public string estado { get; set; }
+}
+```
+
+## Ejemplo de Capa de Datos
+
+```csharp
+public class CitasDAL : CadenaDAL
+{
+    public List<CitasCLS> ListarCitas()
+    {
+        List<CitasCLS> lista = null;
+        using (SqlConnection cn = new SqlConnection(cadenaDato))
+        {
+            cn.Open();
+            using (SqlCommand cmd = new SqlCommand("uspListarCitas", cn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataReader dr = cmd.ExecuteReader();
+                lista = new List<CitasCLS>();
+                while (dr.Read())
+                {
+                    lista.Add(new CitasCLS
+                    {
+                        idCita = dr.GetInt32(0),
+                        idPaciente = dr.GetInt32(1),
+                        idMedico = dr.GetInt32(2),
+                        fecha = dr.GetDateTime(3),
+                        estado = dr.GetString(4)
+                    });
+                }
+            }
+        }
+        return lista;
+    }
+}
+```
+
+## Ejemplo de Capa de Negocio
+
+```csharp
+public class CitasBL
+{
+    public List<CitasCLS> ListarCitas() => new CitasDAL().ListarCitas();
+    public int GuardarCita(CitasCLS obj) => new CitasDAL().GuardarCitas(obj);
+    public int EliminarCita(int id) => new CitasDAL().EliminarCitas(id);
+    public CitasCLS RecuperarCitas(int id) => new CitasDAL().RecuperarCitas(id);
+}
+```
+
 
 **Proyecto de Sistema de Gestión Hospitalaria** en ASP.NET Core MVC con una arquitectura por capaz para mejorar la escalabilidad y mantenimiento del software.
 
