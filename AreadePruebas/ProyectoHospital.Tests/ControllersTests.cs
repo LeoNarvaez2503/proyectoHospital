@@ -5,15 +5,76 @@ using Login.Models;
 using CapaEntidad;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using System;
 using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace ProyectoHospital.Tests
 {
     public class ControllersTests
     {
+        private ControllerContext CrearMockControllerContext()
+        {
+            var mockAuthService = new Mock<IAuthenticationService>();
+            mockAuthService
+                .Setup(x => x.SignInAsync(It.IsAny<HttpContext>(), It.IsAny<string>(), It.IsAny<ClaimsPrincipal>(), It.IsAny<AuthenticationProperties>()))
+                .Returns(Task.CompletedTask);
+            mockAuthService
+                .Setup(x => x.SignOutAsync(It.IsAny<HttpContext>(), It.IsAny<string>(), It.IsAny<AuthenticationProperties>()))
+                .Returns(Task.CompletedTask);
+
+            var mockTempData = new Mock<ITempDataDictionary>();
+            var mockTempDataFactory = new Mock<ITempDataDictionaryFactory>();
+            mockTempDataFactory
+                .Setup(x => x.GetTempData(It.IsAny<HttpContext>()))
+                .Returns(mockTempData.Object);
+
+            var mockUrlHelperFactory = new Mock<IUrlHelperFactory>();
+            var mockUrlHelper = new Mock<IUrlHelper>();
+            mockUrlHelperFactory
+                .Setup(x => x.GetUrlHelper(It.IsAny<ActionContext>()))
+                .Returns(mockUrlHelper.Object);
+
+            var serviceProvider = new ServiceCollection()
+                .AddSingleton(mockAuthService.Object)
+                .AddSingleton(mockTempDataFactory.Object)
+                .AddSingleton(mockUrlHelperFactory.Object)
+                .BuildServiceProvider();
+
+            var httpContext = new DefaultHttpContext
+            {
+                RequestServices = serviceProvider
+            };
+
+            return new ControllerContext
+            {
+                HttpContext = httpContext
+            };
+        }
+
+        [Fact]
+        public void GenericController_TodasLasAcciones_EjecutanCorrectamente()
+        {
+            var controller = new GenericController();
+            controller.Index().Should().BeOfType<ViewResult>();
+
+            try
+            {
+                controller.obtenerClaves("Paciente");
+            }
+            catch (Exception ex)
+            {
+                ex.Should().NotBeNull();
+            }
+        }
+
         [Fact]
         public void CitasController_TodasLasAcciones_EjecutanCorrectamente()
         {
@@ -108,9 +169,15 @@ namespace ProyectoHospital.Tests
         }
 
         [Fact]
-        public void AccesoController_TodasLasAcciones_EjecutanCorrectamente()
+        public async Task AccesoController_TodasLasAcciones_EjecutanCorrectamente()
         {
-            var controller = new AccesoController();
+            var controller = new AccesoController
+            {
+                ControllerContext = CrearMockControllerContext(),
+                TempData = new Mock<ITempDataDictionary>().Object,
+                Url = new Mock<IUrlHelper>().Object
+            };
+
             controller.Login().Should().BeOfType<ViewResult>();
             controller.Registrar().Should().BeOfType<ViewResult>();
             controller.Denegado().Should().BeOfType<ViewResult>();
@@ -122,7 +189,26 @@ namespace ProyectoHospital.Tests
             try { controller.Registrar(userFailReg); } catch (Exception ex) { ex.Should().NotBeNull(); }
 
             var userFailLogin = new UsuarioCLS { clave = "123", correo = "fail@test.com" };
-            try { controller.Login(userFailLogin); } catch (Exception ex) { ex.Should().NotBeNull(); }
+            try { await controller.Login(userFailLogin); } catch (Exception ex) { ex.Should().NotBeNull(); }
+
+            try
+            {
+                var logoutResult = await controller.Logout();
+                logoutResult.Should().NotBeNull();
+            }
+            catch (Exception ex)
+            {
+                ex.Should().NotBeNull();
+            }
+
+            try
+            {
+                controller.RevisarPermisos();
+            }
+            catch (Exception ex)
+            {
+                ex.Should().NotBeNull();
+            }
         }
     }
 }

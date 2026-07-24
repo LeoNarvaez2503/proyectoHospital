@@ -66,11 +66,50 @@ Navega a la raíz del repositorio y ejecuta la secuencia estándar de `dotnet-so
 
 ---
 
+## 🧪 Ejecución Multiplataforma de Pruebas Unitarias para el Equipo de QA
+
+Cualquier analista de QA o desarrollador puede ejecutar la suite de 59 pruebas unitarias automatizadas en cualquier sistema operativo y shell:
+
+### 1. 🪟 Windows (PowerShell)
+```powershell
+$env:DOTNET_ROOT = "$env:USERPROFILE\.dotnet"
+$env:PATH = "$env:DOTNET_ROOT;$env:PATH"
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+### 2. 🪟 Windows (CMD - Símbolo del Sistema)
+```cmd
+set DOTNET_ROOT=%USERPROFILE%\.dotnet
+set PATH=%DOTNET_ROOT%;%PATH%
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+### 3. 🐧 Linux / 🍎 macOS (Bash / Zsh)
+```bash
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$DOTNET_ROOT:$PATH:/usr/bin:/bin
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+### 4. 🐟 Linux / 🍎 macOS (Fish Shell)
+```fish
+set -x DOTNET_ROOT $HOME/.dotnet
+set -x PATH $DOTNET_ROOT $PATH /usr/bin /bin /usr/local/bin
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+---
+
 ## 📊 Visualización de Resultados y Exportación
 
 - **Dashboard Web de SonarQube:**  
   Abre tu navegador en: 👉 **http://localhost:9000/dashboard?id=proyectoHospital**  
   *(Usuario por defecto: `admin` / Contraseña: `admin`)*
+
+- **Recaudar Cobertura XML para SonarQube:**
+  ```bash
+  dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj --collect:"XPlat Code Coverage" --results-directory AreadePruebas/TestResults
+  ```
 
 - **Exportación de Incidencias a CSV:**  
   Puedes exportar la lista completa de hallazgos mediante la API REST de SonarQube a un archivo `.csv` ejecutando el siguiente comando en Python:

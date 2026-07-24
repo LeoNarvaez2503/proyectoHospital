@@ -2,31 +2,32 @@
 bin/
 obj/
 
-# Archivos generados por Visual Studio
+# Archivos generados por Visual Studio e IDEs
 .vs/
 .vscode/
 .idea/
 
-# Archivos de configuración del usuario
+# Archivos de configuración y secretos
 appsettings.Development.json
 appsettings.Production.json
 appsettings.json
+.env
 
-# Archivos temporales
+# Archivos temporales de SonarQube y SonarLint
+.sonarqube/
+.sonarlint/
+
+# Archivos temporales de pruebas y cobertura
+TestResults/
+AreadePruebas/TestResults/
+AreadePruebas/CoverageReport/
+*.cobertura.xml
+
+# Archivos de log y sistema
+*.log
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
-
-# Archivos de log
-*.log
-
-# Archivos generados por Visual Studio (macOS)
-.vscode/
-
-# Archivos de debug y configuración de entorno
-.env
-
-# Otros archivos temporales
 Thumbs.db
-.DS_Store  # macOS
+.DS_Store

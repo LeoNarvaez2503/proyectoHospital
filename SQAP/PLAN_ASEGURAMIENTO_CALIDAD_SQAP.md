@@ -108,10 +108,16 @@ El alcance de las actividades de auditoría y pruebas abarca los módulos críti
 
 ---
 
-### 2.5. ESTRATEGIA DE PRUEBAS Y CRITERIOS DE ENTRADA / SALIDA
+### 2.5. ESTRATEGIA Y TIPOS DE PRUEBAS SELECCIONADOS
 
-#### A. Tipos de Pruebas Seleccionados
-- **Pruebas Estáticas (Static Testing):** Revisión de código sin ejecución mediante Linters y Roslyn Analyzers para detectar deuda técnica y vulnerabilidades iniciales.
+Para cumplir con el **Objetivo Específico 3** y las especificaciones del proyecto final (`Indicaciones.txt`), se implementó una estrategia multinivel combinando:
+
+| Tipo de Prueba | Herramienta | Componentes Evaluados | Justificación Metodológica SQA |
+|---|---|---|---|
+| **Pruebas Unitarias** | `xUnit` + `FluentAssertions` | `CapaNegocio`, `CapaEntidad`, `Controllers` | Valida la lógica de negocio aislada, algoritmos y respuestas HTTP en memoria con **82.3% de cobertura global**. |
+| **Pruebas de Integración** | `xUnit` + `Microsoft.Data.SqlClient` | `CapaDatos` <-> `SQL Server (BDHospitalF)` | **Justificación:** Verifica la comunicación física entre los DALs y la base de datos en Docker, validando la ejecución de Stored Procedures (`sp_ListarPacientes`, `sp_GuardarCitas`), la resolución de `appsettings.json` y la integridad transaccional. |
+| **Pruebas Estáticas** | `SonarQube 26` + `Roslyn Analyzers` | Solución Completa (`Login.sln`) | Identifica deuda técnica, vulnerabilidades de seguridad (`S6703`) y malos olores de código antes de producción. |
+
 - **Pruebas Unitarias (Unit Testing):** Validación aislada de la lógica de negocio en `CapaNegocio` mediante mocks de `CapaDatos`.
 - **Pruebas de Integración (Integration Testing):** Verificación de la comunicación real entre `CapaNegocio` y `CapaDatos` con la base de datos SQL Server.
 - **Pruebas Funcionales / Sistema (E2E Testing):** Validación de flujos de usuario completos a través de la interfaz web MVC.

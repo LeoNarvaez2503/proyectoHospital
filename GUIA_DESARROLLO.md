@@ -115,16 +115,81 @@ docker compose up --build
 
 ---
 
+---
+
 ## 🧪 Pruebas y Auditoría de Calidad (SQAP)
 
-El proyecto cuenta con un entorno configurado para el **Aseguramiento de la Calidad de Software (SQAP)** mediante análisis estático y dinámico:
+El proyecto cuenta con una suite de **59 pruebas unitarias automatizadas (`xUnit` + `FluentAssertions`)** que alcanzan un **82.3% de Cobertura Global en SonarQube** y 100% de éxito de ejecución.
 
-### 1. Auditoría Estática con SonarQube
-Para ejecutar el análisis estático de código, detectar vulnerabilidades y calcular la deuda técnica:
-1. Inicia el servidor local de SonarQube en Docker (`docker start sonarqube`).
-2. Sigue los pasos detallados en la guía de pruebas: [GUIA_ANALISIS_ESTATICO_SONARQUBE.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/GUIA_ANALISIS_ESTATICO_SONARQUBE.md).
-3. Revisa los hallazgos en el Dashboard: `http://localhost:9000/dashboard?id=proyectoHospital`.
+Cualquier miembro del equipo de QA o Desarrollo puede ejecutar la suite de pruebas unitarias en **Windows, macOS o Linux** independientemente de la terminal o shell utilizada.
 
-### 2. Documentación y Evidencias SQAP
-Toda la documentación metodológica, el plan maestro, los reportes de análisis estático y los CSV para importar en Jira se encuentran organizados en la carpeta [SQAP/](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP).
+---
+
+### 🚀 Guía de Ejecución de Pruebas Unitarias por Plataforma y Shell
+
+Abre tu terminal en la raíz del proyecto (`proyectoHospital`) y ejecuta los comandos según tu sistema operativo y shell:
+
+#### 1. 🪟 Windows (PowerShell)
+```powershell
+$env:DOTNET_ROOT = "$env:USERPROFILE\.dotnet"
+$env:PATH = "$env:DOTNET_ROOT;$env:PATH"
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+#### 2. 🪟 Windows (CMD - Símbolo del Sistema)
+```cmd
+set DOTNET_ROOT=%USERPROFILE%\.dotnet
+set PATH=%DOTNET_ROOT%;%PATH%
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+#### 3. 🐧 Linux / 🍎 macOS (Bash / Zsh)
+```bash
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$DOTNET_ROOT:$PATH:/usr/bin:/bin
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+#### 4. 🐟 Linux / 🍎 macOS (Fish Shell)
+```fish
+set -x DOTNET_ROOT $HOME/.dotnet
+set -x PATH $DOTNET_ROOT $PATH /usr/bin /bin /usr/local/bin
+dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+```
+
+---
+
+### 📊 Generación de Reporte de Cobertura XML e HTML (Cobertura de Código)
+
+1. **Ejecutar las pruebas y recabar el XML de cobertura:**
+   ```bash
+   dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj --collect:"XPlat Code Coverage" --results-directory AreadePruebas/TestResults
+   ```
+
+2. **Generar el reporte HTML limpio (Excluyendo infraestructura y Program.cs):**
+   - **Fish Shell:**
+     ```fish
+     set -x DOTNET_ROOT $HOME/.dotnet
+     set -x PATH $DOTNET_ROOT $DOTNET_ROOT/tools $PATH /usr/bin /bin
+     reportgenerator -reports:"AreadePruebas/TestResults/*/coverage.cobertura.xml" -targetdir:"AreadePruebas/CoverageReport" -reporttypes:Html -filefilters:"-**/Program.cs;-**/CapaDatos/**;-**/init.sql;-**/DatabaseInitializer.cs" -classfilters:"-Program;-AspNetCoreGeneratedDocument*;-*Views_*"
+     ```
+   - **Bash:**
+     ```bash
+     export DOTNET_ROOT=$HOME/.dotnet
+     export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH:/usr/bin:/bin
+     reportgenerator -reports:"AreadePruebas/TestResults/*/coverage.cobertura.xml" -targetdir:"AreadePruebas/CoverageReport" -reporttypes:Html -filefilters:"-**/Program.cs;-**/CapaDatos/**;-**/init.sql;-**/DatabaseInitializer.cs" -classfilters:"-Program;-AspNetCoreGeneratedDocument*;-*Views_*"
+     ```
+
+   > **Resultado:** Genera una cobertura limpia del **85.8%** en el archivo [AreadePruebas/CoverageReport/index.html](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/CoverageReport/index.html).
+
+
+---
+
+### 🔍 Auditoría Estática con SonarQube
+
+Para ejecutar la auditoría estática completa y actualizar los 406 hallazgos y el 82.3% de cobertura en SonarQube:
+1. Inicia el servidor de SonarQube en Docker (`docker start sonarqube`).
+2. Sigue los pasos detallados en la guía de auditoría: [GUIA_ANALISIS_ESTATICO_SONARQUBE.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/GUIA_ANALISIS_ESTATICO_SONARQUBE.md).
+3. Revisa las evidencias y reportes del proyecto en la carpeta [SQAP/](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP).
+
 
