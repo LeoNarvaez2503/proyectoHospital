@@ -1,0 +1,25 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Hospital123!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5076:5076"
+    environment:
+      ConnectionStrings__cn: "Server=sqlserver;Database=BDHospital;User Id=sa;Password=Hospital123!;TrustServerCertificate=True;"
+      ASPNETCORE_ENVIRONMENT: Development
+    depends_on:
+      - sqlserver
+
+volumes:
+  sqlserver-data:

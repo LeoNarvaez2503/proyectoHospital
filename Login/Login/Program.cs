@@ -1,6 +1,8 @@
+using CapaDatos;
+using Login.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddAuthentication("CookieAuth")
@@ -9,12 +11,13 @@ builder.Services.AddAuthentication("CookieAuth")
         config.Cookie.Name = "UsuarioLogin";
         config.LoginPath = "/Acceso/Login";
         config.AccessDeniedPath = "/Acceso/Denegado";
-
     });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+var cadenaDAL = new CadenaDAL();
+DatabaseInitializer.Initialize(cadenaDAL.cadenaDato);
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
