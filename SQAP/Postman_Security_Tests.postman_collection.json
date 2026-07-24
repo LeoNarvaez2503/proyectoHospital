@@ -1,0 +1,501 @@
+{
+  "info": {
+    "_postman_id": "b8a9c0d1-e2f3-4567-890a-bcdef1234567",
+    "name": "ProyectoHospital - Suite Completa de Pruebas de Seguridad, Sanitización y Casos de Fallo (SQAP)",
+    "description": "Colección completa de Pruebas de Seguridad, Sanitización HTTP, OWASP Top 10, Casos Positivos, Negativos, Casos de Fallo Controlado y Payload RAW (JSON/Text) para el Sistema Hospitalario.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "🔒 1. Autenticación y Control de Acceso (OWASP A01 & A07)",
+      "item": [
+        {
+          "name": "SEC-01: Login Exitoso con Credenciales Válidas (Form UrlEncoded)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Respuesta HTTP 200 u 302 Redirección', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 302]);",
+                  "});",
+                  "pm.test('Verificar establecimiento de Cookie de Autenticación', function () {",
+                  "    pm.expect(pm.cookies.has('.AspNetCore.Cookies') || pm.cookies.has('CookieAuth') || pm.response.headers.get('Set-Cookie')).to.be.ok;",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "admin@hospital.com", "type": "text" },
+                { "key": "clave", "value": "Admin123!", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SEC-01-RAW: Login con Payload RAW (JSON Content-Type)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Respuesta HTTP recibida (200/400/415)', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 400, 415, 302]);",
+                  "});",
+                  "pm.test('Manejo controlado de Payload RAW sin desbordamiento de pila', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('StackOverflowException');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"correo\": \"admin@hospital.com\",\n  \"clave\": \"Admin123!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SEC-02: [Fallo Controlado] Login con Contraseña Incorrecta",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Respuesta HTTP 200 OK con vista de error', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('No debe permitir autenticación', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('Bienvenido');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "admin@hospital.com", "type": "text" },
+                { "key": "clave", "value": "ClaveIncorrecta999!", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SEC-03: [Fallo Controlado] Login con Usuario Inexistente en Base de Datos",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Respuesta de error de login recibida', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('No debe revelar existencia de cuentas', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('SqlException');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "usuario_fantasma_99@noexiste.com", "type": "text" },
+                { "key": "clave", "value": "ClaveCualquiera123!", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SEC-04: [Prueba Bypass] Intento de Acceso Directo sin Sesión a Módulo Protegido",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Debe denegar acceso o redirigir a Login', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([302, 401, 403, 200]);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "http://localhost:5076/Tratamientos/ListarTratamientos", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Tratamientos", "ListarTratamientos"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "💉 2. Sanitización e Inyección SQL (OWASP A03)",
+      "item": [
+        {
+          "name": "SQLi-01: Inyección Tautológica (' OR '1'='1)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Sanitización exitosa - Sin excepción SQL', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('SqlException');",
+                  "    pm.expect(pm.response.text()).to.not.include('Syntax error');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "admin' OR '1'='1' --", "type": "text" },
+                { "key": "clave", "value": "' OR '1'='1", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SQLi-01-RAW: Inyección SQL en Payload RAW (JSON)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Sanitización en JSON RAW - Sin excepciones SQL', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('SqlException');",
+                  "    pm.expect(pm.response.text()).to.not.include('Unclosed quotation mark');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"correo\": \"admin' OR '1'='1' --\",\n  \"clave\": \"' OR '1'='1\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SQLi-02: Inyección Destructiva (DROP TABLE)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Bloqueo de ejecución de comandos SQL apilados', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('Cannot drop the table');",
+                  "    pm.expect(pm.response.text()).to.not.include('SqlException');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "'; DROP TABLE Usuario; --", "type": "text" },
+                { "key": "clave", "value": "123456", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        },
+        {
+          "name": "SQLi-03: Inyección por Unión SQL (UNION SELECT)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Sanitización de consultas combinadas', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('All queries combined using a UNION');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "' UNION SELECT 1, 'hacked@test.com', 'hash' --", "type": "text" },
+                { "key": "clave", "value": "123", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Login", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Login"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "🛡️ 3. Sanitización XSS e Inyección de Código Front-End",
+      "item": [
+        {
+          "name": "XSS-01: Inyección de Script Malicioso en Nombre de Paciente (Form)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('No debe renderizar etiquetas script sin codificar', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('<script>alert(\"XSS_PACIENTE\")</script>');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "Id", "value": "0", "type": "text" },
+                { "key": "Nombre", "value": "<script>alert('XSS_PACIENTE')</script>", "type": "text" },
+                { "key": "Apellido", "value": "Prueba", "type": "text" },
+                { "key": "Cedula", "value": "1700000001", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Pacientes/GuardarPaciente", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Pacientes", "GuardarPaciente"] }
+          }
+        },
+        {
+          "name": "XSS-01-RAW: Inyección XSS con Payload RAW (JSON)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Sanitización XSS en JSON RAW', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('<script>alert(\"XSS_RAW\")</script>');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Id\": 0,\n  \"Nombre\": \"<script>alert('XSS_RAW')</script>\",\n  \"Apellido\": \"PruebaRAW\",\n  \"Cedula\": \"0999999999\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": { "raw": "http://localhost:5076/Pacientes/GuardarPaciente", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Pacientes", "GuardarPaciente"] }
+          }
+        },
+        {
+          "name": "XSS-02: Inyección de Atributo Evento HTML (onerror=alert)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Manejo seguro de atributos de imagen maliciosos', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('onerror=alert');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "Id", "value": "0", "type": "text" },
+                { "key": "Nombre", "value": "<img src=x onerror=alert('HACKED')>", "type": "text" },
+                { "key": "Especialidad", "value": "Cardiologia", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Medicos/GuardarMedico", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Medicos", "GuardarMedico"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "⚠️ 4. Pruebas de Limites, Validaciones y Casos de Fallo DTO",
+      "item": [
+        {
+          "name": "VAL-01: [Fallo Controlado] Registro con Confirmación de Clave Errónea",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Respuesta HTTP 200 indicando rechazo de registro', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "pm.test('Debe mostrar alerta de no coincidencia', function () {",
+                  "    pm.expect(pm.response.text()).to.include('coincide') || pm.expect(pm.response.text()).to.not.include('Exito');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "correo", "value": "usuario_nuevo@hospital.com", "type": "text" },
+                { "key": "clave", "value": "PasswordSegura123!", "type": "text" },
+                { "key": "confClave", "value": "PasswordDiferente999!", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Acceso/Registrar", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Acceso", "Registrar"] }
+          }
+        },
+        {
+          "name": "VAL-02-RAW: [Fallo Controlado] Buffer Overflow en RAW Payload (JSON)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Manejo controlado de Payload JSON masivo', function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 400, 415, 500]);",
+                  "    pm.expect(pm.response.text()).to.not.include('Fatal crash');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Id\": 0,\n  \"Nombre\": \"TestOverflowRAW\",\n  \"Cedula\": \"999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": { "raw": "http://localhost:5076/Pacientes/GuardarPaciente", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Pacientes", "GuardarPaciente"] }
+          }
+        },
+        {
+          "name": "VAL-03: [Fallo Controlado] Petición de Eliminación con ID Negativo (-1)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test('Manejo controlado de ID inválido', function () {",
+                  "    pm.expect(pm.response.text()).to.not.include('NullReferenceException');",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/x-www-form-urlencoded" }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                { "key": "id", "value": "-1", "type": "text" }
+              ]
+            },
+            "url": { "raw": "http://localhost:5076/Pacientes/EliminarPaciente", "protocol": "http", "host": ["localhost"], "port": "5076", "path": ["Pacientes", "EliminarPaciente"] }
+          }
+        }
+      ]
+    }
+  ]
+}

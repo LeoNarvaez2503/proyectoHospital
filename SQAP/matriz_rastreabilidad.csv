@@ -1,6 +1,8 @@
 ID Requisito,ID Caso Prueba,Titulo Caso Prueba,Tipo Prueba,Herramienta,Defecto Asociado (Jira),Estado Final
 REQ-01,CP-01,Autenticacion con credenciales validas (Secretario / Medico),Funcional / E2E,Manual / Cypress,BUG-01,Pass
 REQ-01,CP-15,Intento de Login con credenciales invalidas (Feedback de Alerta),Funcional / E2E,Manual / Cypress,BUG-15,Pass
+REQ-01,CP-16,Manejo de NullReference y Payload RAW sin datos en Login,Seguridad / API,Postman / Newman,BUG-16,Pass
+
 REQ-01,CP-02,Verificacion de hashing de contrasena en encriptacion,Unitaria,xUnit (AccesoControllerTests),BUG-02,Pass
 REQ-01,CP-03,Control de acceso restrictivo a Tratamientos por rol Secretario,Integracion / UI,Cypress / Manual,BUG-03,Pass
 REQ-02,CP-04,Registro de Paciente con campos obligatorios completos,Unitaria / Integracion,xUnit (PacienteBLTests + Moq),BUG-04,Pass

@@ -142,9 +142,49 @@ graph LR
 - **Prueba Ejecutada:** Verificación de aislamiento mediante variables de entorno `.env` fuera del control de versiones Git.
 - **Resultado:** **Mitigado.** La credencial crítica se aisló del código fuente.
 
+### 5.5 Pruebas Dinámicas HTTP de Sanitización y Casos de Fallo con Postman (Modo Form & RAW JSON)
+Se diseñó e implementó una suite de peticiones HTTP en Postman evaluando payloads en formato **Form UrlEncoded** y **`raw` (JSON)** para probar la resiliencia del servidor frente a negociación de `Content-Type`, sanitización XSS/SQLi y manejo de desbordamientos:
+- **Archivo de Colección JSON:** [Postman_Security_Tests.postman_collection.json](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/Postman_Security_Tests.postman_collection.json)
+
+| Módulo de Prueba | Modo de Body Postman | ID Test Postman | Descripción y Payload Enviado | Criterio de Aceptación y Resultado SQA |
+|---|---|---|---|---|
+| **1. Autenticación & RBAC** | `x-www-form-urlencoded` | `SEC-01` | Login exitoso (`admin@hospital.com` / `Admin123!`) | `200 OK / 302` - Cookie de Sesión generada. |
+| **1. Autenticación & RBAC** | `raw` (application/json) | `SEC-01-RAW` | Login enviando JSON `{"correo": "admin@..."}` | `200 OK / 400` - Sin `StackOverflowException`. |
+| **1. Autenticación & RBAC** | `x-www-form-urlencoded` | `SEC-02` *(Fallo)* | Login con contraseña errónea (`ClaveIncorrecta999!`) | `200 OK` - Rechazo de autenticación sin fugas. |
+| **1. Autenticación & RBAC** | `x-www-form-urlencoded` | `SEC-03` *(Fallo)* | Login con usuario inexistente | `200 OK` - Sin excepciones `SqlException`. |
+| **1. Autenticación & RBAC** | N/A (GET) | `SEC-04` *(Bypass)* | `GET /Tratamientos/ListarTratamientos` sin cookie | Redirección `302` a `/Acceso/Login`. |
+| **2. Sanitización SQLi** | `x-www-form-urlencoded` | `SQLi-01` | Inyección Tautológica (`admin' OR '1'='1 --`) | `200 OK` - Sanitización exitosa. |
+| **2. Sanitización SQLi** | `raw` (application/json) | `SQLi-01-RAW` | Inyección SQL en JSON RAW `{"correo": "' OR 1=1"}` | `200 OK` - Sin excepciones de sintaxis SQL. |
+| **2. Sanitización SQLi** | `x-www-form-urlencoded` | `SQLi-02` | Inyección Destructiva (`'; DROP TABLE Usuario; --`) | Bloqueo de consultas apiladas en SQL Server. |
+| **2. Sanitización SQLi** | `x-www-form-urlencoded` | `SQLi-03` | Inyección por Unión (`' UNION SELECT...`) | Sanitización de consultas combinadas. |
+| **3. Sanitización XSS** | `x-www-form-urlencoded` | `XSS-01` | Script Malicioso (`<script>alert('XSS')</script>`) | Codificación de caracteres HTML en vista MVC. |
+| **3. Sanitización XSS** | `raw` (application/json) | `XSS-01-RAW` | Script XSS en JSON RAW `{"Nombre": "<script>..."}` | Neutralización de etiquetas script en respuesta. |
+| **3. Sanitización XSS** | `x-www-form-urlencoded` | `XSS-02` | Evento Malicioso (`<img src=x onerror=alert>`) | Neutralización de atributos dinámicos DOM. |
+| **4. Validaciones & Limites**| `x-www-form-urlencoded` | `VAL-01` *(Fallo)* | Confirmación clave no coincidente (`confClave`) | Rechazo de registro y alerta en DTO. |
+| **4. Validaciones & Limites**| `raw` (application/json) | `VAL-02-RAW` | Buffer Overflow en RAW JSON (>500 caracteres) | Servidor responde estable sin crash. |
+| **4. Validaciones & Limites**| `x-www-form-urlencoded` | `VAL-03` *(Fallo)* | Petición de eliminación con ID negativo (`id: -1`) | Manejo de excepción controlado sin `NullReference`. |
+
 ---
 
-## 6. 🎨 PRUEBAS DE USABILIDAD Y EXPERIENCIA DE USUARIO (ISO 25010 & NIELSEN)
+### 5.6 Pruebas de Estrés Masivo y Rendimiento (ISO 25010 High Stress Efficiency)
+Se ejecutó una **Prueba de Estrés Masivo Multihilo** en Python ([load_test.py](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/load_test.py)) sometiendo a la aplicación a **50 usuarios virtuales concurrentes simultáneos** y registrando **1,200 inserciones físicas** en la base de datos SQL Server (`BDHospitalF`):
+
+| Módulo Evaluado | Método HTTP y Endpoint | Peticiones / Concurrencia | Tasa de Éxito BD | Throughput (req/sec) | Latencia Promedio (Avg) | Latencia Máxima |
+|---|---|---|---|---|---|---|
+| **1. Pacientes** | `POST /Pacientes/GuardarPaciente` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,309.73 req/sec** | **19.33 ms** | 46.52 ms |
+| **2. Médicos** | `POST /Medicos/GuardarMedico` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,383.11 req/sec** | **21.02 ms** | 43.36 ms |
+| **3. Citas Médicas** | `POST /Citas/GuardarCita` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,195.13 req/sec** | **15.60 ms** | 41.17 ms |
+| **4. Tratamientos** | `POST /Tratamientos/GuardarTratamiento` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,649.43 req/sec** | **15.96 ms** | 36.67 ms |
+| **5. Facturación** | `POST /Facturacion/GuardarFacturacion` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,607.04 req/sec** | **16.45 ms** | 41.98 ms |
+| **6. Especialidades**| `POST /Especialidades/GuardarEspecialidad` | **200 reqs / 50 Virtual Users** | **100.0% (200/200)** | **1,665.79 req/sec** | **16.05 ms** | 34.61 ms |
+
+---
+
+
+
+
+
+
 
 Se evaluó la usabilidad de la aplicación web utilizando los **10 Principios Heurísticos de Nielsen** y la **Escala de Usabilidad del Sistema (SUS)**.
 

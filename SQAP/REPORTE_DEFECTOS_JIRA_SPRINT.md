@@ -51,6 +51,8 @@ La gestión del ciclo de vida de los defectos encontrados (provenientes del aná
 | `BUG-13` | Muestra de IDs numericos en lugar de Nombres (Paciente/Medico) y fecha ISO en Citas | `Medium` | Presentacion | `UX-Citas` | Closed |
 | `BUG-14` | Desplegables de Paciente/Medico muestran IDs y titulo incorrecto en Modal de Citas | `Medium` | Presentacion | `UX-Modal` | Closed |
 | `BUG-15` | Cuadro de alerta de error en blanco al ingresar credenciales incorrectas en Login | `High` | Autenticacion | `UX-Login` | Closed |
+| `BUG-16` | Excepcion unhandled HTTP 500 (NullReference) al enviar Payload RAW en Login | `High` | Autenticacion | `Exception500` | Closed |
+
 
 
 
