@@ -1,8 +1,0 @@
-﻿/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs
-/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/UsuarioBL.cs
