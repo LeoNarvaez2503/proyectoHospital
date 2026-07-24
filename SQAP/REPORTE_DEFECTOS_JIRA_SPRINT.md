@@ -48,11 +48,16 @@ La gestión del ciclo de vida de los defectos encontrados (provenientes del aná
 | `BUG-10` | Omisión `ModelState.IsValid` en `FacturacionController` | Critical | Presentación | TO DO | IN PROGRESS | DONE | **Closed / Verified** |
 | `BUG-11` | RIESGO DE INYECCIÓN SQL (`S2077`) por formateo de cadenas | Major | CapaDatos | TO DO | IN PROGRESS | DONE | **Closed / Verified** |
 | `BUG-12` | EXPOSICIÓN DE CREDENCIAL `SA_PASSWORD` (`S6703`) | **BLOCKER** | Infrastructure | TO DO | IN PROGRESS | DONE | **Closed / Verified** |
+| `BUG-13` | Muestra de IDs numericos en lugar de Nombres (Paciente/Medico) y fecha ISO en Citas | `Medium` | Presentacion | `UX-Citas` | Closed |
+| `BUG-14` | Desplegables de Paciente/Medico muestran IDs y titulo incorrecto en Modal de Citas | `Medium` | Presentacion | `UX-Modal` | Closed |
+| `BUG-15` | Cuadro de alerta de error en blanco al ingresar credenciales incorrectas en Login | `High` | Autenticacion | `UX-Login` | Closed |
+
+
 
 ---
 
 ## 3. MÉTRICAS DE GESTIÓN DE DEFECTOS
-- **Total de Defectos Reportados:** 12
+- **Total de Defectos Reportados:** 13
 - **Defectos Críticos / Blocker:** 7
 - **Defectos Resueltos y Verificados (Sprint W3):** 12 (**100%**)
 - **Densidad de Defectos por Módulo:**

@@ -1,10 +1,14 @@
 ID Requisito,ID Caso Prueba,Titulo Caso Prueba,Tipo Prueba,Herramienta,Defecto Asociado (Jira),Estado Final
 REQ-01,CP-01,Autenticacion con credenciales validas (Secretario / Medico),Funcional / E2E,Manual / Cypress,BUG-01,Pass
+REQ-01,CP-15,Intento de Login con credenciales invalidas (Feedback de Alerta),Funcional / E2E,Manual / Cypress,BUG-15,Pass
 REQ-01,CP-02,Verificacion de hashing de contrasena en encriptacion,Unitaria,xUnit (AccesoControllerTests),BUG-02,Pass
 REQ-01,CP-03,Control de acceso restrictivo a Tratamientos por rol Secretario,Integracion / UI,Cypress / Manual,BUG-03,Pass
 REQ-02,CP-04,Registro de Paciente con campos obligatorios completos,Unitaria / Integracion,xUnit (PacienteBLTests + Moq),BUG-04,Pass
 REQ-02,CP-05,Validacion de duplicados o cedula invalida en Paciente,Unitaria,xUnit (PacienteBLTests),BUG-05,Pass
 REQ-03,CP-06,Agendamiento exitoso de Cita Medica,Unitaria / Integracion,xUnit (CitasBLTests + Moq),BUG-06,Pass
+REQ-03,CP-13,Visibilidad de Nombres de Paciente y Medico en Citas,Unitaria / Integracion,xUnit (CitasBLTests),BUG-13,Pass
+REQ-03,CP-14,Formateo de combos desplegables y titulo en Modal de Citas,Funcional / E2E,Manual / Cypress,BUG-14,Pass
+
 REQ-03,CP-07,Filtrado de Citas Medicas por rango de fecha o estado,Unitaria,xUnit (CitasBLTests),BUG-07,Pass
 REQ-04,CP-08,Asignacion de Tratamiento por perfil Medico,Unitaria / Integracion,xUnit (TratamientosBLTests + Moq),BUG-08,Pass
 REQ-04,CP-09,Intento de acceso a Tratamientos por perfil Secretario (Acceso Denegado),Funcional / E2E,Manual / Cypress,BUG-09,Pass

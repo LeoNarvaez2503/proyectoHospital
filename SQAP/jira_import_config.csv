@@ -1,0 +1,20 @@
+#Jira CSV Importer Configuration File
+config.version=2.0
+config.delimiter=,
+config.encoding=UTF-8
+
+field.Issue\ Type=issueType
+field.Issue\ ID=issueId
+field.Summary=summary
+field.Description=description
+field.Priority=priority
+field.Component/s=components
+field.Labels=labels
+field.Epic\ Name=epicName
+field.Epic\ Link=epicLink
+field.Status=status
+
+value.Priority.Highest=Highest
+value.Priority.High=High
+value.Priority.Medium=Medium
+value.Priority.Low=Low
