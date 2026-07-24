@@ -1,0 +1,1 @@
+jR]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CapaNegocio.csprojòCSharp12

@@ -1,0 +1,12 @@
+‚
+w/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/obj/Debug/net8.0/CapaNegocio.AssemblyInfo.csutf-8–
+Š/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8„
+y/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/obj/Debug/net8.0/CapaNegocio.GlobalUsings.g.csutf-8`
+W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/UsuarioBL.csutf-8e
+\/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.csutf-8b
+Y/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.csutf-8`
+W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.csutf-8`
+W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.csutf-8d
+[/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.csutf-8g
+^/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.csutf-8^
+U/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.csutf-8
