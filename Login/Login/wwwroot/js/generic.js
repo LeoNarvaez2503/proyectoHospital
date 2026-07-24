@@ -1,4 +1,4 @@
-﻿function get(valor) {
+function get(valor) {
     return document.getElementById(valor).value;
 }
 function set(idControl, valor) {
@@ -27,25 +27,30 @@ async function fetchGet(url, tipoRespuesta, callback) {
     try {
         let urlCompleta = window.location.protocol + "//" + window.location.host + "/" + url;
         let res = await fetch(urlCompleta);
+        if (!res.ok) {
+            let errorText = await res.text();
+            console.error("Error en respuesta GET:", errorText);
+            alert("Error en el servidor (" + res.status + "): " + res.statusText);
+            return;
+        }
         if (tipoRespuesta == "json")
             res = await res.json();
         else if (tipoRespuesta == "text")
-            res = res.text();
+            res = await res.text();
         else if (tipoRespuesta == "none")
             res = null;
 
         callback(res);
     } catch (e) {
-        console.error("Error en fetchPost:", e);
+        console.error("Error en fetchGet:", e);
         alert("Ocurrio un problema en GET: " + e);
     }
-
-
 }
 
 async function cargarForaneas(tabla, id) {
     fetchGet("Generic/obtenerClaves/?tabla=" + tabla, "json", function (data) {
         let select = document.getElementById(id);
+        if (!select || !data) return;
         select.innerHTML = "";
         for (let clave of data) {
             let foranea = document.createElement("option");
@@ -62,16 +67,22 @@ async function fetchPost(url, tipoRespuesta, frm, callback) {
             method: "POST",
             body: frm
         });
+        if (!res.ok) {
+            let errorText = await res.text();
+            console.error("Error en respuesta POST:", errorText);
+            alert("Error en el servidor (" + res.status + "): " + res.statusText);
+            return;
+        }
         if (tipoRespuesta == "json")
             res = await res.json();
         else if (tipoRespuesta == "text")
-            res = res.text();
+            res = await res.text();
         else if (tipoRespuesta == "none")
             res = null;
         callback(res);
 
     } catch (e) {
-        alert("Ocurrio un problema en POST" + e);
+        alert("Ocurrio un problema en POST: " + e);
     }
 }
 

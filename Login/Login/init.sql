@@ -64,6 +64,24 @@ BEGIN
 END
 GO
 
+IF NOT EXISTS (SELECT 1 FROM Usuario WHERE correo = 'admin@hospital.com')
+BEGIN
+    INSERT INTO Usuario (correo, clave, rol) VALUES ('admin@hospital.com', '3eb3fe66b31e3b4d10fa70b5cad49c7112294af6ae4e476a1c405155d45aa121', 'Admin')
+END
+GO
+
+IF NOT EXISTS (SELECT 1 FROM Usuario WHERE correo = 'usuario@hospital.com')
+BEGIN
+    INSERT INTO Usuario (correo, clave, rol) VALUES ('usuario@hospital.com', '7b206fb8a67ddcbcab26b50b034306ef08a2e1844b6cd2d8d2ba18798df328f1', 'Usuario')
+END
+GO
+
+IF NOT EXISTS (SELECT 1 FROM Usuario WHERE correo = 'secretario@hospital.com')
+BEGIN
+    INSERT INTO Usuario (correo, clave, rol) VALUES ('secretario@hospital.com', 'a1ff63e00a4cb9d4a8f14226b076d86673cdda8b6c6d28030a45f6d35c25be2a', 'Secretario')
+END
+GO
+
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Cita')
 BEGIN
     CREATE TABLE Cita (

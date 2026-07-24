@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,20 +11,33 @@ namespace CapaDatos
     {
         public List<int> ObtenerClaves(string tabla)
         {
-            List<int> lista = null;
+            List<int> lista = new List<int>();
+            string nombreTabla = tabla;
+            string nombreId = "Id";
+
+            if (tabla.Equals("Pacientes", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Paciente";
+            else if (tabla.Equals("Medicos", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Medico";
+            else if (tabla.Equals("Citas", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Cita"; nombreId = "idCita"; }
+            else if (tabla.Equals("Tratamientos", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Tratamiento";
+            else if (tabla.Equals("Especialidades", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Especialidad";
+            else if (tabla.Equals("Facturacion", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Facturacion";
+            else if (tabla.Equals("Usuarios", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Usuario"; nombreId = "idUsuario"; }
+
             using (SqlConnection cn = new SqlConnection(cadenaDato))
             {
                 try
                 {
                     cn.Open();
-                    using (SqlCommand cmd = new SqlCommand("SELECT Id FROM " + tabla + " ORDER BY Id ASC", cn))
+                    string query = $"SELECT {nombreId} FROM {nombreTabla} ORDER BY {nombreId} ASC";
+                    using (SqlCommand cmd = new SqlCommand(query, cn))
                     {
                         cmd.CommandType = System.Data.CommandType.Text;
-                        SqlDataReader dr = cmd.ExecuteReader();
-                        lista = new List<int>();
-                        while (dr.Read())
+                        using (SqlDataReader dr = cmd.ExecuteReader())
                         {
-                            lista.Add(dr.GetInt32(0));
+                            while (dr.Read())
+                            {
+                                lista.Add(dr.GetInt32(0));
+                            }
                         }
                     }
                 }
