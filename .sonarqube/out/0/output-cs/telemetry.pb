@@ -1,1 +1,0 @@
-jR]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/CapaEntidad.csprojòCSharp12
