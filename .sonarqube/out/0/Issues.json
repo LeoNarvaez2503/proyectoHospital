@@ -14,16 +14,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'MetodoPago' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "message": "Non-nullable property 'correo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/FacturacionCLS.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 6,
                   "startColumn": 23,
-                  "endLine": 14,
-                  "endColumn": 33
+                  "endLine": 6,
+                  "endColumn": 29
                 }
               }
             }
@@ -31,12 +31,114 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/FacturacionCLS.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 6,
                   "startColumn": 23,
-                  "endLine": 14,
-                  "endColumn": 33
+                  "endLine": 6,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'clave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'confClave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'rol' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 26
                 }
               }
             }
@@ -173,6 +275,142 @@
                   "startColumn": 23,
                   "endLine": 16,
                   "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Nombre' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'estado' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/CitasCLS.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/CitasCLS.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 23,
+                  "endLine": 15,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Descripcion' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'MetodoPago' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/FacturacionCLS.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/FacturacionCLS.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 33
                 }
               }
             }
@@ -352,286 +590,6 @@
           }
         },
         {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Nombre' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Descripcion' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 23,
-                  "endLine": 13,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 23,
-                  "endLine": 13,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'estado' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/CitasCLS.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/CitasCLS.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 23,
-                  "endLine": 15,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'correo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'clave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 23,
-                  "endLine": 7,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 23,
-                  "endLine": 7,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'confClave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 23,
-                  "endLine": 8,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 23,
-                  "endLine": 8,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'rol' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 23,
-                  "endLine": 9,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/UsuarioCLS.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 23,
-                  "endLine": 9,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'MedicosCLS' to match pascal case naming rules, consider using 'MedicosCls'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/MedicosCLS.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'EspecialidadesCLS' to match pascal case naming rules, consider using 'EspecialidadesCls'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 18,
-                  "endLine": 9,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S101",
           "level": "warning",
           "message": "Rename class 'CitasCLS' to match pascal case naming rules, consider using 'CitasCls'.",
@@ -676,16 +634,16 @@
         {
           "ruleId": "S101",
           "level": "warning",
-          "message": "Rename class 'TratamientosCLS' to match pascal case naming rules, consider using 'TratamientosCls'.",
+          "message": "Rename class 'EspecialidadesCLS' to match pascal case naming rules, consider using 'EspecialidadesCls'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/EspecialidadesCLS.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 18,
                   "endLine": 9,
-                  "endColumn": 33
+                  "endColumn": 35
                 }
               }
             }
@@ -727,6 +685,48 @@
                   "startLine": 3,
                   "startColumn": 18,
                   "endLine": 3,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TratamientosCLS' to match pascal case naming rules, consider using 'TratamientosCls'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/TratamientosCLS.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'MedicosCLS' to match pascal case naming rules, consider using 'MedicosCls'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaEntidad/MedicosCLS.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
                   "endColumn": 28
                 }
               }

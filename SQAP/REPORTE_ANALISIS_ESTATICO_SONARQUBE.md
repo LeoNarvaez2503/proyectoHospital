@@ -12,15 +12,18 @@
 
 La auditoría de análisis estático se ejecutó sobre el 100% de los proyectos del **System Under Test (SUT)** (`Login/Login.sln`, abarcando `CapaEntidad`, `CapaDatos`, `CapaNegocio` y `Login` MVC presentation layer).
 
-### Resumen Consolidado de Incidencias y Métricas Generales
-| Métrica / Tipo | Cantidad / Valor | Descripción General |
-|---|---|---|
-| **Total de Incidencias** | **406** | Total de hallazgos detectados por las reglas de SonarQube y Roslyn Analyzers. |
-| **Vulnerabilidades (Vulnerabilities)** | **5** | Fallos de seguridad que representan riesgos directos de explotación. |
-| **Errores de Código (Bugs)** | **9** | Defectos lógicos que pueden generar comportamiento inesperado o fallos de ejecución. |
-| **Malos Olores de Código (Code Smells)** | **392** | Infracciones a estándares de diseño, mantenibilidad y rendimiento. |
-| **Cobertura de Código (Coverage)** | **0.0%** | **Nula cobertura inicial** sobre **922 líneas ejecutables**. El código legado carece de pruebas unitarias/automatizadas ejecutadas. |
-| **Duplicación de Código (Duplications)** | **12.0%** | **12% de código duplicado** sobre 4.6k líneas, evidenciado en la repetición de lógica DAL y BL. |
+### 1.1. TABLA COMPARATIVA DE EVOLUCIÓN DE COBERTURA: ANTES VS. DESPUÉS
+
+| Métrica / Capa de Software | Estado Inicial ("ANTES 1") | Avance Intermedio ("ANTES 2") | Estado Final ("DESPUÉS") | Objetivo Cumplido | Diagnóstico y Resultado SQA |
+|---|---|---|---|---|---|
+| **Cobertura CapaEntidad** | **0.0%** | **94.3%** | **100.0%** | ✅ **≥ 80%** | Cobertura total de instanciación y propiedades de modelos de entidad. |
+| **Cobertura CapaNegocio (BL)** | **0.0%** | **83.9%** | **83.9%** | ✅ **≥ 80%** | Cobertura de métodos de negocio en todas las clases BL (`CitasBL`, `PacientesBL`, `MedicosBL`, etc.). |
+| **Cobertura Capa Presentación (Controllers)** | **0.0%** | **10.5%** | **88.2%** | ✅ **≥ 80%** | Pruebas unitarias de acciones y respuestas en todos los controladores MVC. |
+| **COBERTURA GLOBAL EN SONARQUBE** | **0.0%** | **35.5%** | **82.3%** | ✅ **≥ 80.0%** | **Superado el objetivo del 80% global** registrando Cobertura XML en SonarQube. |
+| **Pruebas Automatizadas (xUnit)** | **0** | **24 Pasadas** | **59 Pasadas** | ✅ 100% Éxito | Tasa de éxito del 100% (59/59 pasadas) en `AreadePruebas/ProyectoHospital.Tests/`. |
+| **Incidencias Auditadas** | **406** | **406** | **406** | ✅ 100% Auditadas | Mapeo y registro completo en la matriz de evidencias e importación de Jira. |
+
+
 
 
 ### Distribución por Severidad

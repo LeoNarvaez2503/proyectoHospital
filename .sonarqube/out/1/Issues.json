@@ -73,27 +73,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 20,
-                  "endLine": 16,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
                 "region": {
                   "startLine": 16,
@@ -116,27 +95,6 @@
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 43,
-                  "endLine": 16,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
                   "startLine": 16,
                   "startColumn": 43,
@@ -184,27 +142,6 @@
                   "startColumn": 49,
                   "endLine": 21,
                   "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 28,
-                  "endLine": 21,
-                  "endColumn": 38
                 }
               }
             }
@@ -226,27 +163,6 @@
                   "startColumn": 25,
                   "endLine": 24,
                   "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 49,
-                  "endLine": 21,
-                  "endColumn": 59
                 }
               }
             }
@@ -268,426 +184,6 @@
                   "startColumn": 36,
                   "endLine": 15,
                   "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 25,
-                  "endLine": 24,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 42,
-                  "endLine": 15,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 20,
-                  "endLine": 16,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 43,
-                  "endLine": 16,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 28,
-                  "endLine": 21,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 49,
-                  "endLine": 21,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 25,
-                  "endLine": 24,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 45,
-                  "endLine": 15,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 20,
-                  "endLine": 16,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 43,
-                  "endLine": 16,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 28,
-                  "endLine": 21,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 49,
-                  "endLine": 21,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 25,
-                  "endLine": 24,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 39,
-                  "endLine": 15,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 20,
-                  "endLine": 16,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 43,
-                  "endLine": 16,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 28,
-                  "endLine": 21,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 49,
-                  "endLine": 21,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 25,
-                  "endLine": 24,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 43,
-                  "endLine": 15,
-                  "endColumn": 47
                 }
               }
             }
@@ -829,6 +325,510 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 43,
+                  "endLine": 16,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 43,
+                  "endLine": 16,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 28,
+                  "endLine": 21,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 28,
+                  "endLine": 21,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 49,
+                  "endLine": 21,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 49,
+                  "endLine": 21,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endLine": 24,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endLine": 24,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 42,
+                  "endLine": 15,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 45,
+                  "endLine": 15,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 43,
+                  "endLine": 16,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 28,
+                  "endLine": 21,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 49,
+                  "endLine": 21,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endLine": 24,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 43,
+                  "endLine": 15,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 20,
+                  "endLine": 16,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 43,
+                  "endLine": 16,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 28,
+                  "endLine": 21,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 49,
+                  "endLine": 21,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 25,
+                  "endLine": 24,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 39,
+                  "endLine": 15,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs",
                 "region": {
                   "startLine": 26,
@@ -925,6 +925,174 @@
           ],
           "properties": {
             "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 20,
+                  "endLine": 45,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 43,
+                  "endLine": 45,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 28,
+                  "endLine": 50,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 49,
+                  "endLine": 50,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 25,
+                  "endLine": 55,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 46,
+                  "endLine": 44,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 36,
+                  "endLine": 67,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 24,
+                  "endLine": 70,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -1087,342 +1255,6 @@
                   "startColumn": 24,
                   "endLine": 76,
                   "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 20,
-                  "endLine": 50,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 43,
-                  "endLine": 50,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 28,
-                  "endLine": 55,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 49,
-                  "endLine": 55,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 25,
-                  "endLine": 60,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 36,
-                  "endLine": 49,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 32,
-                  "endLine": 77,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 24,
-                  "endLine": 80,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 20,
-                  "endLine": 49,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 43,
-                  "endLine": 49,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 28,
-                  "endLine": 54,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 54,
-                  "startColumn": 49,
-                  "endLine": 54,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 25,
-                  "endLine": 59,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 33,
-                  "endLine": 48,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 30,
-                  "endLine": 75,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 24,
-                  "endLine": 78,
-                  "endColumn": 30
                 }
               }
             }
@@ -1753,11 +1585,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 45,
+                  "startLine": 49,
                   "startColumn": 20,
-                  "endLine": 45,
+                  "endLine": 49,
                   "endColumn": 33
                 }
               }
@@ -1774,11 +1606,53 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
-                  "startLine": 45,
+                  "startLine": 50,
+                  "startColumn": 20,
+                  "endLine": 50,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 50,
                   "startColumn": 43,
-                  "endLine": 45,
+                  "endLine": 50,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 43,
+                  "endLine": 49,
                   "endColumn": 56
                 }
               }
@@ -1795,11 +1669,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
-                  "startLine": 50,
+                  "startLine": 55,
                   "startColumn": 28,
-                  "endLine": 50,
+                  "endLine": 55,
                   "endColumn": 38
                 }
               }
@@ -1816,11 +1690,53 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 50,
+                  "startLine": 54,
+                  "startColumn": 28,
+                  "endLine": 54,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 55,
                   "startColumn": 49,
-                  "endLine": 50,
+                  "endLine": 55,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 49,
+                  "endLine": 54,
                   "endColumn": 59
                 }
               }
@@ -1837,11 +1753,32 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
-                  "startLine": 55,
+                  "startLine": 60,
                   "startColumn": 25,
-                  "endLine": 55,
+                  "endLine": 60,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 25,
+                  "endLine": 59,
                   "endColumn": 38
                 }
               }
@@ -1858,12 +1795,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
-                  "startLine": 44,
-                  "startColumn": 46,
-                  "endLine": 44,
-                  "endColumn": 50
+                  "startLine": 49,
+                  "startColumn": 36,
+                  "endLine": 49,
+                  "endColumn": 40
                 }
               }
             }
@@ -1879,12 +1816,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 67,
-                  "startColumn": 36,
-                  "endLine": 67,
-                  "endColumn": 40
+                  "startLine": 48,
+                  "startColumn": 33,
+                  "endLine": 48,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 32,
+                  "endLine": 77,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 30,
+                  "endLine": 75,
+                  "endColumn": 34
                 }
               }
             }
@@ -1900,12 +1879,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
-                  "startLine": 70,
+                  "startLine": 80,
                   "startColumn": 24,
-                  "endLine": 70,
-                  "endColumn": 36
+                  "endLine": 80,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 24,
+                  "endLine": 78,
+                  "endColumn": 30
                 }
               }
             }
@@ -2110,90 +2110,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 20,
-                  "endLine": 81,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 43,
-                  "endLine": 81,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 28,
-                  "endLine": 86,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 49,
-                  "endLine": 86,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
                 "region": {
                   "startLine": 81,
@@ -2278,11 +2194,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
-                  "startLine": 83,
+                  "startLine": 81,
                   "startColumn": 20,
-                  "endLine": 83,
+                  "endLine": 81,
                   "endColumn": 33
                 }
               }
@@ -2299,11 +2215,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
-                  "startLine": 83,
+                  "startLine": 81,
                   "startColumn": 43,
-                  "endLine": 83,
+                  "endLine": 81,
                   "endColumn": 56
                 }
               }
@@ -2320,11 +2236,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
-                  "startLine": 88,
+                  "startLine": 86,
                   "startColumn": 28,
-                  "endLine": 88,
+                  "endLine": 86,
                   "endColumn": 38
                 }
               }
@@ -2341,11 +2257,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
-                  "startLine": 88,
+                  "startLine": 86,
                   "startColumn": 49,
-                  "endLine": 88,
+                  "endLine": 86,
                   "endColumn": 59
                 }
               }
@@ -2446,11 +2362,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 98,
+                  "startLine": 83,
                   "startColumn": 20,
-                  "endLine": 98,
+                  "endLine": 83,
                   "endColumn": 33
                 }
               }
@@ -2467,11 +2383,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 98,
+                  "startLine": 83,
                   "startColumn": 43,
-                  "endLine": 98,
+                  "endLine": 83,
                   "endColumn": 56
                 }
               }
@@ -2488,11 +2404,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 103,
+                  "startLine": 88,
                   "startColumn": 28,
-                  "endLine": 103,
+                  "endLine": 88,
                   "endColumn": 38
                 }
               }
@@ -2509,11 +2425,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
-                  "startLine": 103,
+                  "startLine": 88,
                   "startColumn": 49,
-                  "endLine": 103,
+                  "endLine": 88,
                   "endColumn": 59
                 }
               }
@@ -2530,11 +2446,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 107,
+                  "startLine": 98,
                   "startColumn": 20,
-                  "endLine": 107,
+                  "endLine": 98,
                   "endColumn": 33
                 }
               }
@@ -2551,11 +2467,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 107,
+                  "startLine": 98,
                   "startColumn": 43,
-                  "endLine": 107,
+                  "endLine": 98,
                   "endColumn": 56
                 }
               }
@@ -2572,11 +2488,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 112,
+                  "startLine": 103,
                   "startColumn": 28,
-                  "endLine": 112,
+                  "endLine": 103,
                   "endColumn": 38
                 }
               }
@@ -2593,11 +2509,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 112,
+                  "startLine": 103,
                   "startColumn": 49,
-                  "endLine": 112,
+                  "endLine": 103,
                   "endColumn": 59
                 }
               }
@@ -2762,6 +2678,90 @@
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 49,
+                  "endLine": 112,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 20,
+                  "endLine": 107,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 43,
+                  "endLine": 107,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 28,
+                  "endLine": 112,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
                   "startLine": 112,
                   "startColumn": 49,
@@ -3076,132 +3076,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 131,
-                  "startColumn": 20,
-                  "endLine": 131,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 131,
-                  "startColumn": 43,
-                  "endLine": 131,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 136,
-                  "startColumn": 28,
-                  "endLine": 136,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 136,
-                  "startColumn": 49,
-                  "endLine": 136,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 144,
-                  "startColumn": 25,
-                  "endLine": 144,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS8600",
-          "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 130,
-                  "startColumn": 42,
-                  "endLine": 130,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
                 "region": {
                   "startLine": 131,
@@ -3313,6 +3187,132 @@
                   "startColumn": 43,
                   "endLine": 130,
                   "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 20,
+                  "endLine": 131,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 131,
+                  "startColumn": 43,
+                  "endLine": 131,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 28,
+                  "endLine": 136,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 49,
+                  "endLine": 136,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 25,
+                  "endLine": 144,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 42,
+                  "endLine": 130,
+                  "endColumn": 46
                 }
               }
             }
@@ -3559,132 +3559,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 20,
-                  "endLine": 50,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 43,
-                  "endLine": 50,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 28,
-                  "endLine": 55,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 49,
-                  "endLine": 55,
-                  "endColumn": 59
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 62,
-                  "startColumn": 32,
-                  "endLine": 62,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 2
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "The variable 'e' is declared but never used",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 34,
-                  "endLine": 75,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0618",
-          "level": "warning",
-          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
                 "region": {
                   "startLine": 133,
@@ -3802,6 +3676,132 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 20,
+                  "endLine": 50,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 43,
+                  "endLine": 50,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 28,
+                  "endLine": 55,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 49,
+                  "endLine": 55,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0618",
+          "level": "warning",
+          "message": "'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 32,
+                  "endLine": 62,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "The variable 'e' is declared but never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 34,
+                  "endLine": 75,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
           }
         },
         {
@@ -3954,15 +3954,36 @@
         {
           "ruleId": "S101",
           "level": "warning",
-          "message": "Rename class 'UsuarioDAL' to match pascal case naming rules, consider using 'UsuarioDal'.",
+          "message": "Rename class 'CitasDAL' to match pascal case naming rules, consider using 'CitasDal'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
                 "region": {
-                  "startLine": 8,
+                  "startLine": 11,
                   "startColumn": 18,
-                  "endLine": 8,
+                  "endLine": 11,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'GenericDAL' to match pascal case naming rules, consider using 'GenericDal'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
                   "endColumn": 28
                 }
               }
@@ -3996,79 +4017,16 @@
         {
           "ruleId": "S101",
           "level": "warning",
-          "message": "Rename class 'GenericDAL' to match pascal case naming rules, consider using 'GenericDal'.",
+          "message": "Rename class 'FacturacionDAL' to match pascal case naming rules, consider using 'FacturacionDal'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 18,
-                  "endLine": 10,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'CitasDAL' to match pascal case naming rules, consider using 'CitasDal'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
                   "startLine": 11,
                   "startColumn": 18,
                   "endLine": 11,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'TratamientosDAL' to match pascal case naming rules, consider using 'TratamientosDal'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 18,
-                  "endLine": 11,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'PacienteDAL' to match pascal case naming rules, consider using 'PacienteDal'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 18,
-                  "endLine": 11,
-                  "endColumn": 29
+                  "endColumn": 32
                 }
               }
             }
@@ -4101,16 +4059,58 @@
         {
           "ruleId": "S101",
           "level": "warning",
-          "message": "Rename class 'FacturacionDAL' to match pascal case naming rules, consider using 'FacturacionDal'.",
+          "message": "Rename class 'PacienteDAL' to match pascal case naming rules, consider using 'PacienteDal'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
                 "region": {
                   "startLine": 11,
                   "startColumn": 18,
                   "endLine": 11,
-                  "endColumn": 32
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'UsuarioDAL' to match pascal case naming rules, consider using 'UsuarioDal'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TratamientosDAL' to match pascal case naming rules, consider using 'TratamientosDal'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 18,
+                  "endLine": 11,
+                  "endColumn": 33
                 }
               }
             }
@@ -4183,27 +4183,6 @@
         {
           "ruleId": "S1854",
           "level": "warning",
-          "message": "Remove this useless assignment to local variable 'paciente'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 21,
-                  "endLine": 77,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1854",
-          "level": "warning",
           "message": "Remove this useless assignment to local variable 'especialidad'.",
           "locations": [
             {
@@ -4235,6 +4214,27 @@
                   "startColumn": 21,
                   "endLine": 73,
                   "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'paciente'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 21,
+                  "endLine": 77,
+                  "endColumn": 36
                 }
               }
             }
@@ -4350,54 +4350,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 27,
-                  "endLine": 78,
-                  "endColumn": 85
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 27,
-                  "endLine": 40,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
                 "region": {
-                  "startLine": 101,
+                  "startLine": 74,
                   "startColumn": 27,
-                  "endLine": 101,
-                  "endColumn": 86
+                  "endLine": 74,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 27,
+                  "endLine": 46,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 27,
+                  "endLine": 76,
+                  "endColumn": 83
                 }
               }
             }
@@ -4415,10 +4415,73 @@
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 37,
+                  "startLine": 68,
                   "startColumn": 27,
-                  "endLine": 37,
+                  "endLine": 68,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 27,
+                  "endLine": 75,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 27,
+                  "endLine": 74,
                   "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 27,
+                  "endLine": 78,
+                  "endColumn": 85
                 }
               }
             }
@@ -4476,33 +4539,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 27,
-                  "endLine": 41,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
                 "region": {
                   "startLine": 40,
                   "startColumn": 27,
                   "endLine": 40,
-                  "endColumn": 79
+                  "endColumn": 86
                 }
               }
             }
@@ -4520,52 +4562,31 @@
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 37,
                   "startColumn": 27,
-                  "endLine": 68,
-                  "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 27,
-                  "endLine": 46,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 27,
-                  "endLine": 74,
+                  "endLine": 37,
                   "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 27,
+                  "endLine": 41,
+                  "endColumn": 81
                 }
               }
             }
@@ -4604,9 +4625,9 @@
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
                 "region": {
-                  "startLine": 75,
+                  "startLine": 40,
                   "startColumn": 27,
-                  "endLine": 75,
+                  "endLine": 40,
                   "endColumn": 79
                 }
               }
@@ -4617,39 +4638,18 @@
           }
         },
         {
-          "ruleId": "S112",
+          "ruleId": "S1481",
           "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "message": "Remove the unused local variable 'e'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
                 "region": {
-                  "startLine": 76,
-                  "startColumn": 27,
-                  "endLine": 76,
-                  "endColumn": 83
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 27,
-                  "endLine": 74,
-                  "endColumn": 88
+                  "startLine": 100,
+                  "startColumn": 34,
+                  "endLine": 100,
+                  "endColumn": 35
                 }
               }
             }
@@ -4671,6 +4671,27 @@
                   "startColumn": 35,
                   "endLine": 17,
                   "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 27,
+                  "endLine": 123,
+                  "endColumn": 87
                 }
               }
             }
@@ -4728,69 +4749,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 129,
-                  "startColumn": 27,
-                  "endLine": 129,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
-                "region": {
-                  "startLine": 123,
-                  "startColumn": 27,
-                  "endLine": 123,
-                  "endColumn": 87
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
-                "region": {
-                  "startLine": 123,
-                  "startColumn": 27,
-                  "endLine": 123,
-                  "endColumn": 87
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
                 "region": {
                   "startLine": 126,
@@ -4812,12 +4770,117 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 27,
+                  "endLine": 129,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 27,
+                  "endLine": 123,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 27,
+                  "endLine": 101,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs",
                 "region": {
                   "startLine": 101,
                   "startColumn": 27,
                   "endLine": 101,
                   "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 27,
+                  "endLine": 104,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 27,
+                  "endLine": 107,
+                  "endColumn": 83
                 }
               }
             }
@@ -5026,75 +5089,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs",
-                "region": {
-                  "startLine": 104,
-                  "startColumn": 27,
-                  "endLine": 104,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'e'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs",
-                "region": {
-                  "startLine": 100,
-                  "startColumn": 34,
-                  "endLine": 100,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs",
                 "region": {
                   "startLine": 144,
                   "startColumn": 27,
                   "endLine": 144,
                   "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
-          "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs",
-                "region": {
-                  "startLine": 107,
-                  "startColumn": 27,
-                  "endLine": 107,
-                  "endColumn": 83
                 }
               }
             }

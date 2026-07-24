@@ -2,6 +2,10 @@
 <AnalysisInput>
   <Settings>
     <Setting>
+      <Key>sonar.cs.cobertura.reportsPaths</Key>
+      <Value>AreadePruebas/TestResults/*/coverage.cobertura.xml</Value>
+    </Setting>
+    <Setting>
       <Key>sonar.cs.ignoreHeaderComments</Key>
       <Value>true</Value>
     </Setting>

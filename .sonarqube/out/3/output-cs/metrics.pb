@@ -1,13 +1,13 @@
 ‰
 O/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Program.cs 8r	
-!"#%x‚	!%ë
-`/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Data/DatabaseInitializer.cs, 8rS	
- !#$%&'()*+,-./01345789:;<=>?@ABCEFHIJKLMNOPQRSTUVWXYZ[\x‚'
- $&')*+-.34579:<=>@EJOPQUVYs
-]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/ErrorViewModel.cs 8r	‚j
+!"#%x‚	!%j
 V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/Usuario.cs 8r
 	
-§
+s
+]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/ErrorViewModel.cs 8r	‚ë
+`/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Data/DatabaseInitializer.cs, 8rS	
+ !#$%&'()*+,-./01345789:;<=>?@ABCEFHIJKLMNOPQRSTUVWXYZ[\x‚'
+ $&')*+-.34579:<=>@EJOPQUVY§
 j/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs 8r(
  "#$%&()*+,-.‚%+¤
 g/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs 8r(

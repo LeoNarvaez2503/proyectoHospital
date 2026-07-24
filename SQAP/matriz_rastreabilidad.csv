@@ -1,0 +1,13 @@
+ID Requisito,ID Caso Prueba,Titulo Caso Prueba,Tipo Prueba,Herramienta,Defecto Asociado (Jira),Estado Final
+REQ-01,CP-01,Autenticacion con credenciales validas (Secretario / Medico),Funcional / E2E,Manual / Cypress,BUG-01,Pass
+REQ-01,CP-02,Verificacion de hashing de contrasena en encriptacion,Unitaria,xUnit (AccesoControllerTests),BUG-02,Pass
+REQ-01,CP-03,Control de acceso restrictivo a Tratamientos por rol Secretario,Integracion / UI,Cypress / Manual,BUG-03,Pass
+REQ-02,CP-04,Registro de Paciente con campos obligatorios completos,Unitaria / Integracion,xUnit (PacienteBLTests + Moq),BUG-04,Pass
+REQ-02,CP-05,Validacion de duplicados o cedula invalida en Paciente,Unitaria,xUnit (PacienteBLTests),BUG-05,Pass
+REQ-03,CP-06,Agendamiento exitoso de Cita Medica,Unitaria / Integracion,xUnit (CitasBLTests + Moq),BUG-06,Pass
+REQ-03,CP-07,Filtrado de Citas Medicas por rango de fecha o estado,Unitaria,xUnit (CitasBLTests),BUG-07,Pass
+REQ-04,CP-08,Asignacion de Tratamiento por perfil Medico,Unitaria / Integracion,xUnit (TratamientosBLTests + Moq),BUG-08,Pass
+REQ-04,CP-09,Intento de acceso a Tratamientos por perfil Secretario (Acceso Denegado),Funcional / E2E,Manual / Cypress,BUG-09,Pass
+REQ-05,CP-10,Generacion e impresion de Factura por perfil Secretario,Unitaria / Integracion,xUnit (FacturacionBLTests + Moq),BUG-10,Pass
+REQ-06,CP-11,Prevencion de Inyeccion SQL en consultas de datos,Analisis Estatico / Unitaria,SonarQube / xUnit (GenericDAL),BUG-11,Pass
+REQ-06,CP-12,Proteccion de Credenciales de BD en Entorno Docker,Auditoria Seguridad,SonarQube / Docker,BUG-12,Pass

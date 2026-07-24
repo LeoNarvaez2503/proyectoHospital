@@ -14,16 +14,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'ListarEspecialidades' a static method.",
+          "message": "Make 'ListarFacturaciones' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
                 "region": {
                   "startLine": 13,
-                  "startColumn": 40,
+                  "startColumn": 37,
                   "endLine": 13,
-                  "endColumn": 60
+                  "endColumn": 56
                 }
               }
             }
@@ -35,16 +35,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'ListarPacientes' a static method.",
+          "message": "Make 'ListarEspecialidades' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
                 "region": {
                   "startLine": 13,
-                  "startColumn": 34,
+                  "startColumn": 40,
                   "endLine": 13,
-                  "endColumn": 49
+                  "endColumn": 60
                 }
               }
             }
@@ -138,6 +138,69 @@
           }
         },
         {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ListarMedicos' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 33,
+                  "endLine": 13,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ListarFacturaciones' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 37,
+                  "endLine": 13,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ListarMedicos' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 33,
+                  "endLine": 13,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA1822",
           "level": "note",
           "message": "Member 'ListarCitas' does not access instance data and can be marked as static",
@@ -150,27 +213,6 @@
                   "startColumn": 31,
                   "endLine": 13,
                   "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ListarEspecialidades' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 40,
-                  "endLine": 13,
-                  "endColumn": 60
                 }
               }
             }
@@ -203,37 +245,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'ListarPacientes' does not access instance data and can be marked as static",
+          "message": "Member 'obtenerClaves' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 34,
-                  "endLine": 13,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'ListarFacturaciones' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 37,
-                  "endLine": 13,
-                  "endColumn": 56
+                  "startLine": 12,
+                  "startColumn": 26,
+                  "endLine": 12,
+                  "endColumn": 39
                 }
               }
             }
@@ -245,16 +266,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'obtenerClaves' does not access instance data and can be marked as static",
+          "message": "Member 'ListarEspecialidades' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 26,
-                  "endLine": 12,
-                  "endColumn": 39
+                  "startLine": 13,
+                  "startColumn": 40,
+                  "endLine": 13,
+                  "endColumn": 60
                 }
               }
             }
@@ -308,100 +329,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'GuardarTratamiento' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 20,
-                  "endLine": 19,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'ListarMedicos' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 33,
-                  "endLine": 13,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'GuardarPaciente' a static method.",
+          "message": "Make 'ListarPacientes' a static method.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
                 "region": {
-                  "startLine": 19,
-                  "startColumn": 20,
-                  "endLine": 19,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'EliminarPaciente' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ListarFacturaciones' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
-                "region": {
                   "startLine": 13,
-                  "startColumn": 37,
+                  "startColumn": 34,
                   "endLine": 13,
-                  "endColumn": 56
+                  "endColumn": 49
                 }
               }
             }
@@ -418,6 +355,27 @@
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 20,
+                  "endLine": 19,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GuardarTratamiento' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
                 "region": {
                   "startLine": 19,
                   "startColumn": 20,
@@ -476,16 +434,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'EliminarTratamiento' a static method.",
+          "message": "Make 'GuardarPaciente' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 19,
                   "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 39
+                  "endLine": 19,
+                  "endColumn": 35
                 }
               }
             }
@@ -507,237 +465,6 @@
                   "startColumn": 20,
                   "endLine": 19,
                   "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'EliminarMedico' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'EliminarEspecialidad' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ListarMedicos' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 33,
-                  "endLine": 13,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GuardarTratamiento' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 20,
-                  "endLine": 19,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'EliminarCita' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 20,
-                  "endLine": 23,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'GuardarPaciente' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 20,
-                  "endLine": 19,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'RecuperarPaciente' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 28,
-                  "endLine": 31,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'EliminarMedico' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'EliminarPaciente' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'EliminarFacturacion' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'EliminarEspecialidad' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 40
                 }
               }
             }
@@ -791,37 +518,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'GuardarCita' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 20,
-                  "endLine": 18,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'EliminarTratamiento' does not access instance data and can be marked as static",
+          "message": "Member 'GuardarTratamiento' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 19,
                   "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 39
+                  "endLine": 19,
+                  "endColumn": 38
                 }
               }
             }
@@ -833,79 +539,37 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'EliminarCita' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 20,
-                  "endLine": 23,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'RecuperarEspecialidad' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 34,
-                  "endLine": 31,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'RecuperarTratamiento' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 32,
-                  "endLine": 31,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'RecuperarPaciente' does not access instance data and can be marked as static",
+          "message": "Member 'ListarPacientes' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
                 "region": {
-                  "startLine": 31,
-                  "startColumn": 28,
-                  "endLine": 31,
-                  "endColumn": 45
+                  "startLine": 13,
+                  "startColumn": 34,
+                  "endLine": 13,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GuardarPaciente' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 20,
+                  "endLine": 19,
+                  "endColumn": 35
                 }
               }
             }
@@ -938,16 +602,100 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'RecuperarMedico' a static method.",
+          "message": "Make 'EliminarMedico' a static method.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
                 "region": {
-                  "startLine": 31,
-                  "startColumn": 27,
-                  "endLine": 31,
-                  "endColumn": 42
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'EliminarTratamiento' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'GuardarCita' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 20,
+                  "endLine": 18,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'EliminarEspecialidad' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarFacturacion' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 39
                 }
               }
             }
@@ -980,16 +728,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'FiltrarEspecialidades' a static method.",
+          "message": "Make 'EliminarPaciente' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
                 "region": {
-                  "startLine": 37,
-                  "startColumn": 40,
-                  "endLine": 37,
-                  "endColumn": 61
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 36
                 }
               }
             }
@@ -1001,14 +749,245 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'FiltrarTratamientos' a static method.",
+          "message": "Make 'EliminarCita' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 20,
+                  "endLine": 23,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'RecuperarFacturacion' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 31,
+                  "endLine": 31,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarMedico' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarTratamiento' does not access instance data and can be marked as static",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
                 "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarEspecialidad' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'RecuperarMedico' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 27,
+                  "endLine": 31,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarPaciente' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'EliminarCita' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 20,
+                  "endLine": 23,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'FiltrarMedicos' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
+                "region": {
                   "startLine": 37,
-                  "startColumn": 38,
+                  "startColumn": 33,
+                  "endLine": 37,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'RecuperarPaciente' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 28,
+                  "endLine": 31,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'RecuperarCitas' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 25,
+                  "endLine": 28,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'FiltrarFacturaciones' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 37,
                   "endLine": 37,
                   "endColumn": 57
                 }
@@ -1022,16 +1001,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'FiltrarPacientes' a static method.",
+          "message": "Make 'RecuperarTratamiento' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
                 "region": {
-                  "startLine": 37,
-                  "startColumn": 34,
-                  "endLine": 37,
-                  "endColumn": 50
+                  "startLine": 31,
+                  "startColumn": 32,
+                  "endLine": 31,
+                  "endColumn": 52
                 }
               }
             }
@@ -1041,9 +1020,9 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'RecuperarEspecialidad' does not access instance data and can be marked as static",
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'RecuperarEspecialidad' a static method.",
           "locations": [
             {
               "resultFile": {
@@ -1083,90 +1062,6 @@
           }
         },
         {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'FiltrarFacturaciones' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 37,
-                  "endLine": 37,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'FiltrarMedicos' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 33,
-                  "endLine": 37,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'RecuperarFacturacion' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 31,
-                  "endLine": 31,
-                  "endColumn": 51
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'RecuperarTratamiento' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 32,
-                  "endLine": 31,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1822",
           "level": "note",
           "message": "Member 'RecuperarMedico' does not access instance data and can be marked as static",
@@ -1188,39 +1083,18 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'RecuperarCitas' does not access instance data and can be marked as static",
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'FiltrarTratamientos' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 25,
-                  "endLine": 28,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'FiltrarPacientes' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
                 "region": {
                   "startLine": 37,
-                  "startColumn": 34,
+                  "startColumn": 38,
                   "endLine": 37,
-                  "endColumn": 50
+                  "endColumn": 57
                 }
               }
             }
@@ -1230,9 +1104,9 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'FiltrarEspecialidades' does not access instance data and can be marked as static",
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'FiltrarEspecialidades' a static method.",
           "locations": [
             {
               "resultFile": {
@@ -1274,6 +1148,27 @@
         {
           "ruleId": "CA1822",
           "level": "note",
+          "message": "Member 'RecuperarPaciente' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 28,
+                  "endLine": 31,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
           "message": "Member 'FiltrarFacturaciones' does not access instance data and can be marked as static",
           "locations": [
             {
@@ -1284,6 +1179,69 @@
                   "startColumn": 37,
                   "endLine": 37,
                   "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'RecuperarTratamiento' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/TratamientosBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 32,
+                  "endLine": 31,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'RecuperarEspecialidad' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 34,
+                  "endLine": 31,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'FiltrarPacientes' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 34,
+                  "endLine": 37,
+                  "endColumn": 50
                 }
               }
             }
@@ -1326,6 +1284,48 @@
                   "startColumn": 38,
                   "endLine": 37,
                   "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'FiltrarEspecialidades' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/EspecialidadesBL.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 40,
+                  "endLine": 37,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'FiltrarPacientes' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 34,
+                  "endLine": 37,
+                  "endColumn": 50
                 }
               }
             }

@@ -1,4 +1,38 @@
-È
+ù
+W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.cs
+
+
+
+ 
+
+ &
+. 3/ 4
+ $  e
+W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/UsuarioBL.cs
+
+ Î
+[/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs
+
+ 
+
+$ 7
+ , $
+
+ %
+5 F8 I
+ , $
+
+ &
++ -9 ;
+ , $
+
+ 2
+7 9"": <
+!! ,"" $
+
+%%$ 8
+%%H N((: @
+'' ,(( $È
 Y/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/PacientesBL.cs
 
  
@@ -42,19 +76,7 @@ Y/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/Paci
 
 %%% 8
 %%I O((: @
-'' .(( %e
-W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/UsuarioBL.cs
-
- ù
-W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/GenericBL.cs
-
-
-
- 
-
- &
-. 3/ 4
- $  Á
+'' .(( %Á
 W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/MedicosBL.cs
 
  
@@ -98,29 +120,7 @@ W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/Medi
 
 %%' <
 %%O U((> D
-'' 2(( 'Î
-[/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/FacturacionBL.cs
-
- 
-
-$ 7
- , $
-
- %
-5 F8 I
- , $
-
- &
-+ -9 ;
- , $
-
- 2
-7 9"": <
-!! ,"" $
-
-%%$ 8
-%%H N((: @
-'' ,(( $Â
+'' 2(( 'Â
 U/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaNegocio/CitasBL.cs
 
  

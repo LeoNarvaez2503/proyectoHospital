@@ -10,7 +10,7 @@
     },
     {
       "key": "sonar.scanner.bootstrapStartTime",
-      "value": "1784916151000"
+      "value": "1784920163000"
     },
     {
       "key": "sonar.projectKey",
@@ -30,7 +30,7 @@
     },
     {
       "key": "sonar.sources",
-      "value": "/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/project.assets.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/ProyectoHospital.Tests.csproj.nuget.dgspec.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/Debug/net8.0/ProyectoHospital.Tests.sourcelink.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.deps.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.runtimeconfig.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/appsettings.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.staticwebassets.runtime.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/ProyectoHospital.Tests.deps.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/ProyectoHospital.Tests.runtimeconfig.json,/home/meatpuppets/Escritorio/University/proyectoHospital/Dockerfile,/home/meatpuppets/Escritorio/University/proyectoHospital/docker-compose.yml"
+      "value": "/home/meatpuppets/Escritorio/University/proyectoHospital/.vscode/settings.json,/home/meatpuppets/Escritorio/University/proyectoHospital/.sonarlint/Login.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/appsettings.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/project.assets.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/ProyectoHospital.Tests.csproj.nuget.dgspec.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/obj/Debug/net8.0/ProyectoHospital.Tests.sourcelink.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.staticwebassets.runtime.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.deps.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/Login.runtimeconfig.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/ProyectoHospital.Tests.deps.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/ProyectoHospital.Tests.runtimeconfig.json,/home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/bin/Debug/net8.0/appsettings.json,/home/meatpuppets/Escritorio/University/proyectoHospital/Dockerfile,/home/meatpuppets/Escritorio/University/proyectoHospital/docker-compose.yml"
     },
     {
       "key": "sonar.tests",
@@ -207,6 +207,14 @@
     {
       "key": "sonar.host.url",
       "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.cs.cobertura.reportsPaths",
+      "value": "AreadePruebas/TestResults/*/coverage.cobertura.xml"
+    },
+    {
+      "key": "sonar.coverage.exclusions",
+      "value": "**/CapaDatos/**,**/init.sql,**/wwwroot/**,**/Properties/**,**/*.cshtml,**/DatabaseInitializer.cs,**/Program.cs"
     },
     {
       "key": "sonar.visualstudio.enable",

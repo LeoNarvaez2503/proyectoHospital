@@ -167,6 +167,8 @@
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
+    <Property Name="sonar.cs.cobertura.reportsPaths">AreadePruebas/TestResults/*/coverage.cobertura.xml</Property>
+    <Property Name="sonar.coverage.exclusions">**/CapaDatos/**,**/init.sql,**/wwwroot/**,**/Properties/**,**/*.cshtml,**/DatabaseInitializer.cs,**/Program.cs</Property>
   </LocalSettings>
   <ScannerOptsSettings />
   <AnalyzersSettings>

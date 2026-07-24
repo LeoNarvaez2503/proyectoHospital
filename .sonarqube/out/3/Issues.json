@@ -114,6 +114,54 @@
           }
         },
         {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Error_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Privacy_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS0618",
           "level": "warning",
           "message": "'SqlConnectionStringBuilder' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
@@ -219,102 +267,6 @@
           }
         },
         {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Privacy_cshtml.g.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Error_cshtml.g.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 67,
-                  "endLine": 36,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS0618",
           "level": "warning",
           "message": "'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.'",
@@ -366,12 +318,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
                 "region": {
-                  "startLine": 90,
-                  "startColumn": 234,
-                  "endLine": 90,
-                  "endColumn": 236
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
                 }
               }
             }
@@ -390,12 +342,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
                 "region": {
-                  "startLine": 150,
-                  "startColumn": 236,
-                  "endLine": 150,
-                  "endColumn": 238
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
                 }
               }
             }
@@ -414,252 +366,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 164,
-                  "startColumn": 236,
-                  "endLine": 164,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 234,
-                  "endLine": 90,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 142,
-                  "startColumn": 236,
-                  "endLine": 142,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 156,
-                  "startColumn": 236,
-                  "endLine": 156,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 90,
-                  "startColumn": 234,
-                  "endLine": 90,
-                  "endColumn": 236
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 155,
-                  "startColumn": 236,
-                  "endLine": 155,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 169,
-                  "startColumn": 237,
-                  "endLine": 169,
-                  "endColumn": 239
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 236,
-                  "endLine": 61,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 236,
-                  "endLine": 75,
-                  "endColumn": 238
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
-                "region": {
-                  "startLine": 75,
+                  "startLine": 73,
                   "startColumn": 232,
-                  "endLine": 75,
+                  "endLine": 73,
                   "endColumn": 234
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 234,
-                  "endLine": 102,
-                  "endColumn": 236
                 }
               }
             }
@@ -731,6 +443,78 @@
                   "startLine": 143,
                   "startColumn": 236,
                   "endLine": 143,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 234,
+                  "endLine": 90,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 236,
+                  "endLine": 141,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 236,
+                  "endLine": 155,
                   "endColumn": 238
                 }
               }
@@ -822,11 +606,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
                 "region": {
-                  "startLine": 73,
+                  "startLine": 75,
                   "startColumn": 232,
-                  "endLine": 73,
+                  "endLine": 75,
                   "endColumn": 234
                 }
               }
@@ -846,7 +630,79 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 234,
+                  "endLine": 102,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 236,
+                  "endLine": 61,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 236,
+                  "endLine": 75,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 90,
                   "startColumn": 234,
@@ -870,11 +726,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 141,
+                  "startLine": 155,
                   "startColumn": 236,
-                  "endLine": 141,
+                  "endLine": 155,
                   "endColumn": 238
                 }
               }
@@ -894,11 +750,155 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Tratamientos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 155,
+                  "startLine": 169,
+                  "startColumn": 237,
+                  "endLine": 169,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 234,
+                  "endLine": 90,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 142,
                   "startColumn": 236,
-                  "endLine": 155,
+                  "endLine": 142,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 236,
+                  "endLine": 156,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 90,
+                  "startColumn": 234,
+                  "endLine": 90,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 236,
+                  "endLine": 150,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 164,
+                  "startColumn": 236,
+                  "endLine": 164,
                   "endColumn": 238
                 }
               }
@@ -1484,66 +1484,18 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Home_Index.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Acceso_Denegado.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
                 "region": {
                   "startLine": 43,
                   "startColumn": 24,
                   "endLine": 43,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Views_Citas_Citas.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Citas_Citas_cshtml.g.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 24,
-                  "endLine": 44,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Views_Pacientes_Index.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 24,
-                  "endLine": 44,
                   "endColumn": 52
                 }
               }
@@ -1604,38 +1556,14 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Acceso_Registrar.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Pacientes_Index.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Registrar_cshtml.g.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 24,
-                  "endLine": 46,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0169",
-          "level": "warning",
-          "message": "The field 'Views_Medicos_Index.__tagHelperStringValueBuffer' is never used",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Pacientes_Index_cshtml.g.cs",
                 "region": {
                   "startLine": 44,
                   "startColumn": 24,
@@ -1652,14 +1580,14 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Facturacion_Index.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Citas_Citas.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Citas_Citas_cshtml.g.cs",
                 "region": {
                   "startLine": 44,
                   "startColumn": 24,
@@ -1700,18 +1628,42 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Acceso_Denegado.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Acceso_Registrar.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Denegado_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Registrar_cshtml.g.cs",
                 "region": {
-                  "startLine": 43,
+                  "startLine": 46,
                   "startColumn": 24,
-                  "endLine": 43,
+                  "endLine": 46,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Acceso_Login.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 24,
+                  "endLine": 46,
                   "endColumn": 52
                 }
               }
@@ -1748,18 +1700,66 @@
         {
           "ruleId": "CS0169",
           "level": "warning",
-          "message": "The field 'Views_Acceso_Login.__tagHelperStringValueBuffer' is never used",
+          "message": "The field 'Views_Facturacion_Index.__tagHelperStringValueBuffer' is never used",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Acceso_Login_cshtml.g.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Facturacion_Index_cshtml.g.cs",
                 "region": {
-                  "startLine": 46,
+                  "startLine": 44,
                   "startColumn": 24,
-                  "endLine": 46,
+                  "endLine": 44,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Medicos_Index.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Medicos_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 24,
+                  "endLine": 44,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Home_Index.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/obj/Debug/net8.0/Microsoft.CodeAnalysis.Razor.Compiler/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
                   "endColumn": 52
                 }
               }
@@ -1892,138 +1892,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 20,
-                  "endLine": 27,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
-                "region": {
-                  "startLine": 39,
-                  "startColumn": 31,
-                  "endLine": 39,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 20,
-                  "endLine": 21,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 20,
-                  "endLine": 27,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
                 "region": {
                   "startLine": 28,
                   "startColumn": 20,
                   "endLine": 28,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 32,
-                  "endLine": 34,
-                  "endColumn": 52
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 25,
-                  "endLine": 33,
-                  "endColumn": 39
+                  "endColumn": 34
                 }
               }
             }
@@ -2041,31 +1915,10 @@
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/FacturacionController.cs",
                 "region": {
-                  "startLine": 27,
-                  "startColumn": 20,
-                  "endLine": 27,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
-                "region": {
                   "startLine": 21,
                   "startColumn": 20,
                   "endLine": 21,
-                  "endColumn": 31
+                  "endColumn": 38
                 }
               }
             }
@@ -2102,12 +1955,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/FacturacionController.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs",
                 "region": {
-                  "startLine": 21,
+                  "startLine": 22,
                   "startColumn": 20,
-                  "endLine": 21,
-                  "endColumn": 38
+                  "endLine": 22,
+                  "endColumn": 35
                 }
               }
             }
@@ -2125,10 +1978,199 @@
               "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs",
                 "region": {
-                  "startLine": 40,
-                  "startColumn": 38,
-                  "endLine": 40,
-                  "endColumn": 57
+                  "startLine": 28,
+                  "startColumn": 20,
+                  "endLine": 28,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 34,
+                  "endLine": 33,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/FacturacionController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 20,
+                  "endLine": 27,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 20,
+                  "endLine": 28,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 20,
+                  "endLine": 21,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 20,
+                  "endLine": 27,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 20,
+                  "endLine": 27,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 20,
+                  "endLine": 21,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 20,
+                  "endLine": 22,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 32,
+                  "endLine": 34,
+                  "endColumn": 52
                 }
               }
             }
@@ -2165,12 +2207,54 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/EspecialidadesController.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
                 "region": {
                   "startLine": 33,
-                  "startColumn": 34,
+                  "startColumn": 25,
                   "endLine": 33,
-                  "endColumn": 55
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 27,
+                  "endLine": 34,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 33,
+                  "endLine": 40,
+                  "endColumn": 47
                 }
               }
             }
@@ -2228,96 +2312,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/CitasController.cs",
                 "region": {
-                  "startLine": 22,
-                  "startColumn": 20,
-                  "endLine": 22,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 20,
-                  "endLine": 22,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 20,
-                  "endLine": 28,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 27,
-                  "endLine": 34,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 20,
-                  "endLine": 28,
-                  "endColumn": 36
+                  "startLine": 39,
+                  "startColumn": 31,
+                  "endLine": 39,
+                  "endColumn": 43
                 }
               }
             }
@@ -2354,27 +2354,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/MedicosController.cs",
-                "region": {
-                  "startLine": 40,
-                  "startColumn": 33,
-                  "endLine": 40,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6967",
-          "level": "warning",
-          "message": "ModelState.IsValid should be checked in controller actions.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/PacientesController.cs",
                 "region": {
                   "startLine": 40,
@@ -2396,12 +2375,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/AccesoController.cs",
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs",
                 "region": {
-                  "startLine": 31,
-                  "startColumn": 30,
-                  "endLine": 31,
-                  "endColumn": 39
+                  "startLine": 40,
+                  "startColumn": 38,
+                  "endLine": 40,
+                  "endColumn": 57
                 }
               }
             }
@@ -2444,6 +2423,27 @@
                   "startColumn": 24,
                   "endLine": 56,
                   "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6967",
+          "level": "warning",
+          "message": "ModelState.IsValid should be checked in controller actions.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/AccesoController.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 30,
+                  "endLine": 31,
+                  "endColumn": 39
                 }
               }
             }
@@ -2538,27 +2538,6 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'Encriptar' does not access instance data and can be marked as static",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/AccesoController.cs",
-                "region": {
-                  "startLine": 56,
-                  "startColumn": 24,
-                  "endLine": 56,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S6966",
           "level": "warning",
           "message": "Await RunAsync instead.",
@@ -2571,6 +2550,27 @@
                   "startColumn": 1,
                   "endLine": 37,
                   "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'Encriptar' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/AccesoController.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 24,
+                  "endLine": 56,
+                  "endColumn": 33
                 }
               }
             }

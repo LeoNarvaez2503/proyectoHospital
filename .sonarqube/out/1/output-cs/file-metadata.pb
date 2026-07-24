@@ -1,9 +1,9 @@
 ~
 s/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/obj/Debug/net8.0/CapaDatos.AssemblyInfo.csutf-8”
 ˆ/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8€
-u/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/obj/Debug/net8.0/CapaDatos.GlobalUsings.g.csutf-8_
-V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.csutf-8d
-[/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.csutf-8`
+u/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/obj/Debug/net8.0/CapaDatos.GlobalUsings.g.csutf-8d
+[/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.csutf-8_
+V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.csutf-8`
 W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.csutf-8_
 V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.csutf-8_
 V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.csutf-8c

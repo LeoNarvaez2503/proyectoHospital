@@ -4,7 +4,24 @@ O/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Program.cs
  (
 		 #   V
         !! %% 
-  (˛
+  (î
+V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/Usuario.cs
+
+ 
+
+ 
+
+ 
+
+ 
+
+		 ç
+]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/ErrorViewModel.cs
+
+ 
+  ; D
+
+ !˛
 `/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Data/DatabaseInitializer.cs
 
  +
@@ -35,24 +52,7 @@ O/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Program.cs
 HHJ TJJ  *UU` j
 HH_ kVV6 B(
 JJ JJ JJ, -UUX Y
-NN "OO ç
-]/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/ErrorViewModel.cs
-
- 
-  ; D
-
- !î
-V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Models/Usuario.cs
-
- 
-
- 
-
- 
-
- 
-
-		 Ü
+NN "OO Ü
 j/home/meatpuppets/Escritorio/University/proyectoHospital/Login/Login/Controllers/TratamientosController.cs
 
 

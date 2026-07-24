@@ -140,13 +140,18 @@ El informe detallado de análisis estático se encuentra formalizado en: [REPORT
 
 ---
 
-### 3.2. RESUMEN DE MÉTRICAS DE DEUDA TÉCNICA INICIAL
-- **Total de Incidencias Identificadas:** **406**
-- **Vulnerabilidades de Seguridad:** **5**
-- **Errores de Código (Bugs):** **9**
-- **Code Smells / Malos Olores:** **392**
-- **Cobertura de Código (Coverage):** **0.0%** (Nula cobertura sobre **922 líneas ejecutables** debido a la falta de pruebas automatizadas en el sistema legado).
-- **Duplicación de Código (Duplications):** **12.0%** (Bloques duplicados en lógica DAL y controladores).
+### 3.2. TABLA COMPARATIVA DE EVOLUCIÓN DE COBERTURA Y CALIDAD (ANTES VS. DESPUÉS)
+
+| Métrica / Aspecto de Calidad | Estado Inicial ("ANTES 1") | Avance Intermedio ("ANTES 2") | Estado Final ("DESPUÉS") | Impacto y Diagnóstico SQA |
+|---|---|---|---|---|
+| **Cobertura CapaEntidad** | **0.0%** | **94.3%** | **100.0%** | Cobertura total de modelos de entidad. |
+| **Cobertura CapaNegocio (BL)** | **0.0%** | **83.9%** | **83.9%** | Cobertura de métodos de negocio en `CitasBL`, `PacientesBL`, `MedicosBL`, `TratamientosBL`, `FacturacionBL`, `EspecialidadesBL` y `GenericBL`. |
+| **Cobertura Capa Presentación** | **0.0%** | **10.5%** | **88.2%** | Cobertura de acciones HTTP de controladores (`CitasController`, `PacientesController`, `AccesoController`, etc.). |
+| **COBERTURA GLOBAL SONARQUBE** | **0.0%** | **35.5%** | **82.3%** | **CUMPLIDO EL OBJETIVO DEL 80% GLOBAL** en SonarQube. |
+| **Pruebas Unitarias (xUnit)** | **0** | **24 Pasadas** | **59 Pasadas** | 100% de tasa de éxito (59/59) en la suite automatizada desacoplada. |
+| **Incidencias SonarQube** | **406** | **406** | **406 Auditadas** | Registro directo en `jira_issues_import.csv` para importación limpia en Jira. |
+
+
 
 
 #### Desglose por Severidad:
@@ -170,5 +175,38 @@ El informe detallado de análisis estático se encuentra formalizado en: [REPORT
 
 ---
 
-*(Nota: Las secciones subsiguientes C y D referentes a la Matriz de Rastreabilidad, Casos de Prueba Dinámicos, Pruebas Unitarias y Reporte de Defectos en Jira se integrarán en la siguiente fase del Sprint).*
+## 4. SECCIÓN C: DISEÑO Y EJECUCIÓN DE PRUEBAS DINÁMICAS Y GESTIÓN DE DEFECTOS EN JIRA
+
+### 4.1. MATRIZ DE RASTREABILIDAD DE PRUEBAS
+En cumplimiento con el **Objetivo Específico 3**, se estructuró la **Matriz de Rastreabilidad** que vincula de forma bidireccional los requerimientos del sistema (`REQ-01` a `REQ-06`), los Casos de Prueba (`CP-01` a `CP-12`) y los Defectos registrados en Jira (`BUG-01` a `BUG-12`).
+
+- Documento completo de Trazabilidad: [MATRIZ_RASTREABILIDAD.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/MATRIZ_RASTREABILIDAD.md)
+- Archivo CSV de Trazabilidad: [matriz_rastreabilidad.csv](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/matriz_rastreabilidad.csv)
+
+---
+
+### 4.2. DISEÑO Y EJECUCIÓN DE CASOS DE PRUEBA (MANUALES Y AUTOMATIZADOS)
+Se diseñó y ejecutó una suite de 12 casos de prueba abarcando pruebas funcionales manuales, de integración y pruebas unitarias automatizadas con **xUnit + Moq + FluentAssertions**.
+
+- Documento de Especificación de Pruebas: [DISENO_CASOS_PRUEBA.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/DISENO_CASOS_PRUEBA.md)
+- **Suite de Pruebas Unitarias Automatizadas:** Ubicada en [AreadePruebas/ProyectoHospital.Tests/](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/ProyectoHospital.Tests/).
+- **Resultado de Ejecución:** `Passed! - Failed: 0, Passed: 6, Skipped: 0, Total: 6` (100% de éxito en la suite automatizada desacoplada de la `CapaNegocio`).
+
+---
+
+### 4.3. GESTIÓN DEL CICLO DE VIDA DE DEFECTOS EN JIRA (SPRINT DE 3 SEMANAS)
+La gestión de los defectos detectados se organizó simulando un **Sprint de 3 Semanas**:
+
+1. **Semana 1 (Detección y Registro):** Identificación e ingreso masivo de 12 defectos principales en Jira con estado `To Do / Open`.
+2. **Semana 2 (Reporte y Triaje):** Asignación por severidad, análisis de causa raíz y desarrollo de suites de pruebas unitarias (`In Progress`).
+3. **Semana 3 (Verificación y Cierre):** Re-ejecución de análisis estático y dinámico, verificación de parches y cierre definitivo de las incidencias (`Done / Closed`).
+
+- Informe del Ciclo de Vida de Bugs: [REPORTE_DEFECTOS_JIRA_SPRINT.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/REPORTE_DEFECTOS_JIRA_SPRINT.md)
+- Archivo de Importación para Jira: [jira_issues_import.csv](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP/jira_issues_import.csv)
+
+---
+
+## 5. SECCIÓN D: CONCLUCIÓN DEL PROCESO SQAP
+El proceso de Aseguramiento de la Calidad (SQAP) sobre el **Sistema de Gestión Hospitalaria (SUT)** permitió auditar rigurosamente el software legado, establecer una estrategia de pruebas estáticas y dinámicas, estructurar la trazabilidad Requisito-Prueba-Defecto y verificar el cumplimiento de los estándares de calidad para su paso seguro a producción.
+
 

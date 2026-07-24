@@ -1,30 +1,4 @@
-”
-V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs
-
- 
-
-
-
- $
-
-
-0 7? F> E(
-
-
-D K    %% 
-  !)) 
-! # R TZ
-& )      6 9  " %
-
-++ !
-++- 4;;? F<<> E(
-++A H.. EE  'NN 
-++R [// BB  )
-++h k00 CC  #(
--- DD  )MM RR 
-22! #66 77P R2
-77& )99 ;; << >>6 9(
->>- 3@@  &BB, 2CC& ,š
+š
 [/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs
 
   
@@ -95,7 +69,33 @@ V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/Usuari
 –– '
 —— '
 ˜˜ '
-™™& 1ð
+™™& 1”
+V/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs
+
+ 
+
+
+
+ $
+
+
+0 7? F> E(
+
+
+D K    %% 
+  !)) 
+! # R TZ
+& )      6 9  " %
+
+++ !
+++- 4;;? F<<> E(
+++A H.. EE  'NN 
+++R [// BB  )
+++h k00 CC  #(
+-- DD  )MM RR 
+22! #66 77P R2
+77& )99 ;; << >>6 9(
+>>- 3@@  &BB, 2CC& ,ð
 W/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs
 
  
