@@ -1,0 +1,9 @@
+﻿/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CadenaDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/CitasDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/EspecialidadesDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/FacturacionDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/GenericDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/MedicosDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/PacienteDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/TratamientosDAL.cs
+/home/meatpuppets/Escritorio/University/proyectoHospital/Login/CapaDatos/UsuarioDAL.cs
