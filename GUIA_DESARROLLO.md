@@ -115,13 +115,16 @@ docker compose up --build
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🧪 Pruebas y Auditoría de Calidad (SQAP)
 
-- **`docker-compose.yml`**: Define los servicios de SQL Server y la App Web .NET.
-- **`Dockerfile`**: Instrucciones de construcción e imagen multi-stage para la aplicación.
-- **`Login/Login/init.sql`**: Script de inicialización de tablas, procedimientos almacenados y datos iniciales.
-- **`Login/Login.sln`**: Solución principal de .NET compuesta por la arquitectura en capas:
-  - `Login`: Capa de presentación (ASP.NET Core MVC).
-  - `CapaNegocio`: Lógica de negocio.
-  - `CapaDatos`: Acceso a datos y ejecuciones SQL.
-  - `CapaEntidad`: Modelos de entidades de datos.
+El proyecto cuenta con un entorno configurado para el **Aseguramiento de la Calidad de Software (SQAP)** mediante análisis estático y dinámico:
+
+### 1. Auditoría Estática con SonarQube
+Para ejecutar el análisis estático de código, detectar vulnerabilidades y calcular la deuda técnica:
+1. Inicia el servidor local de SonarQube en Docker (`docker start sonarqube`).
+2. Sigue los pasos detallados en la guía de pruebas: [GUIA_ANALISIS_ESTATICO_SONARQUBE.md](file:///home/meatpuppets/Escritorio/University/proyectoHospital/AreadePruebas/GUIA_ANALISIS_ESTATICO_SONARQUBE.md).
+3. Revisa los hallazgos en el Dashboard: `http://localhost:9000/dashboard?id=proyectoHospital`.
+
+### 2. Documentación y Evidencias SQAP
+Toda la documentación metodológica, el plan maestro, los reportes de análisis estático y los CSV para importar en Jira se encuentran organizados en la carpeta [SQAP/](file:///home/meatpuppets/Escritorio/University/proyectoHospital/SQAP).
+
