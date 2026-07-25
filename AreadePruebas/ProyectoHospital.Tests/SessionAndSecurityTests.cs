@@ -86,30 +86,19 @@ namespace ProyectoHospital.Tests
         // ═══════════════════════════════════════════════════════════════
 
         [Fact]
-        public void CP55_CSRF_AccesoController_RegistrarPost_EvaluacionTokenAntiforgery()
+        public void CP55_CSRF_AccesoController_RegistrarPost_DebeTenerTokenAntiforgery()
         {
             var method = typeof(AccesoController).GetMethod("Registrar", new[] { typeof(UsuarioCLS) });
             var antiforgeryAttr = method?.GetCustomAttribute<ValidateAntiForgeryTokenAttribute>();
-            
-            // Verificamos si existe o documentamos la oportunidad de mejora
-            // En SQA es vital reportar hallazgos de seguridad no mitigados
-            if (antiforgeryAttr == null)
-            {
-                // Hallazgo documentado
-                true.Should().BeTrue("ALERT SQA: Registrar POST no cuenta con [ValidateAntiForgeryToken]");
-            }
+            antiforgeryAttr.Should().NotBeNull("La acción Registrar (POST) DEBE incluir [ValidateAntiForgeryToken] para prevenir ataques CSRF");
         }
 
         [Fact]
-        public void CP56_CSRF_AccesoController_LoginPost_EvaluacionTokenAntiforgery()
+        public void CP56_CSRF_AccesoController_LoginPost_DebeTenerTokenAntiforgery()
         {
             var method = typeof(AccesoController).GetMethod("Login", new[] { typeof(UsuarioCLS) });
             var antiforgeryAttr = method?.GetCustomAttribute<ValidateAntiForgeryTokenAttribute>();
-
-            if (antiforgeryAttr == null)
-            {
-                true.Should().BeTrue("ALERT SQA: Login POST no cuenta con [ValidateAntiForgeryToken]");
-            }
+            antiforgeryAttr.Should().NotBeNull("La acción Login (POST) DEBE incluir [ValidateAntiForgeryToken] para prevenir ataques CSRF");
         }
 
         // ═══════════════════════════════════════════════════════════════
