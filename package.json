@@ -1,0 +1,31 @@
+{
+  "name": "proyectohospital",
+  "version": "1.0.0",
+  "description": "**Equipo:** Caetano Flores · Leonardo Narváez  \r **Institución:** Universidad de las Fuerzas Armadas ESPE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoNarvaez2503/proyectoHospital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LeoNarvaez2503/proyectoHospital/issues"
+  },
+  "homepage": "https://github.com/LeoNarvaez2503/proyectoHospital#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^26.0.0",
+    "@cypress/webpack-preprocessor": "^7.1.1",
+    "cypress": "^15.19.0",
+    "esbuild": "^0.28.1",
+    "webpack": "^5.109.0"
+  },
+  "dependencies": {
+    "hasha": "^7.0.0"
+  }
+}
