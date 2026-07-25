@@ -31,3 +31,9 @@ AreadePruebas/CoverageReport/
 *.sln.docstates
 Thumbs.db
 .DS_Store
+
+# Archivos temporales de auditoría / pentesting
+cookies.txt
+login.html
+sqlmap/
+
