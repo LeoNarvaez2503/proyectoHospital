@@ -22,7 +22,7 @@ namespace ProyectoHospital.Tests
         {
             var dal = new CadenaDAL();
             dal.cadenaDato.Should().NotBeNullOrEmpty("La cadena de conexión debe cargarse desde appsettings.json o variables de entorno");
-            dal.cadenaDato.Should().Contain("BDHospitalF", "Debe apuntar a la base de datos del sistema hospitalario");
+            dal.cadenaDato.Should().Contain("BDHospital", "Debe apuntar a la base de datos del sistema hospitalario");
         }
 
         [Fact]

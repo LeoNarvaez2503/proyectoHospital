@@ -400,3 +400,5 @@ Resumen de la estructura:
 | Datos | Lógica para interactuar con la base de datos (procedimientos almacenados) |
 | Negocio | Lógica de negocio que llama a las funciones de la capa de datos |
 | Presentación | Controladores y vistas que interactúan con el usuario |
+
+<!-- Actualización de documentación -->
