@@ -31,6 +31,6 @@ AreadePruebas/CoverageReport/
 *.sln.docstates
 Thumbs.db
 .DS_Store
-.create_docx_plan.py
-.generate_master_doc.py
-
+AreadePruebas/generate_master_doc.py
+AreadePruebas/create_docx_plan.py
+SQA_Plan_Template.docx.txt
