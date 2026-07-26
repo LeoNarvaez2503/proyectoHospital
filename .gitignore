@@ -36,3 +36,4 @@ Thumbs.db
 AreadePruebas/generate_master_doc.py
 AreadePruebas/create_docx_plan.py
 SQA_Plan_Template.docx.txt
+node_modules
