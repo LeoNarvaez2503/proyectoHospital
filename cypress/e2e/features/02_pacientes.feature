@@ -1,8 +1,8 @@
 # language: es
-Característica: Gestión de Pacientes
+Característica: Gestión de Pacientes y Sanitización de Formulario
   Como Administrador del sistema
   Quiero administrar el registro de pacientes
-  Para mantener actualizada la información de los pacientes del hospital
+  Para mantener actualizada la información de los pacientes del hospital con datos limpios y válidos
 
   # ------------------------------------------------------------------
   # FLUJOS PRINCIPALES (SUCCESS PATHS)
@@ -28,3 +28,15 @@ Característica: Gestión de Pacientes
     Y se encuentra en el módulo de Pacientes "/Pacientes/Index"
     Cuando abre el modal de registro y hace clic en Enviar sin llenar los campos
     Entonces el modal debe permanecer abierto o el sistema debe mantener la estabilidad en la página
+
+  Escenario: Registro de paciente con número de teléfono inválido (con caracteres alfabéticos)
+    Dado que el Administrador ha iniciado sesión con correo "admin@hospital.com" y clave "Admin123!"
+    Y se encuentra en el módulo de Pacientes "/Pacientes/Index"
+    Cuando intenta registrar un paciente con teléfono "TELEFONO_INVALIDO_123"
+    Entonces el sistema debe denegar el registro o mostrar mensaje de validación de campo numérico
+
+  Escenario: Registro de paciente con correo electrónico malformado
+    Dado que el Administrador ha iniciado sesión con correo "admin@hospital.com" y clave "Admin123!"
+    Y se encuentra en el módulo de Pacientes "/Pacientes/Index"
+    Cuando intenta registrar un paciente con email "correo_sin_formato_valido"
+    Entonces la interfaz debe señalar el error en el campo email y mantener la estabilidad

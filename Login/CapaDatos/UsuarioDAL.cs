@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using CapaEntidad;
@@ -29,7 +29,7 @@ namespace CapaDatos
                         cmd.ExecuteNonQuery();
 
                         respuesta = Convert.ToBoolean(cmd.Parameters["Registrado"].Value);
-                        mensaje = cmd.Parameters["Mensaje"].Value.ToString();
+                        mensaje = cmd.Parameters["Mensaje"].Value?.ToString() ?? "Error en el registro";
                     }
                 }
                 catch (Exception e)
@@ -40,6 +40,7 @@ namespace CapaDatos
 
             return respuesta;
         }
+
         public bool IniciarSesion(UsuarioCLS usuario, out string mensaje, out int idUsuario, out string rol)
         {
             bool respuesta = false;
@@ -68,14 +69,18 @@ namespace CapaDatos
                                 respuesta = true;
                                 mensaje = "Inicio de sesión exitoso";
                             }
-                           
+                            else
+                            {
+                                respuesta = false;
+                                mensaje = "Correo o contraseña incorrectos";
+                            }
                         }
                     }
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     respuesta = false;
-                    mensaje = "Usuario o contraseña incorrecta";
+                    mensaje = "Correo o contraseña incorrectos";
                 }
             }
 

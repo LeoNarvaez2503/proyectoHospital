@@ -1,10 +1,10 @@
-﻿window.onload = function () {
+window.onload = function () {
     listarMedicos();
 }
 async function listarMedicos() {
     pintar({
         url: "Medicos/ListarMedicos",
-        cabeceras: ["ID Medico", "Nombre", "Apellido", "Id Epecialidad", "Telefono", "email"],
+        cabeceras: ["ID Médico", "Nombre", "Apellido", "Especialidad", "Teléfono", "Email"],
         propiedades: ["id", "nombre", "apellido", "especialidadId", "telefono", "email"],
         editar: true,
         eliminar: true,
@@ -34,6 +34,7 @@ function Editar(id) {
             setN("id", data.id);
             setN("nombre", data.nombre);
             setN("apellido", data.apellido);
+            cargarForaneas("Especialidades", "especialidadId");
             setN("especialidadId", data.especialidadId);
             setN("telefono", data.telefono);
             setN("email", data.email);
@@ -42,6 +43,7 @@ function Editar(id) {
     }
     else {
         limpiarForm();
+        cargarForaneas("Especialidades", "especialidadId");
         setN("id", id);
     }
 

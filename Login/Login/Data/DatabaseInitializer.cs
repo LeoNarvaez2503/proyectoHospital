@@ -49,7 +49,7 @@ namespace Login.Data
             }
 
             Console.WriteLine("[DatabaseInitializer] Ejecutando init.sql...");
-            string script = File.ReadAllText(initScriptPath);
+            string script = File.ReadAllText(initScriptPath, System.Text.Encoding.UTF8);
             string[] batches = script.Split(new[] { "\r\nGO\r\n", "\nGO\n", "\rGO\r", "GO" }, StringSplitOptions.RemoveEmptyEntries);
 
             using (var conn = new SqlConnection(dbConnStr))

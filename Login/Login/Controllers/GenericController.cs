@@ -1,4 +1,5 @@
-﻿using CapaNegocio;
+using CapaEntidad;
+using CapaNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Login.Controllers
@@ -14,6 +15,12 @@ namespace Login.Controllers
         {
             GenericBL objGenericBL = new GenericBL();
             return objGenericBL.obtenerClaves(tabla);
+        }
+
+        public List<ElementoComboCLS> obtenerCombo(string tabla)
+        {
+            GenericBL objGenericBL = new GenericBL();
+            return objGenericBL.obtenerCombo(tabla);
         }
     }
 }

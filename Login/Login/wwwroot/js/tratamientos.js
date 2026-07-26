@@ -1,11 +1,11 @@
-﻿window.onload = function () {
+window.onload = function () {
     listarTratamientos();
 }
 async function listarTratamientos() {
     pintar({
         url: "Tratamientos/ListarTratamientos",
-        cabeceras: ["ID Tratamiento", "Id Paciente", "Descripcion", "fecha", "costo"],
-        propiedades: ["id", "pacienteId", "descripcion", "fecha", "costo"],
+        cabeceras: ["ID Tratamiento", "Paciente", "Descripción", "Fecha", "Costo"],
+        propiedades: ["id", "nombrePaciente", "descripcion", "fecha", "costo"],
         editar: true,
         eliminar: true,
         propiedadId: "id"

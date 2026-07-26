@@ -1,4 +1,5 @@
-﻿using CapaDatos;
+using CapaDatos;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace CapaNegocio
         {
             GenericDAL objGenericDAL = new GenericDAL();
             return objGenericDAL.ObtenerClaves(tabla);
+        }
+
+        public List<ElementoComboCLS> obtenerCombo(string tabla)
+        {
+            GenericDAL objGenericDAL = new GenericDAL();
+            return objGenericDAL.ObtenerCombo(tabla);
         }
     }
 }

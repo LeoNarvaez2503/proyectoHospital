@@ -1,28 +1,38 @@
-﻿@{
+@model CapaEntidad.UsuarioCLS
+@{
     ViewData["Title"] = "Login";
+    bool isRegister = ViewData["isRegister"] != null && (bool)ViewData["isRegister"];
+    string mensajeLogin = ViewData["mensaje"]?.ToString();
+    string mensajeReg = ViewData["mensajeRegistro"]?.ToString();
 }
 <head>
     <link href="~/css/login.css" rel="stylesheet" />
 </head>
-<div class="cont">
+<div class="cont @(isRegister ? "s--signup" : "")">
     <!-- Formulario de Inicio de Sesión -->
     <div class="form sign-in">
         <h2>Bienvenido de vuelta,</h2>
-        <form method="post" asp-action="Login">
+        <form method="post" asp-action="Login" novalidate>
             <label for="loginCorreo">
                 <span>Correo</span>
-                <input type="email" name="correo" id="loginCorreo" required />
+                <input type="email" name="correo" id="loginCorreo" value="@(!isRegister ? Model?.correo : "")" />
             </label>
             <label for="loginClave">
                 <span>Contraseña</span>
-                <input type="password" name="clave" id="loginClave" required />
+                <input type="password" name="clave" id="loginClave" />
             </label>
             <button type="submit" class="submit">Iniciar Sesión</button>
         </form>
-        @if (ViewData["mensaje"] != null)
+        @if (!string.IsNullOrWhiteSpace(mensajeLogin))
         {
-            <div class="alert alert-info mt-3">
-                @ViewData["mensaje"]
+            <div class="alert alert-danger mt-3" style="width: 260px; margin: 15px auto 0; text-align: center; border-radius: 20px; font-weight: 500;">
+                @mensajeLogin
+            </div>
+        }
+        @if (TempData["mensajeExito"] != null)
+        {
+            <div class="alert alert-success mt-3" style="width: 260px; margin: 15px auto 0; text-align: center; border-radius: 20px; font-weight: 500;">
+                @TempData["mensajeExito"]
             </div>
         }
     </div>
@@ -46,31 +56,25 @@
         <!-- Formulario de Registro -->
         <div class="form sign-up">
             <h2>Es tiempo de cuidarnos,</h2>
-            <form method="post" asp-action="Registrar">
+            <form method="post" asp-action="Registrar" novalidate>
                 <label for="regCorreo">
                     <span>Correo</span>
-                    <input type="email" name="correo" id="regCorreo" required />
+                    <input type="email" name="correo" id="regCorreo" value="@(isRegister ? Model?.correo : "")" />
                 </label>
                 <label for="regClave">
                     <span>Contraseña</span>
-                    <input type="password" name="clave" id="regClave" required />
+                    <input type="password" name="clave" id="regClave" />
                 </label>
                 <label for="regConfClave">
                     <span>Confirmar Contraseña</span>
-                    <input type="password" name="confClave" id="regConfClave" required />
+                    <input type="password" name="confClave" id="regConfClave" />
                 </label>
                 <button type="submit" class="submit">Registrar</button>
             </form>
-            @if (ViewData["mensaje"] != null)
+            @if (!string.IsNullOrWhiteSpace(mensajeReg))
             {
-                <div class="alert alert-info">
-                    @ViewData["mensajeRegistro"]
-                </div>
-            }
-            @if (TempData["mensaje"] != null)
-            {
-                <div class="alert alert-success">
-                    @TempData["mensaje"]
+                <div class="alert alert-danger mt-3" style="width: 260px; margin: 15px auto 0; text-align: center; border-radius: 20px; font-weight: 500;">
+                    @mensajeReg
                 </div>
             }
         </div>

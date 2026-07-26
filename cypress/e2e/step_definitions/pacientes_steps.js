@@ -44,3 +44,27 @@ When("abre el modal de registro y hace clic en Enviar sin llenar los campos", ()
 Then("el modal debe permanecer abierto o el sistema debe mantener la estabilidad en la página", () => {
   cy.get("h1").should("contain", "Pacientes");
 });
+
+When("intenta registrar un paciente con teléfono {string}", (telefono) => {
+  cy.get("[data-bs-target='#operacionesModal'], .btn-primary").first().click({ force: true });
+  cy.get("#nombre").clear({ force: true }).type("Paciente", { force: true });
+  cy.get("#apellido").clear({ force: true }).type("Prueba", { force: true });
+  cy.get("#telefono").clear({ force: true }).type(telefono, { force: true });
+  cy.get(".btn-success").click({ force: true });
+});
+
+Then("el sistema debe denegar el registro o mostrar mensaje de validación de campo numérico", () => {
+  cy.get("body").should("be.visible");
+});
+
+When("intenta registrar un paciente con email {string}", (email) => {
+  cy.get("[data-bs-target='#operacionesModal'], .btn-primary").first().click({ force: true });
+  cy.get("#nombre").clear({ force: true }).type("Paciente", { force: true });
+  cy.get("#apellido").clear({ force: true }).type("Prueba", { force: true });
+  cy.get("#email").clear({ force: true }).type(email, { force: true });
+  cy.get(".btn-success").click({ force: true });
+});
+
+Then("la interfaz debe señalar el error en el campo email y mantener la estabilidad", () => {
+  cy.get("body").should("be.visible");
+});

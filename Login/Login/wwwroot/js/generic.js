@@ -48,15 +48,24 @@ async function fetchGet(url, tipoRespuesta, callback) {
 }
 
 async function cargarForaneas(tabla, id) {
-    fetchGet("Generic/obtenerClaves/?tabla=" + tabla, "json", function (data) {
+    fetchGet("Generic/obtenerCombo/?tabla=" + tabla, "json", function (data) {
         let select = document.getElementById(id);
         if (!select || !data) return;
+        let valorPrevio = select.value;
         select.innerHTML = "";
-        for (let clave of data) {
+        for (let item of data) {
             let foranea = document.createElement("option");
-            foranea.value = clave;
-            foranea.textContent = clave;
+            if (typeof item === "object" && item !== null) {
+                foranea.value = item.id;
+                foranea.textContent = item.texto || item.id;
+            } else {
+                foranea.value = item;
+                foranea.textContent = item;
+            }
             select.appendChild(foranea);
+        }
+        if (valorPrevio) {
+            select.value = valorPrevio;
         }
     });
 }

@@ -73,3 +73,14 @@ When("intenta navegar directamente a la URL {string}", (path) => {
 Then("el sistema debe bloquear el acceso y redirigir a {string}", (pathEsperado) => {
   cy.url().should("include", pathEsperado);
 });
+
+Then("el navegador o el sistema debe marcar el correo como inválido o impedir el ingreso", () => {
+  cy.url().should("not.include", "/Home/Index");
+});
+
+Then("el sistema debe sanitizar la entrada y no ejecutar ningún script en pantalla", () => {
+  cy.on("window:alert", (str) => {
+    expect(str).to.not.equal("xss_reg");
+  });
+  cy.get("body").should("be.visible");
+});

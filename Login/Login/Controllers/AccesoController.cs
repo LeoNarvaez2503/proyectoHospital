@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
@@ -16,12 +16,13 @@ namespace Login.Controllers
         public IActionResult Login()
         {
             return View();
-
         }
+
         public IActionResult Registrar()
         {
             return View();
         }
+
         public IActionResult Denegado()
         {
             return View();
@@ -30,11 +31,24 @@ namespace Login.Controllers
         [HttpPost]
         public IActionResult Registrar(UsuarioCLS objUser)
         {
+            if (string.IsNullOrWhiteSpace(objUser.correo) || string.IsNullOrWhiteSpace(objUser.clave) || string.IsNullOrWhiteSpace(objUser.confClave))
+            {
+                ViewData["mensajeRegistro"] = "Por favor, completa todos los campos para registrarte";
+                ViewData["isRegister"] = true;
+                objUser.clave = "";
+                objUser.confClave = "";
+                return View("Login", objUser);
+            }
+
             if (objUser.clave != objUser.confClave)
             {
-                ViewData["mensaje"] = "Las contraseñas no coinciden";
-                return View();
+                ViewData["mensajeRegistro"] = "Las contraseñas no coinciden";
+                ViewData["isRegister"] = true;
+                objUser.clave = "";
+                objUser.confClave = "";
+                return View("Login", objUser);
             }
+            
             objUser.clave = Encriptar(objUser.clave);
 
             UsuarioDAL objUserDAL = new UsuarioDAL();
@@ -47,10 +61,16 @@ namespace Login.Controllers
             }
             else
             {
-                ViewData["mensaje"] = mensaje;
-                return View("Login");
+                if (string.IsNullOrWhiteSpace(mensaje))
+                {
+                    mensaje = "Error al registrar usuario";
+                }
+                ViewData["mensajeRegistro"] = mensaje;
+                ViewData["isRegister"] = true;
+                objUser.clave = "";
+                objUser.confClave = "";
+                return View("Login", objUser);
             }
-
         }
 
         private string Encriptar(string cadena)
@@ -58,21 +78,30 @@ namespace Login.Controllers
             StringBuilder builder = new StringBuilder();
             using (SHA256 sha256Hash = SHA256.Create())
             {
-                byte[] result = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(cadena));
+                byte[] result = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(cadena ?? ""));
                 foreach (byte b in result)
                     builder.Append(b.ToString("x2"));
             }
             return builder.ToString();
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(UsuarioCLS objUser)
         {
+            if (string.IsNullOrWhiteSpace(objUser.correo) || string.IsNullOrWhiteSpace(objUser.clave))
+            {
+                ViewData["mensaje"] = "Por favor, ingresa tu correo y contraseña";
+                ViewData["isRegister"] = false;
+                objUser.clave = "";
+                return View(objUser);
+            }
+
             objUser.clave = Encriptar(objUser.clave);
             string mensaje;
             int idUsuario;
             string rol;
             UsuarioDAL objUserDAL = new UsuarioDAL();
-            bool exito = objUserDAL.IniciarSesion(objUser, out mensaje,out idUsuario, out rol);
+            bool exito = objUserDAL.IniciarSesion(objUser, out mensaje, out idUsuario, out rol);
             if (exito)
             {
                 var claims = new List<Claim>
@@ -87,19 +116,24 @@ namespace Login.Controllers
             }
             else
             {
+                if (string.IsNullOrWhiteSpace(mensaje))
+                {
+                    mensaje = "Correo o contraseña incorrectos";
+                }
                 ViewData["mensaje"] = mensaje;
-                return View();
+                ViewData["isRegister"] = false;
+                objUser.clave = "";
+                return View(objUser);
             }
         }
+
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            // Cerrar la sesión del usuario usando el esquema "CookieAuth"
             await HttpContext.SignOutAsync("CookieAuth");
-
-            // Redirigir al usuario a la página de inicio de sesión
             return RedirectToAction("Login", "Acceso");
         }
+
         public bool RevisarPermisos()
         {
             return User.IsInRole("Admin");
