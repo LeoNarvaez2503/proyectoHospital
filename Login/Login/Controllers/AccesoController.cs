@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Text.RegularExpressions;
 
 namespace Login.Controllers
 {
@@ -28,12 +29,46 @@ namespace Login.Controllers
             return View();
         }
 
+        private bool EsEntradaSegura(string entrada)
+        {
+            if (string.IsNullOrEmpty(entrada)) return true;
+            string lower = entrada.ToLowerInvariant();
+            if (lower.Contains("<script") || lower.Contains("</script>") ||
+                lower.Contains("javascript:") || lower.Contains("onerror=") ||
+                lower.Contains("onload=") || lower.Contains("<iframe") ||
+                lower.Contains("<img") || lower.Contains("<svg") ||
+                lower.Contains("<object") || lower.Contains("<embed") ||
+                entrada.Contains("<") || entrada.Contains(">"))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        private bool EsEmailValido(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email)) return false;
+            if (!EsEntradaSegura(email)) return false;
+            // Exigir formato de correo válido con regex y sin caracteres de scripts
+            string patronEmail = @"^[^@\s<>'""\(\)]+@[^@\s<>'""\(\)]+\.[^@\s<>'""\(\)]+$";
+            return Regex.IsMatch(email, patronEmail, RegexOptions.IgnoreCase);
+        }
+
         [HttpPost]
         public IActionResult Registrar(UsuarioCLS objUser)
         {
             if (string.IsNullOrWhiteSpace(objUser.correo) || string.IsNullOrWhiteSpace(objUser.clave) || string.IsNullOrWhiteSpace(objUser.confClave))
             {
                 ViewData["mensajeRegistro"] = "Por favor, completa todos los campos para registrarte";
+                ViewData["isRegister"] = true;
+                objUser.clave = "";
+                objUser.confClave = "";
+                return View("Login", objUser);
+            }
+
+            if (!EsEmailValido(objUser.correo) || !EsEntradaSegura(objUser.clave))
+            {
+                ViewData["mensajeRegistro"] = "El correo electrónico contiene caracteres o formatos no permitidos por seguridad";
                 ViewData["isRegister"] = true;
                 objUser.clave = "";
                 objUser.confClave = "";
@@ -91,6 +126,14 @@ namespace Login.Controllers
             if (string.IsNullOrWhiteSpace(objUser.correo) || string.IsNullOrWhiteSpace(objUser.clave))
             {
                 ViewData["mensaje"] = "Por favor, ingresa tu correo y contraseña";
+                ViewData["isRegister"] = false;
+                objUser.clave = "";
+                return View(objUser);
+            }
+
+            if (!EsEmailValido(objUser.correo) || !EsEntradaSegura(objUser.clave))
+            {
+                ViewData["mensaje"] = "El correo o contraseña contiene caracteres o formatos no permitidos por seguridad";
                 ViewData["isRegister"] = false;
                 objUser.clave = "";
                 return View(objUser);
