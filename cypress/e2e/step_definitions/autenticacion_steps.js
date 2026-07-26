@@ -30,7 +30,8 @@ Given("conmuta al panel de Registro usando el botón de deslizamiento", () => {
 });
 
 When("llena el formulario de registro con correo {string}, clave {string} y confirmación diferente {string}", (correo, clave, confClave) => {
-  cy.get("#regCorreo").clear({ force: true }).type(correo, { force: true });
+  const correoDinamico = correo.includes("@") ? correo.replace("@", `_${Date.now()}@`) : correo;
+  cy.get("#regCorreo").clear({ force: true }).type(correoDinamico, { force: true });
   cy.get("#regClave").clear({ force: true }).type(clave, { force: true });
   cy.get("#regConfClave").clear({ force: true }).type(confClave, { force: true });
 });
