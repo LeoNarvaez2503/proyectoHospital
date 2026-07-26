@@ -171,8 +171,8 @@ jobs:
             /d:sonar.host.url="$SONAR_URL" \
             /d:sonar.token="$SONAR_TOKEN" \
             /d:sonar.cs.opencover.reportsPaths="$GITHUB_WORKSPACE/TestResults/coverage.opencover.xml" \
-            /d:sonar.exclusions="**/Migrations/**,**/obj/**,**/bin/**,**/*.Tests/**" \
-            /d:sonar.coverage.exclusions="**/*.Tests/**" \
+            /d:sonar.exclusions="**/Migrations/**,**/obj/**,**/bin/**,**/*.Tests/**,**/*.Designer.cs" \
+            /d:sonar.coverage.exclusions="**/*.Tests/**,**/Migrations/**" \
             /d:sonar.branch.name="${{ github.ref_name }}"
 
       - name: Build for SonarQube
