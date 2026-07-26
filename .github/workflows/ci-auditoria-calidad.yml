@@ -13,16 +13,33 @@ on:
 jobs:
   # ============================================================
   # JOB 1: BUILD & UNIT TESTS (xUnit + Coverlet)
+  # SQL Server se levanta como service container para los
+  # Integration Tests que necesitan BD real
   # ============================================================
   build-and-test:
     name: Build & xUnit Tests
     runs-on: ubuntu-latest
 
+    services:
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        env:
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Hospital123!CI"
+        ports:
+          - 1433:1433
+        options: >-
+          --health-cmd "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'Hospital123!CI' -C -Q 'SELECT 1'"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
+          --health-start-period 20s
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Requerido por SonarCloud para blame info
+          fetch-depth: 0
 
       - name: Setup .NET 8.0
         uses: actions/setup-dotnet@v4
@@ -37,39 +54,99 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Restore dependencies (Solution)
-        run: dotnet restore Login/Login.sln
+      # ---------------------------------------------------------
+      # Esperar que SQL Server esté listo y crear BDHospitalF
+      # ---------------------------------------------------------
+      - name: Wait for SQL Server to be ready
+        run: |
+          echo "Waiting for SQL Server..."
+          for i in {1..30}; do
+            /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -Q "SELECT 1" > /dev/null 2>&1 && echo "SQL Server ready!" && break
+            echo "Attempt $i/30 - not ready yet, waiting 5s..."
+            sleep 5
+          done
 
-      - name: Restore dependencies (Tests)
-        run: dotnet restore AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
+      - name: Initialize database (BDHospitalF)
+        run: |
+          # Crear la base de datos BDHospitalF (el test verifica este nombre)
+          /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -Q "
+            IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'BDHospitalF')
+            BEGIN CREATE DATABASE BDHospitalF END"
+          # Ejecutar el script de inicializacion de tablas y stored procedures
+          # (ajustando el nombre de BD para que coincida con BDHospitalF)
+          sed 's/BDHospital/BDHospitalF/g' Login/Login/init.sql > /tmp/init_ci.sql
+          /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -i /tmp/init_ci.sql || true
+          echo "Database initialized."
+
+      # ---------------------------------------------------------
+      # Configurar appsettings.json de CI para los tests
+      # (sobreescribe el placeholder con la cadena real del runner)
+      # ---------------------------------------------------------
+      - name: Write CI appsettings.json for tests
+        run: |
+          cat > AreadePruebas/ProyectoHospital.Tests/appsettings.json << 'EOF'
+          {
+            "ConnectionStrings": {
+              "cn": "Server=localhost,1433;Database=BDHospitalF;User Id=sa;Password=Hospital123!CI;TrustServerCertificate=True;"
+            }
+          }
+          EOF
+          echo "appsettings.json written for CI"
+
+      # ---------------------------------------------------------
+      # Build y Tests
+      # ---------------------------------------------------------
+      - name: Restore dependencies
+        run: |
+          dotnet restore Login/Login.sln
+          dotnet restore AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
 
       - name: Build solution
-        run: dotnet build Login/Login.sln --configuration Release --no-restore
+        run: |
+          dotnet build Login/Login.sln \
+            --configuration Release \
+            --no-restore \
+            /p:NoWarn="CS8618"
 
       - name: Run xUnit Tests with Coverage
         run: |
+          mkdir -p ${{ github.workspace }}/TestResults
           dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj \
             --configuration Release \
             --verbosity normal \
             --logger "trx;LogFileName=test-results.trx" \
-            --results-directory TestResults \
+            --results-directory "${{ github.workspace }}/TestResults" \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=opencover \
-            /p:CoverletOutput=TestResults/coverage.opencover.xml \
-            /p:Exclude="[*.Tests]*"
+            /p:CoverletOutput="${{ github.workspace }}/TestResults/coverage.opencover.xml" \
+            /p:Exclude="[*.Tests]*" \
+            /p:NoWarn="CS8618"
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: test-results
-          path: TestResults/
+          path: ${{ github.workspace }}/TestResults/
 
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: coverage-report
-          path: TestResults/coverage.opencover.xml
+          path: ${{ github.workspace }}/TestResults/coverage.opencover.xml
+
+      - name: Test Summary
+        if: always()
+        run: |
+          echo "## Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "| Suite | Estado |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          if [ -f "${{ github.workspace }}/TestResults/test-results.trx" ]; then
+            echo "| xUnit Tests | ✅ Archivo generado |" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "| xUnit Tests | ❌ No se generó el archivo |" >> $GITHUB_STEP_SUMMARY
+          fi
 
   # ============================================================
   # JOB 2: SONARCLOUD ANALYSIS
@@ -78,6 +155,21 @@ jobs:
     name: SonarCloud Analysis
     runs-on: ubuntu-latest
     needs: build-and-test
+
+    services:
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        env:
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Hospital123!CI"
+        ports:
+          - 1433:1433
+        options: >-
+          --health-cmd "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'Hospital123!CI' -C -Q 'SELECT 1'"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 12
+          --health-start-period 20s
 
     steps:
       - name: Checkout code
@@ -101,6 +193,28 @@ jobs:
       - name: Install SonarScanner for .NET
         run: dotnet tool install --global dotnet-sonarscanner
 
+      - name: Write CI appsettings.json for tests
+        run: |
+          cat > AreadePruebas/ProyectoHospital.Tests/appsettings.json << 'EOF'
+          {
+            "ConnectionStrings": {
+              "cn": "Server=localhost,1433;Database=BDHospitalF;User Id=sa;Password=Hospital123!CI;TrustServerCertificate=True;"
+            }
+          }
+          EOF
+
+      - name: Wait for SQL Server and init DB
+        run: |
+          for i in {1..30}; do
+            /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -Q "SELECT 1" > /dev/null 2>&1 && break
+            sleep 5
+          done
+          /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -Q "
+            IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'BDHospitalF')
+            BEGIN CREATE DATABASE BDHospitalF END"
+          sed 's/BDHospital/BDHospitalF/g' Login/Login/init.sql > /tmp/init_ci.sql
+          /opt/mssql-tools18/bin/sqlcmd -S localhost,1433 -U sa -P 'Hospital123!CI' -C -i /tmp/init_ci.sql || true
+
       - name: Restore dependencies
         run: |
           dotnet restore Login/Login.sln
@@ -115,21 +229,23 @@ jobs:
             /o:"${{ secrets.SONAR_ORGANIZATION }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
-            /d:sonar.cs.opencover.reportsPaths="TestResults/coverage.opencover.xml" \
+            /d:sonar.cs.opencover.reportsPaths="${{ github.workspace }}/TestResults/coverage.opencover.xml" \
             /d:sonar.exclusions="**/Migrations/**,**/obj/**,**/bin/**,**/*.Tests/**" \
             /d:sonar.coverage.exclusions="**/*.Tests/**" \
             /d:sonar.branch.name="${{ github.ref_name }}"
 
       - name: Build for SonarCloud
-        run: dotnet build Login/Login.sln --configuration Release
+        run: dotnet build Login/Login.sln --configuration Release /p:NoWarn="CS8618"
 
       - name: Run Tests for SonarCloud Coverage
         run: |
+          mkdir -p ${{ github.workspace }}/TestResults
           dotnet test AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj \
             --configuration Release \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=opencover \
-            /p:CoverletOutput=TestResults/coverage.opencover.xml
+            /p:CoverletOutput="${{ github.workspace }}/TestResults/coverage.opencover.xml" \
+            /p:NoWarn="CS8618"
 
       - name: SonarCloud End Analysis
         env:
