@@ -157,14 +157,18 @@ jobs:
           dotnet restore Login/Login.sln
           dotnet restore AreadePruebas/ProyectoHospital.Tests/ProyectoHospital.Tests.csproj
 
-      - name: SonarQube Begin Analysis
+      - name: SonarCloud Begin Analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
         run: |
+          SONAR_URL="${SONAR_HOST_URL:-https://sonarcloud.io}"
+          ORG="${SONAR_ORGANIZATION:-leonarvaez2503}"
           dotnet sonarscanner begin \
             /k:"proyectoHospital" \
-            /d:sonar.host.url="$SONAR_HOST_URL" \
+            /o:"$ORG" \
+            /d:sonar.host.url="$SONAR_URL" \
             /d:sonar.token="$SONAR_TOKEN" \
             /d:sonar.cs.opencover.reportsPaths="$GITHUB_WORKSPACE/TestResults/coverage.opencover.xml" \
             /d:sonar.exclusions="**/Migrations/**,**/obj/**,**/bin/**,**/*.Tests/**" \
