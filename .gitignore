@@ -31,9 +31,19 @@ AreadePruebas/CoverageReport/
 *.sln.docstates
 Thumbs.db
 .DS_Store
-
 # Archivos temporales de auditoría / pentesting
 cookies.txt
+cookies_admin.txt
 login.html
 sqlmap/
+scratch/
+node_modules/
+.~lock.*
+
+# Scripts y plantillas temporales
+AreadePruebas/generate_master_doc.py
+AreadePruebas/create_docx_plan.py
+generate_master_doc.py
+create_docx_plan.py
+SQA_Plan_Template.docx.txt
 

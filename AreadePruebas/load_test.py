@@ -9,14 +9,14 @@ BASE_URL = "http://localhost:5076"
 TOTAL_REQUESTS = 200  # 200 peticiones por escenario (1,200 inserciones en BD)
 CONCURRENCY = 50      # 50 Usuarios Virtuales Concurrentes (Estrés Alto)
 
-print("=" * 75)
-print("🔥 INICIANDO PRUEBA DE ESTRÉS EXTREMO Y RESILIENCIA SQA (HIGH STRESS TEST)")
-print(f"👥 Usuarios Virtuales Concurrentes (Virtual Users): {CONCURRENCY}")
-print(f"📊 Peticiones por Módulo: {TOTAL_REQUESTS} | Total Inserciones: {TOTAL_REQUESTS * 6}")
-print("=" * 75)
+print("=" * 80)
+print("INICIANDO PRUEBA DE ESTRÉS MASIVO Y RESILIENCIA SQA (EXTREME PERFORMANCE TEST)")
+print(f"Usuarios Virtuales Concurrentes (Virtual Users): {CONCURRENCY}")
+print(f"Peticiones por Módulo: {TOTAL_REQUESTS} | Total Inserciones Físicas: {TOTAL_REQUESTS * 6}")
+print("=" * 80)
 
 # 1. Autenticar usuario Admin para obtener Cookie de Sesión
-print("🔑 Autenticando Administrador en el servidor Kestrel...")
+print("Autenticando Administrador en el servidor Kestrel...")
 cookie_jar = http.cookiejar.CookieJar()
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookie_jar))
 
@@ -34,12 +34,12 @@ login_req = urllib.request.Request(
 
 try:
     with opener.open(login_req) as resp:
-        print(f"✅ Autenticación exitosa en servidor (Status: {resp.status})")
+        print(f"Autenticación exitosa en servidor (Status: {resp.status})")
 except Exception as e:
-    print(f"⚠️ Error durante login inicial: {e}")
+    print(f"Error durante login inicial: {e}")
 
 cookie_header = "; ".join([f"{cookie.name}={cookie.value}" for cookie in cookie_jar])
-print(f"🍪 Cookie de Sesión activa: {cookie_header[:40]}...\n")
+print(f"Cookie de Sesión activa: {cookie_header[:45]}...\n")
 
 TEST_SCENARIOS = [
     {
@@ -116,11 +116,20 @@ TEST_SCENARIOS = [
     }
 ]
 
+def get_percentile(sorted_data, percentile):
+    index = (percentile / 100) * (len(sorted_data) - 1)
+    lower = int(index)
+    upper = lower + 1
+    weight = index - lower
+    if upper >= len(sorted_data):
+        return sorted_data[-1]
+    return sorted_data[lower] * (1 - weight) + sorted_data[upper] * weight
+
 def execute_scenario(scenario):
-    print("=" * 75)
-    print(f"🔥 RÁFAGA DE ESTRÉS: {scenario['name']}")
-    print(f"🎯 50 HILOS CONCURRENTES SIMULTÁNEOS -> {scenario['url']}")
-    print("=" * 75)
+    print("=" * 80)
+    print(f"RÁFAGA DE ESTRÉS: {scenario['name']}")
+    print(f"50 HILOS CONCURRENTES SIMULTÁNEOS -> {scenario['url']}")
+    print("=" * 80)
 
     latencies = []
     statuses = []
@@ -166,16 +175,27 @@ def execute_scenario(scenario):
     successful = len([s for s in statuses if s in (200, 302)])
     failed = TOTAL_REQUESTS - successful
     rps = TOTAL_REQUESTS / total_duration
-    avg_latency = statistics.mean(latencies)
-    p95_latency = sorted(latencies)[int(0.95 * len(latencies))]
+    
+    sorted_lat = sorted(latencies)
+    min_lat = sorted_lat[0]
+    avg_lat = statistics.mean(latencies)
+    p50_lat = get_percentile(sorted_lat, 50)
+    p90_lat = get_percentile(sorted_lat, 90)
+    p95_lat = get_percentile(sorted_lat, 95)
+    p99_lat = get_percentile(sorted_lat, 99)
+    max_lat = sorted_lat[-1]
 
-    print(f"✅ Inserciones Exitosas en BD:        {successful} / {TOTAL_REQUESTS} ({successful/TOTAL_REQUESTS*100:.1f}%)")
-    print(f"❌ Peticiones Fallidas:               {failed}")
-    print(f"⏱️ Tiempo Total de Ráfaga:             {total_duration:.2f} segundos")
-    print(f"⚡ Throughput (Peticiones/segundo):    {rps:.2f} req/sec")
-    print(f"🚀 Latencia Promedio (Avg):           {avg_latency:.2f} ms")
-    print(f"📊 Latencia Percentil 95 (P95):       {p95_latency:.2f} ms")
-    print(f"📈 Latencia Máxima registrada:       {max(latencies):.2f} ms\n")
+    print(f"Concurrencia (VUs):               {CONCURRENCY} Usuarios Virtuales")
+    print(f"Peticiones Totales:              {TOTAL_REQUESTS}")
+    print(f"Éxito BD:                        {successful} / {TOTAL_REQUESTS} ({successful/TOTAL_REQUESTS*100:.1f}%)")
+    print(f"Throughput (RPS):                {rps:.2f} req/sec")
+    print(f"Latencia Mínima (Min):           {min_lat:.2f} ms")
+    print(f"Latencia Promedio (Avg):         {avg_lat:.2f} ms")
+    print(f"Latencia Percentil 50 (P50):     {p50_lat:.2f} ms")
+    print(f"Latencia Percentil 90 (P90):     {p90_lat:.2f} ms")
+    print(f"Latencia Percentil 95 (P95):     {p95_lat:.2f} ms")
+    print(f"Latencia Percentil 99 (P99):     {p99_lat:.2f} ms")
+    print(f"Latencia Máxima (Max):           {max_lat:.2f} ms\n")
 
 if __name__ == "__main__":
     for scenario in TEST_SCENARIOS:
