@@ -31,3 +31,6 @@ AreadePruebas/CoverageReport/
 *.sln.docstates
 Thumbs.db
 .DS_Store
+.create_docx_plan.py
+.generate_master_doc.py
+
