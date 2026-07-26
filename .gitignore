@@ -11,6 +11,8 @@ obj/
 appsettings.Development.json
 appsettings.Production.json
 appsettings.json
+# Excepción: el appsettings.json del proyecto de tests es un placeholder de CI (sin secretos reales)
+!AreadePruebas/ProyectoHospital.Tests/appsettings.json
 .env
 
 # Archivos temporales de SonarQube y SonarLint
