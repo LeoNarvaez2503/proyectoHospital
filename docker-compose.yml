@@ -3,7 +3,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "Hospital123!"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
     ports:
       - "1433:1433"
     volumes:
@@ -16,10 +16,13 @@ services:
     ports:
       - "5076:5076"
     environment:
-      ConnectionStrings__cn: "Server=sqlserver;Database=BDHospital;User Id=sa;Password=Hospital123!;TrustServerCertificate=True;"
+      ConnectionStrings__cn: "Server=sqlserver;Database=BDHospital;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;"
       ASPNETCORE_ENVIRONMENT: Development
     depends_on:
       - sqlserver
+    volumes:
+      - app-keys:/app/keys
 
 volumes:
   sqlserver-data:
+  app-keys:

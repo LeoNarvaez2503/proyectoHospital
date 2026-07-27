@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Medicos";
 }
 
@@ -17,7 +17,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
-                <form id="frmOperaciones">
+                <form id="frmOperaciones">@Html.AntiForgeryToken()
                     <div class="mb-3">
                         <label for="id" class="form-label">ID</label>
                         <input type="text" class="form-control" name="id" id="id" value="0" readonly>
@@ -35,11 +35,11 @@
 
                     <div class="mb-3">
                         <label for="especialidadId" class="form-label">ID Especialidad</label>
-                        <input type="text" class="form-control" name="especialidadId" id="especialidadId">
+                        <select name="especialidadId" id="especialidadId" class="form-select"></select>
                     </div>
 
                     <div class="mb-3">
-                        <label for="telefono" class="form-label">Teléfono</label>
+                        <label for="telefono" class="form-label">Tel�fono</label>
                         <input type="text" class="form-control" name="telefono" id="telefono">
                     </div>
 

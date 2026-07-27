@@ -1,4 +1,4 @@
-﻿namespace Login.Models
+namespace Login.Models
 {
     public class Usuario
     {

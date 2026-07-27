@@ -1,11 +1,11 @@
-﻿window.onload = function () {
+window.onload = function () {
     listarTratamientos();
 }
 async function listarTratamientos() {
     pintar({
         url: "Tratamientos/ListarTratamientos",
-        cabeceras: ["ID Tratamiento", "Id Paciente", "Descripcion", "fecha", "costo"],
-        propiedades: ["id", "pacienteId", "descripcion", "fecha", "costo"],
+        cabeceras: ["ID Tratamiento", "Paciente", "Descripcion", "fecha", "costo"],
+        propiedades: ["id", "pacienteNombre", "descripcion", "fecha", "costo"],
         editar: true,
         eliminar: true,
         propiedadId: "id"
@@ -42,14 +42,21 @@ function Editar(id) {
     }
     else {
         limpiarForm();
+        cargarForaneas("Pacientes", "pacienteId");
         setN("id", id);
     }
 
 }
 
 function Eliminar(id) {
-    fetchGet("Tratamientos/EliminarTratamiento/?id=" + id, "json", function (data) {
-        confirmacion(undefined, "¿Seguro desea eliminar?", function (resp) {
+    confirmacion(undefined, "¿Seguro desea eliminar?", function (resp) {
+        let tokenElement = document.getElementsByName("__RequestVerificationToken")[0];
+        let token = tokenElement ? tokenElement.value : "";
+        let frm = new FormData();
+        frm.append("id", id);
+        frm.append("__RequestVerificationToken", token);
+
+        fetchPost("Tratamientos/EliminarTratamiento", "json", frm, function (data) {
             if (data == -1) {
                 ErrorA("No se puede eliminar, por dependencia con otras tablas");
                 return;

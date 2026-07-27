@@ -20,7 +20,9 @@ function limpiarDatos(idFormulario) {
     let elementos = document.querySelectorAll("#" + idFormulario + " [name]");
     console.log(elementos);
     for (let i = 0; i < elementos.length; i++) {
-        elementos[i].value = "";
+        if (elementos[i].name !== "__RequestVerificationToken") {
+            elementos[i].value = "";
+        }
     }
 }
 async function fetchGet(url, tipoRespuesta, callback) {
@@ -54,8 +56,8 @@ async function cargarForaneas(tabla, id) {
         select.innerHTML = "";
         for (let clave of data) {
             let foranea = document.createElement("option");
-            foranea.value = clave;
-            foranea.textContent = clave;
+            foranea.value = clave.id;
+            foranea.textContent = clave.descripcion;
             select.appendChild(foranea);
         }
     });

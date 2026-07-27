@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +31,8 @@ namespace CapaDatos
                             citas.idMedico = dr.IsDBNull(2) ? -1 : dr.GetInt32(2);
                             citas.fecha = dr.GetDateTime(3);
                             citas.estado = dr.IsDBNull(4) ? "" : dr.GetString(4);
+                            citas.PacienteNombre = dr.FieldCount > 5 && !dr.IsDBNull(5) ? dr.GetString(5) : "";
+                            citas.MedicoNombre = dr.FieldCount > 6 && !dr.IsDBNull(6) ? dr.GetString(6) : "";
                             lista.Add(citas);
                         }
                     }
@@ -158,6 +160,8 @@ namespace CapaDatos
                             citas.idMedico = dr.IsDBNull(2) ? -1 : dr.GetInt32(2);
                             citas.fecha = dr.IsDBNull(3) ? System.DateTime.MinValue : dr.GetDateTime(3);
                             citas.estado = dr.IsDBNull(4) ? "" : dr.GetString(4);
+                            citas.PacienteNombre = dr.FieldCount > 5 && !dr.IsDBNull(5) ? dr.GetString(5) : "";
+                            citas.MedicoNombre = dr.FieldCount > 6 && !dr.IsDBNull(6) ? dr.GetString(6) : "";
                             lista.Add(citas);
                         }
                     }
@@ -172,3 +176,4 @@ namespace CapaDatos
 
     }
 }
+

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Login.Models;
 using CapaDatos;
 using CapaEntidad;
+using CapaEntidad;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Login.Controllers;
 
@@ -30,6 +32,7 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    [Authorize]
     public List<CitasCLS> ListarCitas()
     {
         CitasDAL objCitasDAL = new CitasDAL();

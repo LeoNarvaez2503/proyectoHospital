@@ -1,7 +1,7 @@
-ï»¿using CapaEntidad;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,7 +71,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     factura = null;
-                    throw new Exception("Error al recuperar facturaciÃ³n: " + e.Message);
+                    throw new Exception("Error al recuperar facturación: " + e.Message);
                 }
                 return factura;
             }
@@ -98,7 +98,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     return -1;
-                    throw new Exception("Error al guardar facturaciÃ³n: " + e.Message);
+                    throw new Exception("Error al guardar facturación: " + e.Message);
                 }
             }
         }
@@ -120,7 +120,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     return -1;
-                    throw new Exception("Error al eliminar facturaciÃ³n: " + e.Message);
+                    throw new Exception("Error al eliminar facturación: " + e.Message);
                 }
                 return 1;
             }
@@ -164,3 +164,4 @@ namespace CapaDatos
         }
     }
 }
+

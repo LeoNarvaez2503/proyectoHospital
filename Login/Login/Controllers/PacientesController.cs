@@ -1,4 +1,4 @@
-﻿using CapaEntidad;
+using CapaEntidad;
 using CapaNegocio;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +19,22 @@ namespace Login.Controllers
             return objPacientesBL.ListarPacientes();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public int GuardarPaciente(PacienteCLS objPacienteCLS)
         {
+            if (!ModelState.IsValid)
+            {
+                return -1;
+            }
             PacientesBL objPacientesBL = new PacientesBL();
             return objPacientesBL.GuardarPaciente(objPacienteCLS);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public int EliminarPaciente(int id)
         {
             PacientesBL objPacientesBL = new PacientesBL();

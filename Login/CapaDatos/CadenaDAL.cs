@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +15,7 @@ namespace CapaDatos
         public CadenaDAL()
         {
             IConfigurationBuilder cfg = new ConfigurationBuilder();
-            cfg.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"));
+            cfg.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"), optional: true, reloadOnChange: true);
             cfg.AddEnvironmentVariables();
             var root = cfg.Build();
             cadenaDato = root.GetConnectionString("cn");

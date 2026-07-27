@@ -1,7 +1,7 @@
-ï»¿using CapaEntidad;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,13 +32,14 @@ namespace CapaDatos
                             medico.EspecialidadId = dr.IsDBNull(3) ? -1 : dr.GetInt32(3);
                             medico.Telefono = dr.IsDBNull(4) ? "" : dr.GetString(4);
                             medico.Email = dr.IsDBNull(5) ? "" : dr.GetString(5);
+                            medico.EspecialidadNombre = dr.FieldCount > 6 && !dr.IsDBNull(6) ? dr.GetString(6) : "";
                             lista.Add(medico);
                         }
                     }
                 }
                 catch (Exception e)
                 {
-                    throw new Exception("Error al listar mÃ©dicos: " + e.Message);
+                    throw new Exception("Error al listar médicos: " + e.Message);
                 }
                 return lista;
             }
@@ -73,7 +74,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     medico = null;
-                    throw new Exception("Error al recuperar mÃ©dico: " + e.Message);
+                    throw new Exception("Error al recuperar médico: " + e.Message);
                 }
                 return medico;
             }
@@ -101,7 +102,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     return -1;
-                    throw new Exception("Error al guardar mÃ©dico: " + e.Message);
+                    throw new Exception("Error al guardar médico: " + e.Message);
                 }
             }
         }
@@ -123,7 +124,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     return -1;
-                    throw new Exception("Error al eliminar mÃ©dico: " + e.Message);
+                    throw new Exception("Error al eliminar médico: " + e.Message);
                 }
                 return 1;
             }
@@ -156,16 +157,18 @@ namespace CapaDatos
                             medico.EspecialidadId = dr.IsDBNull(3) ? -1 : dr.GetInt32(3);
                             medico.Telefono = dr.IsDBNull(4) ? "" : dr.GetString(4);
                             medico.Email = dr.IsDBNull(5) ? "" : dr.GetString(5);
+                            medico.EspecialidadNombre = dr.FieldCount > 6 && !dr.IsDBNull(6) ? dr.GetString(6) : "";
                             lista.Add(medico);
                         }
                     }
                 }
                 catch (Exception e)
                 {
-                    throw new Exception("Error al filtrar mÃ©dicos: " + e.Message);
+                    throw new Exception("Error al filtrar médicos: " + e.Message);
                 }
                 return lista;
             }
         }
     }
 }
+

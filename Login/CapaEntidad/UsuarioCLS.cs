@@ -1,4 +1,4 @@
-﻿namespace CapaEntidad
+namespace CapaEntidad
 {
     public class UsuarioCLS
     {

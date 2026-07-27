@@ -1,6 +1,6 @@
-ï»¿using System;
+using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using CapaEntidad;
 
 namespace CapaDatos
@@ -66,7 +66,7 @@ namespace CapaDatos
                                 idUsuario = reader.GetInt32(0);
                                 rol = reader.GetString(1);
                                 respuesta = true;
-                                mensaje = "Inicio de sesiÃ³n exitoso";
+                                mensaje = "Inicio de sesión exitoso";
                             }
                            
                         }
@@ -75,7 +75,7 @@ namespace CapaDatos
                 catch (Exception e)
                 {
                     respuesta = false;
-                    mensaje = "Usuario o contraseÃ±a incorrecta";
+                    mensaje = "Usuario o contraseña incorrecta";
                 }
             }
 

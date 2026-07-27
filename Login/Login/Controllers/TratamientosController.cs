@@ -1,4 +1,4 @@
-﻿using CapaEntidad;
+using CapaEntidad;
 using CapaNegocio;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +19,20 @@ namespace Login.Controllers
             return objTratamientosBL.ListarTratamientos();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public int GuardarTratamiento(TratamientosCLS objTratamientoCLS)
         {
+            if (!ModelState.IsValid)
+            {
+                return -1;
+            }
             TratamientosBL objTratamientosBL = new TratamientosBL();
             return objTratamientosBL.GuardarTratamiento(objTratamientoCLS);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public int EliminarTratamiento(int id)
         {
             TratamientosBL objTratamientosBL = new TratamientosBL();

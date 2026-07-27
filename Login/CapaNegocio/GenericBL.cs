@@ -1,4 +1,5 @@
-﻿using CapaDatos;
+using CapaDatos;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace CapaNegocio
 {
     public class GenericBL
     {
-        public List<int> obtenerClaves(string tabla)
+        public List<ForaneaCLS> obtenerClaves(string tabla)
         {
             GenericDAL objGenericDAL = new GenericDAL();
             return objGenericDAL.ObtenerClaves(tabla);

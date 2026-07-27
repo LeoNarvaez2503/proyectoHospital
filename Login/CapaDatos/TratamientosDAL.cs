@@ -1,7 +1,7 @@
-﻿using CapaEntidad;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +31,7 @@ namespace CapaDatos
                             tratamiento.Descripcion = dr.IsDBNull(2) ? "" : dr.GetString(2);
                             tratamiento.Fecha = dr.GetDateTime(3);
                             tratamiento.Costo = dr.IsDBNull(4) ? 0 : dr.GetDecimal(4);
+                            tratamiento.PacienteNombre = dr.FieldCount > 5 && !dr.IsDBNull(5) ? dr.GetString(5) : "";
                             lista.Add(tratamiento);
                         }
                     }
@@ -150,6 +151,7 @@ namespace CapaDatos
                             tratamiento.Descripcion = dr.IsDBNull(2) ? "" : dr.GetString(2);
                             tratamiento.Fecha = dr.IsDBNull(3) ? System.DateTime.MinValue : dr.GetDateTime(3);
                             tratamiento.Costo = dr.IsDBNull(4) ? 0 : dr.GetDecimal(4);
+                            tratamiento.PacienteNombre = dr.FieldCount > 5 && !dr.IsDBNull(5) ? dr.GetString(5) : "";
                             lista.Add(tratamiento);
                         }
                     }
@@ -163,3 +165,4 @@ namespace CapaDatos
         }
     }
 }
+

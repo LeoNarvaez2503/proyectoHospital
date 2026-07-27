@@ -1,12 +1,12 @@
-﻿window.onload = function () {
+window.onload = function () {
     listarCitas();
 }
 
 async function listarCitas() {
     pintar({
         url: "Citas/ListarCitas",
-        cabeceras: ["ID Cita", "Paciente ID", "Medico ID", "Fecha", "Estado"],
-        propiedades: ["idCita", "idPaciente", "idMedico", "fecha", "estado"],
+        cabeceras: ["ID Cita", "Paciente", "Medico", "Fecha", "Estado"],
+        propiedades: ["idCita", "pacienteNombre", "medicoNombre", "fecha", "estado"],
         editar: true,
         eliminar: true,
         propiedadId: "idCita"
@@ -52,7 +52,7 @@ function Editar(id) {
 
 function Eliminar(id) {
     fetchGet("Citas/EliminarCita/?id=" + id, "json", function (data) {
-        confirmacion(undefined, "¿Seguro desea eliminar?", function (resp) {
+        confirmacion(undefined, "�Seguro desea eliminar?", function (resp) {
             limpiarForm();
             Exito();
         });

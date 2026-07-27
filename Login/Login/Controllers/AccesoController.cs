@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using CapaEntidad;
 using CapaDatos;
 using Microsoft.AspNetCore.Authentication;
@@ -24,6 +24,7 @@ namespace Login.Controllers
         }
         public IActionResult Denegado()
         {
+            ViewData["mensaje"] = "Acceso Denegado. No tienes permisos suficientes para realizar esta acción.";
             return View();
         }
 
@@ -31,6 +32,11 @@ namespace Login.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Registrar(UsuarioCLS objUser)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
             if (objUser.clave != objUser.confClave)
             {
                 ViewData["mensaje"] = "Las contraseñas no coinciden";
@@ -54,7 +60,7 @@ namespace Login.Controllers
 
         }
 
-        private string Encriptar(string cadena)
+        private static string Encriptar(string cadena)
         {
             StringBuilder builder = new StringBuilder();
             using (SHA256 sha256Hash = SHA256.Create())
@@ -69,6 +75,11 @@ namespace Login.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(UsuarioCLS objUser)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
             objUser.clave = Encriptar(objUser.clave);
             string mensaje;
             int idUsuario;

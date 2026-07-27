@@ -1,0 +1,407 @@
+Issue Key,Severity,Type,Component/File,Line,Rule,Message,Effort/Technical Debt
+283db3c9-7b8e-49b5-9693-1c3b6826120d,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,32,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7b365aa1-c77d-4ffa-8f2d-09d922426055,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,32,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+dfc33d3c-1b2e-4d13-873f-be0fd2e4074b,MAJOR,VULNERABILITY,Login/CapaDatos/GenericDAL.cs,32,csharpsquid:S2077,Use a parameterized query instead of string formatting.,20min
+553505ec-6c36-47fd-9838-48e7bd243b4f,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,35,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b5a29508-2e09-4f02-ba67-60334a64c30c,MINOR,VULNERABILITY,Dockerfile,16,docker:S6471,"This image runs with ""root"" or ""containerAdministrator"" as the default user. Make sure it is safe here.",15min
+b5c6111d-1484-416c-98d8-dcda1d7bcb7a,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,9,external_roslyn:CS0618,'SqlConnectionStringBuilder' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+21a9094d-775f-4a58-82fc-e04f59e3a8ac,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+89d54575-b0f0-4efa-a673-98146b1ce522,MAJOR,VULNERABILITY,Login/Login/Data/DatabaseInitializer.cs,21,csharpsquid:S2077,Use a parameterized query instead of string formatting.,20min
+3189d309-a2c7-4e94-b37a-07299876837d,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,36,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+72f4f99a-854b-4875-837d-1b1c0624ccbe,INFO,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,53,external_roslyn:CA1861,Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array,0min
+62a7b686-e5c6-4fe5-ab05-8eab79a00d2e,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,55,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+6e96e155-a7b9-4e80-876a-c848c8e41a15,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,62,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+834257ad-090f-4606-9a7e-cc42e039fd88,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,78,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a84d9563-67fc-4bfe-8b83-3e2efdda6606,MAJOR,CODE_SMELL,Login/Login/Data/DatabaseInitializer.cs,83,external_roslyn:CS0618,'SqlException' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a815efec-cdc5-4c54-bb11-74882725acce,BLOCKER,VULNERABILITY,docker-compose.yml,19,secrets:S6703,Make sure this database password gets changed and removed from the code.,30min
+3a1150fd-be90-4259-bed7-206f98fa9f75,MAJOR,BUG,Login/Login/Views/Home/Index.cshtml,4,Web:PageWithoutTitleCheck,Add a <title> tag to this page.,5min
+7d3f5050-45b7-4418-b58e-4690dc20acf0,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,23,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+d15bd068-40ab-4fae-85bc-551204a2c75f,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,24,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+f7ea396a-04b4-454f-81d3-c50df5200d1e,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,32,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+401e2184-cf8b-4dd5-ab90-0527efd1d06c,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,33,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+402d4dbd-c72f-4612-a1e2-61fdb0406faf,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,41,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+6ac539b2-b05a-4dbd-b225-63e1d4dde781,MAJOR,CODE_SMELL,Login/Login/Views/Home/Index.cshtml,42,Web:S6819,Use <img> instead of the presentation role to ensure accessibility across all devices.,5min
+3d58ab26-ba55-4249-b88a-ea5d97e622f4,MAJOR,CODE_SMELL,Login/Login/Views/Shared/_Layout.cshtml,37,external_roslyn:CS8602,Dereference of a possibly null reference.,0min
+8fdff650-5b56-4e05-aa50-07629eed8837,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,113,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+eae0fdcf-636a-43a9-b110-671521c72e12,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,113,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+03e7e9c9-9255-4274-a1d8-dd295137a79c,MINOR,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,23,csharpsquid:S2325,Make 'EliminarCita' a static method.,5min
+7d07bf5b-1ed4-43c3-9e92-a0791fe41cda,INFO,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,23,external_roslyn:CA1822,Member 'EliminarCita' does not access instance data and can be marked as static,0min
+8dbb2fb4-cb3a-41d2-825a-4937f7bc5de7,MINOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,10,csharpsquid:S101,"Rename class 'GenericDAL' to match pascal case naming rules, consider using 'GenericDal'.",5min
+4acb9bae-26a6-4450-91e6-9fb779d58133,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,26,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+ba79e146-aa9b-406c-be36-06a0c71f16c2,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,26,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+4c1fa229-246a-42fe-851f-eb82d5ed61ac,MAJOR,CODE_SMELL,Login/CapaDatos/GenericDAL.cs,46,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+36dd3c1d-0ad4-45f1-9349-6e8e96ff5641,MINOR,CODE_SMELL,Login/CapaNegocio/GenericBL.cs,12,csharpsquid:S2325,Make 'obtenerClaves' a static method.,5min
+f7a7bc00-00d0-4832-98c9-858288f7aff9,INFO,CODE_SMELL,Login/CapaNegocio/GenericBL.cs,12,external_roslyn:CA1822,Member 'obtenerClaves' does not access instance data and can be marked as static,0min
+23fe36da-25cd-4a18-8062-6ddc0d7f533f,MINOR,BUG,Login/Login/Views/Citas/Citas.cshtml,8,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+3621aeca-d8a6-4516-b3bb-b775932e9899,MAJOR,CODE_SMELL,Login/Login/Views/Citas/Citas.cshtml,8,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+2328bcf5-9626-404f-8dba-c7cba704e549,MAJOR,CODE_SMELL,Login/Login/Views/Especialidades/Index.cshtml,7,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+a7824e75-16f4-410a-8a8a-4e538abbd631,MINOR,BUG,Login/Login/Views/Especialidades/Index.cshtml,7,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+30c01649-bfac-4dd8-b092-2c0a0bc63cd3,MAJOR,CODE_SMELL,Login/Login/Views/Facturacion/Index.cshtml,7,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+730facca-c261-4b72-96dc-b703e9cdd32e,MINOR,BUG,Login/Login/Views/Facturacion/Index.cshtml,7,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+44b7ad55-2ec6-4431-8699-a2b7953eeff7,MAJOR,CODE_SMELL,Login/Login/Views/Medicos/Index.cshtml,7,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+e908878e-6f93-481e-a4bf-ace4a6a12614,MINOR,BUG,Login/Login/Views/Medicos/Index.cshtml,7,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+ab123c0f-8947-42de-91ff-e15d52566853,MAJOR,CODE_SMELL,Login/Login/Views/Pacientes/Index.cshtml,7,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+aceb2d0b-44f0-452c-a03e-34d9ff125348,MINOR,BUG,Login/Login/Views/Pacientes/Index.cshtml,7,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+0f078e4d-e929-4517-b7f8-946ed79b9a1e,MAJOR,CODE_SMELL,Login/Login/Views/Tratamientos/Index.cshtml,7,Web:S6848,"Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",5min
+8de46352-231e-41c4-96f3-408dd19d0e89,MINOR,BUG,Login/Login/Views/Tratamientos/Index.cshtml,7,Web:MouseEventWithoutKeyboardEquivalentCheck,Add a 'onKeyPress|onKeyDown|onKeyUp' attribute to this <i> tag.,5min
+0859801d-d3ff-46fd-86d5-8f54af448359,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,121,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+9b4e2ab8-b538-45f6-832c-f33ac6bf2a76,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,121,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+0dd86c23-839b-4d3e-a820-f1000b1b59ed,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,125,javascript:S4138,Expected a `for-of` loop instead of a `for` loop with this simple iteration.,5min
+409f4bd3-55bd-4cfa-9078-30dbb80c6058,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,132,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+8f15a64a-fbaa-4ecb-a80f-6be05e207a9b,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,132,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+0243c35d-5153-4695-ad21-290066679a77,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,62,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fe38bf6c-f568-460c-a96e-588c2e2c558f,MAJOR,CODE_SMELL,Login/CapaEntidad/UsuarioCLS.cs,9,external_roslyn:CS8618,Non-nullable property 'rol' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+f9c301f5-55a6-499e-bf32-179415994e32,MINOR,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,16,csharpsquid:S4136,All 'Login' method overloads should be adjacent.,1min
+7f8159ab-2233-4c48-8454-e53d9daabb35,CRITICAL,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,68,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+8eab1a89-77a3-450e-9af9-3b109eebc317,MINOR,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,21,csharpsquid:S4136,All 'Registrar' method overloads should be adjacent.,1min
+6a1f91f6-1f34-48d6-9674-d2453d5c5864,MAJOR,BUG,Login/Login/Views/Acceso/Registrar.cshtml,4,Web:PageWithoutTitleCheck,Add a <title> tag to this page.,5min
+c068b083-aadc-4081-a3ad-d2537eca40a5,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,87,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fc4fa63d-86bc-49aa-a51c-1155e2e09faf,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,87,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+8024953e-ee45-494e-9b51-dac8b62ad16e,CRITICAL,CODE_SMELL,Login/Login/Controllers/CitasController.cs,27,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+9e1ae4e6-ad03-45dd-a516-8c74174515ee,CRITICAL,CODE_SMELL,Login/Login/Controllers/CitasController.cs,33,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+32f0c33f-c794-4854-8b12-ec2982a9b7a6,MAJOR,BUG,Login/Login/Views/Acceso/Login.cshtml,4,Web:PageWithoutTitleCheck,Add a <title> tag to this page.,5min
+bed17741-f030-4594-b318-9a622e209217,MINOR,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,18,csharpsquid:S2325,Make 'GuardarCita' a static method.,5min
+eb070eec-02e2-4d2c-a27b-ce4a73dc79c7,INFO,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,18,external_roslyn:CA1822,Member 'GuardarCita' does not access instance data and can be marked as static,0min
+19bcedc5-f762-4dbb-940e-c7bffe877068,MINOR,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,28,csharpsquid:S2325,Make 'RecuperarCitas' a static method.,5min
+5405687d-f8c5-448d-98f0-2ba1b52f426b,INFO,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,28,external_roslyn:CA1822,Member 'RecuperarCitas' does not access instance data and can be marked as static,0min
+070be0e0-b4a6-4615-a827-324a8138bd29,MINOR,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,33,csharpsquid:S2325,Make 'FiltrarCitas' a static method.,5min
+8d2084fd-5959-43e6-8f3c-c58756709211,INFO,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,33,external_roslyn:CA1822,Member 'FiltrarCitas' does not access instance data and can be marked as static,0min
+5919b966-6201-4f08-b37d-57f17598d8b3,INFO,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,13,external_roslyn:CA1822,Member 'ListarEspecialidades' does not access instance data and can be marked as static,0min
+594972e9-1f2a-4cba-9dd1-866ce5ba2df9,MINOR,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,13,csharpsquid:S2325,Make 'ListarEspecialidades' a static method.,5min
+049cabe4-a99d-46a8-857a-cf495fea2891,INFO,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,19,external_roslyn:CA1822,Member 'GuardarEspecialidad' does not access instance data and can be marked as static,0min
+411be1ce-f78a-47cf-a70e-6a9b6199f8f8,MINOR,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,19,csharpsquid:S2325,Make 'GuardarEspecialidad' a static method.,5min
+325a11e2-ef88-4ded-a51f-9540aea63aac,MINOR,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,25,csharpsquid:S2325,Make 'EliminarEspecialidad' a static method.,5min
+98a2dd2d-4c4b-4c35-bff4-062c530f13bd,INFO,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,25,external_roslyn:CA1822,Member 'EliminarEspecialidad' does not access instance data and can be marked as static,0min
+2f117036-fc83-44ad-b7f4-ff1106f398c1,INFO,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,31,external_roslyn:CA1822,Member 'RecuperarEspecialidad' does not access instance data and can be marked as static,0min
+d8f847a7-7782-491c-991f-e69308fd87e5,MINOR,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,31,csharpsquid:S2325,Make 'RecuperarEspecialidad' a static method.,5min
+211c377e-6421-4b09-a5ac-8321edbadbdb,INFO,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,37,external_roslyn:CA1822,Member 'FiltrarEspecialidades' does not access instance data and can be marked as static,0min
+99f26cde-379a-43db-be32-618d2b78f523,MINOR,CODE_SMELL,Login/CapaNegocio/EspecialidadesBL.cs,37,csharpsquid:S2325,Make 'FiltrarEspecialidades' a static method.,5min
+0eb0b0d1-2e5a-4335-a31f-cdc6fbeffc88,MINOR,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,13,csharpsquid:S2325,Make 'ListarFacturaciones' a static method.,5min
+a2871815-4984-489a-a3be-3fa8a19c5482,INFO,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,13,external_roslyn:CA1822,Member 'ListarFacturaciones' does not access instance data and can be marked as static,0min
+c4e2ac9d-5874-4741-bef8-f604b85b9fa9,INFO,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,19,external_roslyn:CA1822,Member 'GuardarFacturacion' does not access instance data and can be marked as static,0min
+d43eaa4c-7070-4749-8920-622e70d03b8e,MINOR,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,19,csharpsquid:S2325,Make 'GuardarFacturacion' a static method.,5min
+1bb67905-ddcc-46d5-b4ce-bc2f33429e53,INFO,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,25,external_roslyn:CA1822,Member 'EliminarFacturacion' does not access instance data and can be marked as static,0min
+429cb482-d8be-437f-8d53-c4fb1b88fc71,MINOR,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,25,csharpsquid:S2325,Make 'EliminarFacturacion' a static method.,5min
+0d1ac129-ab49-4212-bdb9-138ca7b533ec,INFO,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,31,external_roslyn:CA1822,Member 'RecuperarFacturacion' does not access instance data and can be marked as static,0min
+0db0fe20-06b3-446a-815b-5c92c2e0d794,MINOR,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,31,csharpsquid:S2325,Make 'RecuperarFacturacion' a static method.,5min
+0b818827-60e5-4423-b0c0-d3264edb99e4,INFO,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,37,external_roslyn:CA1822,Member 'FiltrarFacturaciones' does not access instance data and can be marked as static,0min
+f23661f5-d467-4c3b-a18b-050f2c3fa372,MINOR,CODE_SMELL,Login/CapaNegocio/FacturacionBL.cs,37,csharpsquid:S2325,Make 'FiltrarFacturaciones' a static method.,5min
+6677c322-0f1a-4990-9ac8-560e75f967e4,INFO,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,13,external_roslyn:CA1822,Member 'ListarMedicos' does not access instance data and can be marked as static,0min
+c8dee8d3-539e-4307-87e1-c0fd552e1175,MINOR,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,13,csharpsquid:S2325,Make 'ListarMedicos' a static method.,5min
+65f5c224-1585-4073-9a0f-5687d2aa8796,INFO,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,19,external_roslyn:CA1822,Member 'GuardarMedico' does not access instance data and can be marked as static,0min
+8bbbb8e4-308e-4938-8229-cc56089357d2,MINOR,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,19,csharpsquid:S2325,Make 'GuardarMedico' a static method.,5min
+08c2c2ff-8552-4a2a-8ba6-f7f5432cf97e,MINOR,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,25,csharpsquid:S2325,Make 'EliminarMedico' a static method.,5min
+9983e6c7-c947-4a79-acbc-39aa360b0856,INFO,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,25,external_roslyn:CA1822,Member 'EliminarMedico' does not access instance data and can be marked as static,0min
+09af87a4-a868-49cc-9583-d19bd2493b3e,MINOR,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,31,csharpsquid:S2325,Make 'RecuperarMedico' a static method.,5min
+6d1029b1-bd55-4930-b589-92b004e78465,INFO,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,31,external_roslyn:CA1822,Member 'RecuperarMedico' does not access instance data and can be marked as static,0min
+98e735ca-76b8-4e99-8d6f-c0e2dcf2aeb5,INFO,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,37,external_roslyn:CA1822,Member 'FiltrarMedicos' does not access instance data and can be marked as static,0min
+b9a9825a-04cf-497e-a73d-8948d2f5c5a9,MINOR,CODE_SMELL,Login/CapaNegocio/MedicosBL.cs,37,csharpsquid:S2325,Make 'FiltrarMedicos' a static method.,5min
+05f69b40-f501-42a3-81eb-e0d49d93823a,INFO,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,13,external_roslyn:CA1822,Member 'ListarPacientes' does not access instance data and can be marked as static,0min
+5ea61891-f6a6-4074-9e37-6cbcb789174c,MINOR,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,13,csharpsquid:S2325,Make 'ListarPacientes' a static method.,5min
+03950c8c-6b7f-43d0-be4a-245a37788899,INFO,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,19,external_roslyn:CA1822,Member 'GuardarPaciente' does not access instance data and can be marked as static,0min
+6f932c3d-23fe-48e5-95cb-e16d79217676,MINOR,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,19,csharpsquid:S2325,Make 'GuardarPaciente' a static method.,5min
+05e3e98c-8693-4835-bf73-301d5a7eada6,INFO,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,25,external_roslyn:CA1822,Member 'EliminarPaciente' does not access instance data and can be marked as static,0min
+529d276b-bdfa-433f-9de6-acb64b445df3,MINOR,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,25,csharpsquid:S2325,Make 'EliminarPaciente' a static method.,5min
+5bc073fb-9eaf-4c89-97a1-2235a81a1917,INFO,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,31,external_roslyn:CA1822,Member 'RecuperarPaciente' does not access instance data and can be marked as static,0min
+fcb221e2-bca1-411a-b07d-89e2a8ded42d,MINOR,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,31,csharpsquid:S2325,Make 'RecuperarPaciente' a static method.,5min
+3057d47d-b6bb-4e01-9c47-8a8aa2f742f2,INFO,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,37,external_roslyn:CA1822,Member 'FiltrarPacientes' does not access instance data and can be marked as static,0min
+d16cbde5-79e3-42a4-9c77-aa7886330e4b,MINOR,CODE_SMELL,Login/CapaNegocio/PacientesBL.cs,37,csharpsquid:S2325,Make 'FiltrarPacientes' a static method.,5min
+bf0d4e63-acf9-46af-a395-ef4eb2e9ea5b,MINOR,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,13,csharpsquid:S2325,Make 'ListarTratamientos' a static method.,5min
+d53526ae-4118-44a4-a121-616f877c5ff2,INFO,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,13,external_roslyn:CA1822,Member 'ListarTratamientos' does not access instance data and can be marked as static,0min
+19c467db-e337-4467-9e1a-96fadd4e2ed1,MINOR,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,19,csharpsquid:S2325,Make 'GuardarTratamiento' a static method.,5min
+985e284c-46c8-4ace-aed5-69963a4323a8,INFO,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,19,external_roslyn:CA1822,Member 'GuardarTratamiento' does not access instance data and can be marked as static,0min
+312a43ed-41b3-4553-befd-23f1fa4605bc,INFO,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,25,external_roslyn:CA1822,Member 'EliminarTratamiento' does not access instance data and can be marked as static,0min
+93aae356-5d4d-4d45-abff-9dcb0f87de23,MINOR,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,25,csharpsquid:S2325,Make 'EliminarTratamiento' a static method.,5min
+3ec6ba3b-9d96-46c7-8c3e-73cb552ad219,MINOR,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,31,csharpsquid:S2325,Make 'RecuperarTratamiento' a static method.,5min
+7664de27-3f2c-41fe-b8f5-f8c62b9f14be,INFO,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,31,external_roslyn:CA1822,Member 'RecuperarTratamiento' does not access instance data and can be marked as static,0min
+379178f3-cfd7-4053-8bed-68dc1e4b9371,MINOR,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,37,csharpsquid:S2325,Make 'FiltrarTratamientos' a static method.,5min
+980d2f26-6004-4b31-8b54-511c5173e7f7,INFO,CODE_SMELL,Login/CapaNegocio/TratamientosBL.cs,37,external_roslyn:CA1822,Member 'FiltrarTratamientos' does not access instance data and can be marked as static,0min
+8efe15ae-2558-44f7-9aac-68ea6a56afd2,CRITICAL,CODE_SMELL,Login/Login/Controllers/CitasController.cs,21,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+a8b90e98-9578-4884-b9e1-b8e4c0f1b05a,CRITICAL,CODE_SMELL,Login/Login/Controllers/CitasController.cs,39,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+754ecfbd-7d0f-45dd-aa9e-f5fee64fa717,CRITICAL,CODE_SMELL,Login/Login/Controllers/EspecialidadesController.cs,21,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+e4578b96-0d5e-461b-b3b3-dd0a83374513,CRITICAL,CODE_SMELL,Login/Login/Controllers/EspecialidadesController.cs,27,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+ba73d9b6-f655-49fd-904e-644bdb661936,CRITICAL,CODE_SMELL,Login/Login/Controllers/EspecialidadesController.cs,33,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+fae7a740-2bc8-4cd2-b884-7095b5ecb13a,CRITICAL,CODE_SMELL,Login/Login/Controllers/EspecialidadesController.cs,39,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+b63d344f-9fdf-49b4-9ae1-dd2691076231,CRITICAL,CODE_SMELL,Login/Login/Controllers/FacturacionController.cs,21,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+ebd04cb1-b227-4a25-8e34-bb79e0f72620,CRITICAL,CODE_SMELL,Login/Login/Controllers/FacturacionController.cs,27,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+3369b0a4-2700-45a0-bf61-527a6520b88c,CRITICAL,CODE_SMELL,Login/Login/Controllers/FacturacionController.cs,33,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+48b7ca1a-b576-48fd-91c4-80222a1c8e39,CRITICAL,CODE_SMELL,Login/Login/Controllers/FacturacionController.cs,39,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+e2da38a3-a69e-4c89-9e5a-57e1c5a9c58f,CRITICAL,CODE_SMELL,Login/Login/Controllers/MedicosController.cs,22,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+559c6400-6412-4355-ad5f-554aae862836,CRITICAL,CODE_SMELL,Login/Login/Controllers/MedicosController.cs,28,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+abc1a8c3-d2dd-4c59-9b28-4a5e68033ce9,CRITICAL,CODE_SMELL,Login/Login/Controllers/MedicosController.cs,34,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+9dc90ebc-49d0-4763-86a5-8f17201c0408,CRITICAL,CODE_SMELL,Login/Login/Controllers/MedicosController.cs,40,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+c67acad5-cde3-4175-b162-1bc34a882baa,CRITICAL,CODE_SMELL,Login/Login/Controllers/PacientesController.cs,22,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+f0f83462-9872-4f6c-9898-d2c26facae38,CRITICAL,CODE_SMELL,Login/Login/Controllers/PacientesController.cs,28,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+04e5d4c5-1713-4b18-8817-3be59a6fa87c,CRITICAL,CODE_SMELL,Login/Login/Controllers/PacientesController.cs,34,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+fcfa698d-893a-4f23-9871-05f65447d38b,CRITICAL,CODE_SMELL,Login/Login/Controllers/PacientesController.cs,40,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+f3ec8acc-3b97-43c6-9f98-b81dbb0453ad,CRITICAL,CODE_SMELL,Login/Login/Controllers/TratamientosController.cs,22,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+daea4343-1f2c-46b1-9e50-2f6626eafb99,CRITICAL,CODE_SMELL,Login/Login/Controllers/TratamientosController.cs,28,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+58fd6ebb-6fa3-4e9c-8316-3ff97a4732b8,CRITICAL,CODE_SMELL,Login/Login/Controllers/TratamientosController.cs,34,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+192bf945-4d29-49d2-bb98-4e73fbd3cd60,CRITICAL,CODE_SMELL,Login/Login/Controllers/TratamientosController.cs,40,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+1984e95e-4451-4bb2-8145-68cdb6ec5eeb,MINOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,11,csharpsquid:S101,"Rename class 'EspecialidadesDAL' to match pascal case naming rules, consider using 'EspecialidadesDal'.",5min
+7b92b9eb-445e-4de9-a695-f5cac19d262b,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+b3b7410e-c6d1-4ef8-a2b3-a38faa64b434,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+c4e15086-4f97-4cca-a8c3-168e64788a71,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+14b52112-e40f-43c1-ae51-b14fc62bcd59,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b563a2f0-2c0e-4fd0-a475-029b1bbdee5f,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+cceb4c94-9657-4a06-a49c-7432cfa0f2be,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+3d502e54-88a2-4a3a-bff3-d190c8a9a369,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,37,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+5b40a478-8419-4b42-a581-14fdd8de9552,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,44,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+1184d0cf-4266-4830-af1c-662834f5f7e6,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,45,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b0e37d22-48e3-4f91-9f1f-2b22de079b02,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,45,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+552874e6-2d04-4b0b-abd6-82ef8ab6f79a,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,50,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+8f5392c8-4eef-4ff7-9bee-d7d53d53cf93,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,50,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+0ee9eea5-c325-4886-ad31-75a18e63beea,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,55,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+08af94f8-8fa4-48bf-ad3d-5254c94b779c,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,67,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+f974c25d-8754-43ed-87f9-1f44bcf97408,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,67,csharpsquid:S1854,Remove this useless assignment to local variable 'especialidad'.,1min
+a40e2865-78f5-4da6-acc1-2b1f98d5a024,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,68,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+5d7a032d-c268-4439-9c3b-52657d6dba12,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,70,external_roslyn:CS8603,Possible null reference return.,0min
+c52ef809-2541-4690-8262-85b27f829622,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,75,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f3d22684-3d77-489a-91a2-2f57aa7a899e,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,75,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+36689c77-a3b5-4e06-8ae3-127574561885,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,80,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a8b5e14c-dfa3-41bb-b759-77c9847fd20d,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,80,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+6a7c78bc-af2d-4bee-9118-5c15f72d3afa,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,92,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+15620caf-c538-45de-825e-9cc898da7cf4,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,98,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5a5e04ea-0b4a-4c95-b866-231507237c2e,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,98,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+222cbba1-d176-4e28-b6e4-e0ce874f816e,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,103,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+51bb95c2-8e39-4539-9bfc-212e0d43ba77,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,103,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5b07d4fd-f061-4ca1-9b7a-2b60da6ef24b,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,113,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+d627490e-63fd-4160-b8f8-d8735c39d34f,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,120,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+647d29e1-dc3c-46f1-aa20-c3ec19f1ae6d,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,121,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7acf6f65-86ce-44c4-b0b9-2c19c3ce7a1c,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,121,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+626d789d-6109-4ad5-a4d1-a2d2abbd3c91,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,126,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+e1c66217-1875-43c6-adc4-106a8cba25c2,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,126,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+22809412-6c97-4b82-a933-44d44f7f85f0,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,131,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+cd91cc88-c67c-4e02-8bd2-5d4882cf59ad,MAJOR,CODE_SMELL,Login/CapaDatos/EspecialidadesDAL.cs,144,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+873db077-698b-42a4-b8d0-db989f609b01,MINOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,11,csharpsquid:S101,"Rename class 'FacturacionDAL' to match pascal case naming rules, consider using 'FacturacionDal'.",5min
+b456fd8f-bc1b-41b5-8c7e-8453a7c7894e,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+cbb73841-ba2a-426e-9de0-3490e50369ec,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+d736ab03-3aa4-4c1f-8f23-5d7766fa989c,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+6e2f56cd-4d4f-4d05-b8f5-bfc34f732a2e,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+701f8c2c-a2a6-4467-8888-db554afe9ab4,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5a952d73-ad9c-42e0-b9de-20c4b2a56e60,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+28a51b71-699f-4e4d-a0a0-0708bcaa2076,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,40,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+7547b570-651c-4c45-9ab6-cfd92eb1d32a,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,47,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+5c4bcbd5-a387-406c-ba53-d8471b1732e3,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+6805c69a-6c80-44f3-9124-a609fe682b40,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+36cf51a5-1ac1-4ae4-be84-422a07f55013,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7669084a-03a5-4f47-ab39-24639e747031,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+9f394c67-f10c-4e3b-9fb4-a95959c3a48b,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,58,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+41283272-058e-4191-88ee-104c4a949303,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,73,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+bf590e56-150d-41c9-8e30-e0db6978af1b,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,73,csharpsquid:S1854,Remove this useless assignment to local variable 'factura'.,1min
+81a3678a-e655-44cb-8dea-952cc63cf5b9,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,74,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+4eee92a1-ba59-413a-b82a-f13890e099ea,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,76,external_roslyn:CS8603,Possible null reference return.,0min
+23ed7ee6-7bcb-4e1a-bcca-f5d09a001b19,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,81,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+52e477ca-ecaa-43ed-86ec-6203a7113cc2,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,81,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+57b707ca-88e9-4ec4-8d66-89b6fa9c8f06,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,86,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fa784b40-b487-44c7-a7c7-4c5ac0e4a9bc,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,86,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+14d25585-265b-418e-a89d-c3f006d73a7b,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,101,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+67ebb857-277c-4299-8184-06287afd8e00,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,107,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+d4a1de34-7e56-4ab0-9e54-d09a6d17112e,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,107,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+42b90c7d-a230-44da-b48f-60f6177585aa,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,112,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+af136979-1256-413e-967d-d5d2e4ebb014,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,112,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+ca37216c-4f02-4ed2-8d1c-3976d4220c5e,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,123,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+a2e56aa4-c8de-4d6f-9aa6-b1f16b7eb6d8,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,130,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+a45eeecc-7846-45dc-9ab4-91a86d6a9e72,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,131,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b06af13f-d876-4a69-b063-e66b48ce5033,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,131,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+56a567e8-29be-45eb-b23c-3c276c9f6ea9,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,136,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a00df307-4424-4859-83a2-bc7bfdc48747,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,136,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+586c1d45-f0dc-4e80-b157-10dab214bf71,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,144,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7e03cee8-cea6-447f-b5c2-3dd664a35c96,MAJOR,CODE_SMELL,Login/CapaDatos/FacturacionDAL.cs,160,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+42566478-e6e9-4c9a-82b1-f0bdf7bd4479,MINOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,11,csharpsquid:S101,"Rename class 'MedicosDAL' to match pascal case naming rules, consider using 'MedicosDal'.",5min
+b102b2e6-97e6-4fd4-abec-8d15c7725d01,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+2f958f14-4a21-4ced-b0ad-dfcfc5bcce1e,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a58120ed-30eb-47d9-a09e-ab3bfe8ce184,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5c4a78fd-18b9-4fab-a88c-2bd7b60fe7c2,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+9fa24b74-adf3-4ed3-9c0a-b6152baff9bd,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+22bd363d-9099-4b5b-88aa-3a7cece6be5d,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+ac0a4035-65e6-4f73-b99e-b16b7ce603b8,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,41,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+aa26dbae-b5d1-4842-aa88-746eb15f3a8f,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,48,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+36129b56-2210-473a-bd99-f91337f9958d,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,49,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fa74ec2d-7ce9-423f-b238-806085471d43,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,49,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5118f6e4-2bef-4e26-b6af-22cf12381df5,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,54,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b6ff5afc-1b05-4135-8585-933a0206d18f,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,54,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+239c0417-570c-4a35-821b-e300b389d48f,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,59,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+4000a34b-f09e-462a-b4bd-db653e087aab,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,75,csharpsquid:S1854,Remove this useless assignment to local variable 'medico'.,1min
+7a072261-6674-4e6e-b8fc-6d1608916002,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,75,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+5b422a01-358d-4e66-ad72-c0c7501988c2,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,76,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+e139748c-3ed4-41fe-a1aa-8cb2cab1e2c8,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,78,external_roslyn:CS8603,Possible null reference return.,0min
+642b0b65-f836-4aeb-b92b-c0ac8d81f147,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,83,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+6b0f99cf-26e5-4467-9b44-942b9728e8bf,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,83,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+2877aadd-f4c9-4b98-9bda-9fa21f62594d,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,88,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7b9997e4-94f2-423f-8303-7d649cd5a507,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,88,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+af05149b-f290-4cff-a82e-2aa6daa73980,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,104,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+cad573c9-2179-47d7-92c4-917fe354473f,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,110,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+e0dfa38c-e4ba-4e55-83fb-459e97639efe,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,110,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+04f402d5-bba5-4652-b628-45bb2e3e3bfa,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,115,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+80485de4-f1fc-468e-b5b5-8ee7a86a2bf8,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,115,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+1596626f-ba0e-4246-a065-87574e9f9a03,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,126,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+03cc2fca-80f4-412d-b51b-272ca4192836,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,133,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+28100b33-13bf-43ca-b318-1faaa211113a,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,134,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a75bee17-3298-4594-ab05-fbf47b3c78a1,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,134,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+27616520-f6fb-4daa-b46d-4c365ec8e8fd,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,139,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+d5bea7e3-c567-4d7d-bb75-36ce6748af5e,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,139,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b7f850b4-5ad7-4c5f-a57c-d334dfba0d4d,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,148,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b2a31421-5c47-48b2-8016-83cb20a1942a,MAJOR,CODE_SMELL,Login/CapaDatos/MedicosDAL.cs,165,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+35a61bf0-267c-4fca-9421-c8161128fa98,MINOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,11,csharpsquid:S101,"Rename class 'PacienteDAL' to match pascal case naming rules, consider using 'PacienteDal'.",5min
+3e277663-eee2-4b56-a3dc-8990587594ec,MINOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,11,csharpsquid:S101,"Rename class 'TratamientosDAL' to match pascal case naming rules, consider using 'TratamientosDal'.",5min
+db02bb5a-bbc2-49cc-b72e-7ae7bd2695fc,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+16affa42-d834-4b33-90a6-bd9b76c2bc41,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+8c58454a-f12b-412c-9390-cafa964b29aa,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+285e1ca6-59bd-491e-8c92-fc433ebf1a98,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+54061f1b-7a3c-4c40-819b-007f0f27f2bd,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+55a6f54a-4033-4114-8c7f-6112079cb8fa,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+544a26df-5248-4795-898d-bb108cf01405,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,40,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+3363ff8e-541b-4356-bf08-1b302dc9c293,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,47,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+19f80564-5b1f-42e9-8124-f4fd55d460a4,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+c89a2d55-f4fc-4e8e-bfec-fc0237c8ebc0,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f33e488c-d7c4-49a6-96ee-5515b516a62d,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fc9a7f95-501d-4193-b74a-8de1188bf82f,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+cccf83b8-1403-4a3f-a980-e15a4756bd3c,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,58,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+578e58bc-94bc-4ef2-b5cf-817269fc7e97,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,73,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+891582b8-df41-4c0d-838c-f4a8182f6d81,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,73,csharpsquid:S1854,Remove this useless assignment to local variable 'tratamiento'.,1min
+b1e8d588-9607-41f5-873d-4f47ff0b4608,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,74,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+b69865fa-1636-49a4-ac9e-6144e83e10d4,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,76,external_roslyn:CS8603,Possible null reference return.,0min
+5cdca9a0-ddfc-4450-ad72-c3123f0416be,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,81,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7ab1872f-c739-4097-9b1c-d9c904d8cc14,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,81,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+20992d58-0bc1-45bd-b573-090ac1b96a22,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,86,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+2367374a-163c-4cc5-866a-1b0480dda2d6,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,86,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+71cb9dd3-8cae-47d8-bfd1-ac70256ab964,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,101,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+2cae7b1f-1b8f-4474-88cf-73aef8adebc2,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,107,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f6b258bb-4dcd-4653-82cf-a3efb458940c,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,107,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+59613776-58a5-4622-9936-0b256ed2efeb,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,112,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+80cd6524-d119-468e-9797-592dd7e56849,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,112,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+05338ff2-14b4-4743-b533-1ceab11a6eac,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,123,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+befbbb2f-9441-4ac8-baba-9257f4ddeee5,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,130,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+7d1639da-53db-45ed-822e-5ddb3189e0c7,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,131,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f3443ab1-064e-409a-bff3-4d90c5d15030,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,131,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+2d1848ce-c79e-409b-9e49-5268411a607b,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,136,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+749c9741-25c0-45b0-9b09-46f6ba3adbaa,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,136,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+e012ed7b-9cbe-4cf9-8d69-c3999c26a2c1,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,143,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+3b5158de-038e-42c6-bb37-916920b35e1b,MAJOR,CODE_SMELL,Login/CapaDatos/TratamientosDAL.cs,159,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+4cd047d7-0d3f-4615-b694-b6bda1f3c58c,MINOR,CODE_SMELL,Login/CapaEntidad/EspecialidadesCLS.cs,9,csharpsquid:S101,"Rename class 'EspecialidadesCLS' to match pascal case naming rules, consider using 'EspecialidadesCls'.",5min
+b22193ec-3e2e-4355-b03b-e455d43a7e9f,MAJOR,CODE_SMELL,Login/CapaEntidad/EspecialidadesCLS.cs,12,external_roslyn:CS8618,Non-nullable property 'Nombre' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+a4a2e5ad-4822-441d-90dd-1b6074a9b34b,MINOR,CODE_SMELL,Login/CapaEntidad/FacturacionCLS.cs,9,csharpsquid:S101,"Rename class 'FacturacionCLS' to match pascal case naming rules, consider using 'FacturacionCls'.",5min
+0f3c0987-539c-440c-a720-b662e3b338cd,MAJOR,CODE_SMELL,Login/CapaEntidad/FacturacionCLS.cs,14,external_roslyn:CS8618,Non-nullable property 'MetodoPago' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+2590633b-f96c-411f-8105-5f0dc5488185,MINOR,CODE_SMELL,Login/CapaEntidad/MedicosCLS.cs,9,csharpsquid:S101,"Rename class 'MedicosCLS' to match pascal case naming rules, consider using 'MedicosCls'.",5min
+b3191daa-d5e7-40a4-ac22-c6d197b0cf61,MAJOR,CODE_SMELL,Login/CapaEntidad/MedicosCLS.cs,12,external_roslyn:CS8618,Non-nullable property 'Nombre' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+f198f1de-0f2c-41aa-a234-9f204301a98c,MAJOR,CODE_SMELL,Login/CapaEntidad/MedicosCLS.cs,13,external_roslyn:CS8618,Non-nullable property 'Apellido' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+d376bc0d-fb4d-4639-9530-d2700e99c073,MAJOR,CODE_SMELL,Login/CapaEntidad/MedicosCLS.cs,15,external_roslyn:CS8618,Non-nullable property 'Telefono' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+80aa2180-f55c-406b-b9be-ddf1ee7f5582,MAJOR,CODE_SMELL,Login/CapaEntidad/MedicosCLS.cs,16,external_roslyn:CS8618,Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+f92d005a-85c8-4115-bc26-45dff352aa54,MINOR,CODE_SMELL,Login/CapaEntidad/TratamientosCLS.cs,9,csharpsquid:S101,"Rename class 'TratamientosCLS' to match pascal case naming rules, consider using 'TratamientosCls'.",5min
+3537049e-8da4-4377-a839-8995993e03ef,MAJOR,CODE_SMELL,Login/CapaEntidad/TratamientosCLS.cs,13,external_roslyn:CS8618,Non-nullable property 'Descripcion' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+2694a393-eed2-40d7-b093-43be08919f96,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,40,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+29d2b6df-d437-4909-929d-b60aa23a7105,MINOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,40,csharpsquid:S1192,Define a constant instead of using this literal 'Error al listar citas: ' 4 times.,4min
+07a14d5a-bc8a-4394-a883-6be87141a5a3,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,47,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+d66a4f4f-0db9-4e07-9191-f33b1848825f,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fd031ebd-c002-43ee-bef8-7117c4bce08a,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,48,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+46eddbfd-d217-4188-b9e6-4784cb6fc588,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b1675c0c-9de5-4687-9ea2-debaaa99a507,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,53,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+ae5e473c-d843-4f97-8172-f8b636e35ab4,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,58,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+9672f5e4-5d92-4ac1-bdf1-bf01548cddbc,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,74,csharpsquid:S1854,Remove this useless assignment to local variable 'cita'.,1min
+c3f67aab-21c4-4d39-ad17-257e20b6c014,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,74,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+1996e8f8-8924-45db-8e40-a6ba91b54fe8,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,75,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+06df8679-4953-4a1f-b7fc-176241de5ad9,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,82,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+2e384cd9-7982-4cb2-88a9-710a6ee39667,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,82,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+0ff0cee0-35f3-4c6d-8a8b-b282e0a25d17,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,100,external_roslyn:CS0168,The variable 'e' is declared but never used,0min
+98445a7a-9a9e-4b71-ad17-ed4bf1d734bf,MINOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,100,csharpsquid:S1481,Remove the unused local variable 'e'.,5min
+00ce2331-279f-4457-b7a6-7c432e6672c8,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,108,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+48da0d46-7321-4f38-83df-585654245f00,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,108,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+15b40634-0861-4e64-9662-8c9f939a5ac1,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,125,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+94585159-7325-4d7b-83a0-a1e1029a0634,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,132,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+26af1136-9166-4554-aa6d-a982860c3cd7,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,133,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+e92b79f9-9a60-4b0c-bd3d-7f4e173663d4,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,133,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+82abb1f8-a01f-4da2-93ee-f3d03cc7b33c,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,144,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+dd455f23-84db-42e3-b58e-f2e15cf84488,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,144,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+fd14516d-a93f-420a-8f06-9d771a27bd9c,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,151,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f5980932-3d4c-4828-a268-2c9e58597cf2,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+88b5e794-3f01-4a38-bf1d-9de08e8c9be5,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b18ddae9-371f-4389-8e19-e570e3fc7feb,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7b5d8eb0-42e1-4925-93e6-fbf3274a4f00,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b7936f8e-4197-4329-bf8c-6ec75d6f737e,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+141f417b-3373-4589-ab94-57e70e9fc37c,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a978e9ac-6b19-4423-b1fa-edd74ad0d544,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,42,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+f3f10bdd-17ac-43d2-8716-0ffffb539db9,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,49,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+50175f9a-999a-4119-9f74-f4bc2a15961f,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,50,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+52437f66-e4bb-4b60-b0c1-6bac7d02c81d,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,50,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+39739c41-e45e-43c3-bae7-8e2b9d60fb50,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,55,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f180ab53-e65d-4f67-a741-033f78e8798a,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,55,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+168cdca0-e9dd-498c-b13c-919348a859a2,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,60,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+42cba7f2-ca44-4ff5-9fc3-019b2911da7b,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,77,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+c8172500-80f1-4117-a0b2-b1d747b66179,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,77,csharpsquid:S1854,Remove this useless assignment to local variable 'paciente'.,1min
+eee32d03-f326-4457-98af-7a5cc99a1d72,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,78,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+6fe92c71-04bd-44c7-ab4f-2fa2c76be221,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,80,external_roslyn:CS8603,Possible null reference return.,0min
+002ba02a-61bb-4393-86e2-e894281010f8,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,85,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+85a80085-8fb9-4656-ab86-4adef41d8aa8,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,85,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+07a34448-9506-4b2e-a10c-1e3bafa9016e,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,90,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+8f66c919-61a1-49a5-badd-2687dfecb4e8,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,90,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+0eb8ccd6-c1a5-4bca-bfed-baa23d147c52,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,107,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+74cdb2de-de92-4b73-9204-7b6a330c0562,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,113,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f484d221-b21d-4c9f-ad2a-d02c75e4cd55,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,113,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+1462b488-de7d-424e-853f-e8a7b17fbb31,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,118,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+4bac43ad-1cd6-4513-9124-30d3c389236c,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,118,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+1c281ef9-d4c2-4d93-9a80-36b3840756a4,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,129,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+bd8e71da-22c5-4f04-8b59-d0ca91884dbe,CRITICAL,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,134,csharpsquid:S3776,Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.,6min
+d188003c-211a-497e-aacc-bb15da78d14f,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,136,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+3dce67d2-67ef-4493-b205-6cdc94af4ae7,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,137,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+b082d0e5-c1ee-4b2c-8622-eb84991d6df7,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,137,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+37c7da7e-b961-4c4c-a222-ab949e65b90e,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,142,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+96f1815d-472a-4725-904c-85abc0469d72,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,142,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f2d759e1-8d43-4f66-a09a-37f2edc4d59e,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,152,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f57f4afe-5b72-4614-91ef-2b23588cc816,MAJOR,CODE_SMELL,Login/CapaDatos/PacienteDAL.cs,170,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+59b33c02-4600-4014-9d92-1535e855dd47,MINOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,9,csharpsquid:S101,"Rename class 'PacienteCLS' to match pascal case naming rules, consider using 'PacienteCls'.",5min
+3bd473f6-954e-4e33-9c51-4c77ac2bd7fa,MAJOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,12,external_roslyn:CS8618,Non-nullable property 'Nombre' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+378c8984-691e-4ec9-acf5-a8750d66193d,MAJOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,13,external_roslyn:CS8618,Non-nullable property 'Apellido' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+96510336-16aa-4910-9100-5cfb84593f37,MAJOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,15,external_roslyn:CS8618,Non-nullable property 'Telefono' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+86af641f-c4c3-4de0-bfec-131bcabfca95,MAJOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,16,external_roslyn:CS8618,Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+a83d9508-1c79-4c99-a9cf-cb8411cd6fbe,MAJOR,CODE_SMELL,Login/CapaEntidad/PacienteCLS.cs,17,external_roslyn:CS8618,Non-nullable property 'Direccion' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+40ff716d-a21c-4ed6-85b9-da140b234546,MINOR,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,13,csharpsquid:S2325,Make 'ListarCitas' a static method.,5min
+d77d3ad5-d08b-4674-8bca-e983f987e926,INFO,CODE_SMELL,Login/CapaNegocio/CitasBL.cs,13,external_roslyn:CA1822,Member 'ListarCitas' does not access instance data and can be marked as static,0min
+0d477f2c-d561-4372-ad7f-2d92613e1739,MINOR,VULNERABILITY,Login/Login/Views/Shared/_Layout.cshtml,11,Web:S5725,"Add integrity and crossorigin=""anonymous"" attributes to this element to enforce integrity checks.",5min
+1451c8af-15f1-4db0-a8c2-603a1b593bb4,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,127,javascript:S4138,Expected a `for-of` loop instead of a `for` loop with this simple iteration.,5min
+2c99a569-32fd-45ce-8b5f-760055b72f76,MINOR,CODE_SMELL,Login/CapaDatos/CadenaDAL.cs,12,csharpsquid:S101,"Rename class 'CadenaDAL' to match pascal case naming rules, consider using 'CadenaDal'.",5min
+473095a3-5eaf-468c-9b26-f91311ba179e,MAJOR,CODE_SMELL,Login/CapaDatos/CadenaDAL.cs,15,external_roslyn:CS8618,Non-nullable property 'cadenaDato' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+52b13e85-7939-4b9b-ab01-b4d391ec4829,INFO,CODE_SMELL,Login/CapaDatos/CadenaDAL.cs,17,external_roslyn:CA1859,Change type of variable 'cfg' from 'Microsoft.Extensions.Configuration.IConfigurationBuilder' to 'Microsoft.Extensions.Configuration.ConfigurationBuilder' for improved performance,0min
+26135193-0741-4cf2-b70b-97b9820e64b3,MAJOR,CODE_SMELL,Login/CapaDatos/CadenaDAL.cs,21,external_roslyn:CS8601,Possible null reference assignment.,0min
+df559b00-e325-4c78-bb20-102411ca7334,MINOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,11,csharpsquid:S101,"Rename class 'CitasDAL' to match pascal case naming rules, consider using 'CitasDal'.",5min
+c77de7d3-38af-4776-8c1e-4eda4d911997,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,15,external_roslyn:CS8600,Converting null literal or possible null value to non-nullable type.,0min
+9cc6988d-68df-4c15-9e98-9192abbde9f1,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a12ed070-d1dc-4684-8d81-fdec5bd00588,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,16,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a423d561-def9-411f-8775-5bbd8547a8a0,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+e66e344f-abd7-44c4-8336-a461265ec56a,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,21,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+2cb52d4c-d231-4a53-a754-b2b2abc915ca,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,24,external_roslyn:CS0618,'SqlDataReader' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+7ceb11d9-9759-4f56-bb7e-fa10d54f5405,MAJOR,CODE_SMELL,Login/CapaDatos/CitasDAL.cs,167,csharpsquid:S112,'System.Exception' should not be thrown by user code.,20min
+7f69070c-13bb-4302-8070-edb70050c2d0,MINOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,8,csharpsquid:S101,"Rename class 'UsuarioDAL' to match pascal case naming rules, consider using 'UsuarioDal'.",5min
+89e03a4b-1d79-4ac8-90ea-0b3b0d2eba76,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,15,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+d08a6727-29a4-43c7-9093-ea20edc5fd6d,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,15,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+3ac5c0ad-dbfc-4c6c-8c87-9ba014517665,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,20,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+f94248a1-161e-4c3f-a36f-33f918a03120,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,20,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+db8850e8-fd3a-4eb2-9663-5fdeed3e2352,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,32,external_roslyn:CS8601,Possible null reference assignment.,0min
+760e7504-3b0a-4be7-bd7a-44cf2b5054fb,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,50,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+a3bd3fa0-d143-4732-8790-db74356fb54c,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,50,external_roslyn:CS0618,'SqlConnection' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+24e42ca9-bcc7-4d74-8794-7aedc4633e8b,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,55,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+55a22032-5135-4440-af13-2e44632a2d19,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,55,external_roslyn:CS0618,'SqlCommand' is obsolete: 'Use the Microsoft.Data.SqlClient package instead.',0min
+5df3fb12-d331-47bd-b14b-96281aac244e,MINOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,75,csharpsquid:S1481,Remove the unused local variable 'e'.,5min
+f05eaa0a-ee32-46c0-bba5-b2c9e6f2b52f,MAJOR,CODE_SMELL,Login/CapaDatos/UsuarioDAL.cs,75,external_roslyn:CS0168,The variable 'e' is declared but never used,0min
+5de563fc-c9a3-48c5-a6a0-8bb3787c58fb,MINOR,CODE_SMELL,Login/CapaEntidad/CitasCLS.cs,9,csharpsquid:S101,"Rename class 'CitasCLS' to match pascal case naming rules, consider using 'CitasCls'.",5min
+377c4486-7cd6-4865-bf6b-0b228d49f0e7,MAJOR,CODE_SMELL,Login/CapaEntidad/CitasCLS.cs,15,external_roslyn:CS8618,Non-nullable property 'estado' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+ae121d6a-bc7d-42e3-92d5-82d9c6d48496,MINOR,CODE_SMELL,Login/CapaEntidad/UsuarioCLS.cs,3,csharpsquid:S101,"Rename class 'UsuarioCLS' to match pascal case naming rules, consider using 'UsuarioCls'.",5min
+bb704b04-7090-493f-b676-6a47a6d0ad39,MAJOR,CODE_SMELL,Login/CapaEntidad/UsuarioCLS.cs,6,external_roslyn:CS8618,Non-nullable property 'correo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+d218d07d-1eaf-4ff7-957f-85b53b42f33e,MAJOR,CODE_SMELL,Login/CapaEntidad/UsuarioCLS.cs,7,external_roslyn:CS8618,Non-nullable property 'clave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+d3c50e77-4413-417e-88b1-8c48e5bef4cb,MAJOR,CODE_SMELL,Login/CapaEntidad/UsuarioCLS.cs,8,external_roslyn:CS8618,Non-nullable property 'confClave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+441461bd-aee9-45da-9d35-adc3cebdaa1d,MINOR,CODE_SMELL,Login/CapaNegocio/UsuarioBL.cs,3,csharpsquid:S2094,"Remove this empty class, write its code or make it an ""interface"".",5min
+cccd9fa2-5bf7-4b99-a62f-43040cc3f6a0,CRITICAL,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,31,csharpsquid:S6967,ModelState.IsValid should be checked in controller actions.,5min
+26725b6a-69d2-4088-a8b3-bc4271227e01,MINOR,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,56,csharpsquid:S2325,Make 'Encriptar' a static method.,5min
+83c43c14-5376-4ea4-b33c-1e298ddfe102,INFO,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,56,external_roslyn:CA1822,Member 'Encriptar' does not access instance data and can be marked as static,0min
+0a4b1b35-cffd-4df1-960e-6b0c072f02d4,INFO,CODE_SMELL,Login/Login/Controllers/AccesoController.cs,61,external_roslyn:CA1850,Prefer static 'System.Security.Cryptography.SHA256.HashData' method over 'ComputeHash',0min
+cc047c1a-df3f-47f3-a5d3-2e4f410a3183,CRITICAL,CODE_SMELL,Login/Login/Controllers/HomeController.cs,11,csharpsquid:S4487,Remove this unread private field '_logger' or refactor the code to use its value.,5min
+8080af0c-31af-402a-8033-555539964f0e,MAJOR,CODE_SMELL,Login/Login/Models/Usuario.cs,6,external_roslyn:CS8618,Non-nullable property 'correo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+7e761260-2823-475e-aeb2-aec2cc2106e6,MAJOR,CODE_SMELL,Login/Login/Models/Usuario.cs,7,external_roslyn:CS8618,Non-nullable property 'clave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+f21e0851-92cd-4754-8738-38e3c9456b18,MAJOR,CODE_SMELL,Login/Login/Models/Usuario.cs,9,external_roslyn:CS8618,Non-nullable property 'confClave' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.,0min
+4b5d6ebd-b801-4a20-aeb3-e8ac165d71ce,MAJOR,CODE_SMELL,Login/Login/Program.cs,37,csharpsquid:S6966,Await RunAsync instead.,5min
+62357e69-979f-4602-ba16-522a8bfa54f2,MAJOR,CODE_SMELL,Login/Login/wwwroot/css/site.css,15,css:S4666,"Duplicate selector ""html"", first used at line 1",1min
+5639884e-85cb-4d5e-8282-327ff43c8d74,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,22,javascript:S4138,Expected a `for-of` loop instead of a `for` loop with this simple iteration.,5min
+2cd78467-47fb-4c41-9528-a9d8670e4c30,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,134,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+e747f11c-e436-495d-8294-5060747cd1d9,MINOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,143,javascript:S1125,Refactor the code to avoid using this boolean literal.,5min
+3d8258ac-f8e7-435c-b377-17da5970fd94,MAJOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,207,javascript:S1788,Default parameters should be last.,20min
+dcfbfd13-dd81-4c52-acd3-0cefa8133cdd,MAJOR,CODE_SMELL,Login/Login/wwwroot/js/generic.js,207,javascript:S1788,Default parameters should be last.,20min

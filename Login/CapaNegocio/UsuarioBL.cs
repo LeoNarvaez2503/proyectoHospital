@@ -1,4 +1,4 @@
-﻿namespace CapaNegocio
+namespace CapaNegocio
 {
     public class UsuarioBL
     {

@@ -271,11 +271,12 @@ IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspListarMedicos')
 GO
 
 CREATE PROCEDURE uspListarMedicos
-AS
-BEGIN
-    SELECT Id, Nombre, Apellido, EspecialidadId, Telefono, Email
-    FROM Medico
-END
+  AS
+  BEGIN
+      SELECT M.Id, M.Nombre, M.Apellido, M.EspecialidadId, M.Telefono, M.Email, E.Nombre AS EspecialidadNombre
+      FROM Medico M
+      LEFT JOIN Especialidad E ON M.EspecialidadId = E.Id
+  END
 GO
 
 IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspRecuperarMedicos')
@@ -442,11 +443,13 @@ IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspListarCitas')
 GO
 
 CREATE PROCEDURE uspListarCitas
-AS
-BEGIN
-    SELECT idCita, idPaciente, idMedico, fecha, estado
-    FROM Cita
-END
+  AS
+  BEGIN
+      SELECT C.idCita, C.idPaciente, C.idMedico, C.fecha, C.estado, (P.Nombre + ' ' + P.Apellido) AS PacienteNombre, (M.Nombre + ' ' + M.Apellido) AS MedicoNombre
+      FROM Cita C
+      LEFT JOIN Paciente P ON C.idPaciente = P.Id
+      LEFT JOIN Medico M ON C.idMedico = M.Id
+  END
 GO
 
 IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspRecuperarCitas')
@@ -532,11 +535,12 @@ IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspListarTratamientos')
 GO
 
 CREATE PROCEDURE uspListarTratamientos
-AS
-BEGIN
-    SELECT Id, PacienteId, Descripcion, Fecha, Costo
-    FROM Tratamiento
-END
+  AS
+  BEGIN
+      SELECT T.Id, T.PacienteId, T.Descripcion, T.Fecha, T.Costo, (P.Nombre + ' ' + P.Apellido) AS PacienteNombre
+      FROM Tratamiento T
+      LEFT JOIN Paciente P ON T.PacienteId = P.Id
+  END
 GO
 
 IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspRecuperarTratamientos')
@@ -620,11 +624,12 @@ IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspListarFacturacion')
 GO
 
 CREATE PROCEDURE uspListarFacturacion
-AS
-BEGIN
-    SELECT Id, PacienteId, Monto, MetodoPago, FechaPago
-    FROM Facturacion
-END
+  AS
+  BEGIN
+      SELECT F.Id, F.PacienteId, F.Monto, F.MetodoPago, F.FechaPago, (P.Nombre + ' ' + P.Apellido) AS PacienteNombre
+      FROM Facturacion F
+      LEFT JOIN Paciente P ON F.PacienteId = P.Id
+  END
 GO
 
 IF EXISTS (SELECT * FROM sys.procedures WHERE name = 'uspRecuperarFacturacion')
@@ -699,3 +704,5 @@ BEGIN
       AND (@metodoPago = '' OR MetodoPago LIKE '%' + @metodoPago + '%')
 END
 GO
+
+

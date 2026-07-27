@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class EspecialidadesCLS
+    public class ForaneaCLS
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
     }
 }

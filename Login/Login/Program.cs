@@ -1,9 +1,19 @@
 using CapaDatos;
 using Login.Data;
+using Microsoft.AspNetCore.DataProtection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(@"/app/keys"))
+    .SetApplicationName("HospitalApp");
+
+builder.Services.AddAntiforgery(options =>
+{
+    options.Cookie.Name = "HospitalAntiforgery";
+});
 
 builder.Services.AddAuthentication("CookieAuth")
     .AddCookie("CookieAuth", config =>

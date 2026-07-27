@@ -1,4 +1,4 @@
-﻿using CapaEntidad;
+using CapaEntidad;
 using CapaNegocio;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,12 +18,22 @@ namespace Login.Controllers
             return objFacturacionBL.ListarFacturaciones();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public int GuardarFacturacion(FacturacionCLS objFacturacionCLS)
         {
+            if (!ModelState.IsValid)
+            {
+                return -1;
+            }
             FacturacionBL objFacturacionBL = new FacturacionBL();
             return objFacturacionBL.GuardarFacturacion(objFacturacionCLS);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public int EliminarFacturacion(int id)
         {
             FacturacionBL objFacturacionBL = new FacturacionBL();

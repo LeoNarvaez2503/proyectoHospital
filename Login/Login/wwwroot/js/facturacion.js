@@ -1,11 +1,11 @@
-﻿window.onload = function () {
+window.onload = function () {
     listarFacturacion();
 }
 async function listarFacturacion() {
     pintar({
         url: "Facturacion/ListarFacturaciones",
-        cabeceras: ["ID Facturacion", "Id Paciente", "Monto", "Metodo Pago", "Fecha Pago"],
-        propiedades: ["id", "pacienteId", "monto", "metodoPago", "fechaPago"],
+        cabeceras: ["ID Facturacion", "Paciente", "Monto", "Metodo Pago", "Fecha Pago"],
+        propiedades: ["id", "pacienteNombre", "monto", "metodoPago", "fechaPago"],
         editar: true,
         eliminar: true,
         propiedadId: "id"
@@ -49,8 +49,14 @@ function Editar(id) {
 }
 
 function Eliminar(id) {
-    fetchGet("Facturacion/EliminarFacturacion/?id=" + id, "json", function (data) {
-        confirmacion(undefined, "¿Seguro desea eliminar?", function (resp) {
+    confirmacion(undefined, "¿Seguro desea eliminar?", function (resp) {
+        let tokenElement = document.getElementsByName("__RequestVerificationToken")[0];
+        let token = tokenElement ? tokenElement.value : "";
+        let frm = new FormData();
+        frm.append("id", id);
+        frm.append("__RequestVerificationToken", token);
+
+        fetchPost("Facturacion/EliminarFacturacion", "json", frm, function (data) {
             if (data == -1) {
                 ErrorA("No se puede eliminar, por dependencia con otras tablas");
                 return;

@@ -1,34 +1,33 @@
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaEntidad;
 
 namespace CapaDatos
 {
     public class GenericDAL : CadenaDAL
     {
-        public List<int> ObtenerClaves(string tabla)
+        public List<ForaneaCLS> ObtenerClaves(string tabla)
         {
-            List<int> lista = new List<int>();
-            string nombreTabla = tabla;
+            List<ForaneaCLS> lista = new List<ForaneaCLS>();
+            string nombreTabla = "";
             string nombreId = "Id";
+            string selectFields = "Id, Nombre";
 
-            if (tabla.Equals("Pacientes", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Paciente";
-            else if (tabla.Equals("Medicos", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Medico";
-            else if (tabla.Equals("Citas", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Cita"; nombreId = "idCita"; }
-            else if (tabla.Equals("Tratamientos", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Tratamiento";
-            else if (tabla.Equals("Especialidades", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Especialidad";
-            else if (tabla.Equals("Facturacion", StringComparison.OrdinalIgnoreCase)) nombreTabla = "Facturacion";
-            else if (tabla.Equals("Usuarios", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Usuario"; nombreId = "idUsuario"; }
+            if (tabla.Equals("Pacientes", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Paciente"; selectFields = "Id, (Nombre + ' ' + Apellido) as Nombre"; }
+            else if (tabla.Equals("Medicos", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Medico"; selectFields = "Id, (Nombre + ' ' + Apellido) as Nombre"; }
+            else if (tabla.Equals("Especialidades", StringComparison.OrdinalIgnoreCase)) { nombreTabla = "Especialidad"; selectFields = "Id, Nombre"; }
+            else { throw new ArgumentException("Tabla no permitida para foraneas: " + tabla); }
 
             using (SqlConnection cn = new SqlConnection(cadenaDato))
             {
                 try
                 {
                     cn.Open();
-                    string query = $"SELECT {nombreId} FROM {nombreTabla} ORDER BY {nombreId} ASC";
+                    string query = $"SELECT {selectFields} FROM {nombreTabla} ORDER BY {nombreId} ASC";
                     using (SqlCommand cmd = new SqlCommand(query, cn))
                     {
                         cmd.CommandType = System.Data.CommandType.Text;
@@ -36,7 +35,7 @@ namespace CapaDatos
                         {
                             while (dr.Read())
                             {
-                                lista.Add(dr.GetInt32(0));
+                                lista.Add(new ForaneaCLS { Id = dr.GetInt32(0), Descripcion = dr.GetString(1) });
                             }
                         }
                     }

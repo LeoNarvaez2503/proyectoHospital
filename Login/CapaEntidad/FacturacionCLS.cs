@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +10,7 @@ namespace CapaEntidad
     {
         public int Id { get; set; }
         public int PacienteId { get; set; }
+        public string PacienteNombre { get; set; }
         public decimal Monto { get; set; }
         public string MetodoPago { get; set; }
         public DateTime FechaPago { get; set; }
