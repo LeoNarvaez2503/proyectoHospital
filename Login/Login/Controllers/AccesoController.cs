@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using System.Security.Cryptography;
 using System.Data.SqlClient;
@@ -28,6 +28,7 @@ namespace Login.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Registrar(UsuarioCLS objUser)
         {
             if (objUser.clave != objUser.confClave)
@@ -65,6 +66,7 @@ namespace Login.Controllers
             return builder.ToString();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(UsuarioCLS objUser)
         {
             objUser.clave = Encriptar(objUser.clave);
@@ -92,6 +94,7 @@ namespace Login.Controllers
             }
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             // Cerrar la sesión del usuario usando el esquema "CookieAuth"
