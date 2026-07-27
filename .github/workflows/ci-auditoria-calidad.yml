@@ -5,9 +5,11 @@ on:
     branches:
       - AuditoriaCalidad
       - AuditoriaCalidad_Cypress
+      - AuditoriaCalidad-Fixes
   pull_request:
     branches:
       - AuditoriaCalidad
+      - AuditoriaCalidad-Fixes
       - main
 
 jobs:
